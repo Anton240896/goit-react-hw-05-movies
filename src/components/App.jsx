@@ -13,16 +13,16 @@ import { Layout } from 'components/Layout/Layout';
 
 /*   ====== IMPORT-LAZY ======*/
 
-const Home = lazy(() => import('pages/Home/Home'));
-const Movies = lazy(() => import('pages/MovieDetails/MovieDetails'));
-const MovieDetails = lazy(() => import('pages/MovieDetails/MovieDetails'));
-const NotFound = lazy(() => import('pages/NotFound/NotFound'));
-const Cast = lazy(() => import('components/Cast/Cast'));
-const Reviews = lazy(() => import('components/Reviews/Reviews'));
+export const Home = lazy(() => 'pages/Home/Home');
+export const Movies = lazy(() => 'pages/MovieDetails/MovieDetails');
+export const MovieDetails = lazy(() => 'pages/MovieDetails/MovieDetails');
+export const NotFound = lazy(() => 'pages/NotFound/NotFound');
+export const Cast = lazy(() => 'components/Cast/Cast');
+export const Reviews = lazy(() => 'components/Reviews/Reviews');
 
 /*   ====== ROUTES ======*/
 
-const App = () => {
+export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -33,10 +33,8 @@ const App = () => {
           <Route path="/movies/:movieId/reviews" element={<Reviews />} />
         </Route>
 
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Route>
     </Routes>
   );
 };
-
-export default App;

@@ -22,7 +22,7 @@ const Reviews = lazy(() => import('components/Reviews/Reviews'));
 
 /*   ====== ROUTES ======*/
 
-export const App = () => {
+const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -38,3 +38,5 @@ export const App = () => {
     </Routes>
   );
 };
+
+export default App;

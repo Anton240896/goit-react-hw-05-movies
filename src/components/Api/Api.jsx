@@ -13,7 +13,7 @@ const REVIEWS = '/reviews';
 const PAGE = 'page=1';
 const ADULT_FALSE = 'include_adult=false';
 
-/*   ====== REQUEST API  ======*/
+/*   ====== REQUEST API ASYNC FUNCTION ⬇️  ======*/
 
 /*   ====== TREND MOVIES FOR TODAY ======*/
 export const requestTrending = async () => {

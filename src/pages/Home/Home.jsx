@@ -5,7 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import { Loader } from 'components/Loader/Loader';
 
 /*   ====== HOOKS ======*/
-export const Home = () => {
+const Home = () => {
   const [films, setFilms] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -39,3 +39,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;

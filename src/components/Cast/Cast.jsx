@@ -6,7 +6,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 /*   ====== HOOKS ======*/
 
-export const Cast = () => {
+const Cast = () => {
   const [movieId] = useParams();
   const [actors, setActors] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -56,3 +56,5 @@ export const Cast = () => {
     </div>
   );
 };
+
+export default Cast;

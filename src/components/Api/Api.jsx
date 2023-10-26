@@ -2,29 +2,22 @@ import axios from 'axios';
 
 axios.defaults.baseURL = 'https://api.themoviedb.org/3/';
 
-/*   ====== FETCH REQUEST API ======*/
-const API_KEY = '64832fedcffbe340ec8c3c22e595e81';
-const ENGLISH_LANG = 'language=en-US';
-const TRENDING = 'trending/movie/day';
-const SEARCH = 'search/movie';
-const MOVIE = 'movie/';
-const CREDITS = '/credits';
-const REVIEWS = '/reviews';
-const PAGE = 'page=1';
-const ADULT_FALSE = 'include_adult=false';
+/*   ====== KEY API ======*/
+
+const API_KEY = '992758a4802a699e8df27d4d6efc34fb';
 
 /*   ====== REQUEST API ASYNC FUNCTION ⬇️  ======*/
 
 /*   ====== TREND MOVIES FOR TODAY ======*/
 export const requestTrending = async () => {
-  const response = await axios.get(`${TRENDING}?${API_KEY}`);
+  const response = await axios.get(`trending/movie/day?api_key=${API_KEY}`);
   return response.data.results;
 };
 
 /*   ====== SEARCH MOVIES ======*/
 export const requestSearch = async keyword => {
   const response = await axios.get(
-    `${SEARCH}?${API_KEY}&${ENGLISH_LANG}&${PAGE}&${ADULT_FALSE}&query=${keyword}`
+    `search/movie?api_key=${API_KEY}&language=en-US&page=1&include_adult=false&query=${keyword}`
   );
   return response.data.results;
 };
@@ -32,7 +25,7 @@ export const requestSearch = async keyword => {
 /*   ====== MOVIE ======*/
 export const requestMovieDetails = async movieId => {
   const response = await axios.get(
-    `${MOVIE}${movieId}?${API_KEY}&${ENGLISH_LANG}`
+    `movie/${movieId}?api_key=${API_KEY}&language=en-US`
   );
   return response.data;
 };
@@ -40,7 +33,7 @@ export const requestMovieDetails = async movieId => {
 /*   ====== MOVIE ACTORS ======*/
 export const requestActors = async movieId => {
   const response = await axios.get(
-    `${MOVIE}${movieId}${CREDITS}?${API_KEY}&${ENGLISH_LANG}`
+    `movie/${movieId}/credits?api_key=${API_KEY}&language=en-US`
   );
   return response.data.cast;
 };
@@ -48,7 +41,9 @@ export const requestActors = async movieId => {
 /*   ====== MOVIE REVIEWS ======*/
 export const requestReviews = async movieId => {
   const response = await axios.get(
-    `${MOVIE}${movieId}${REVIEWS}?${API_KEY}&${ENGLISH_LANG}&${PAGE}`
+    `movie/${movieId}/reviews?api_key=${API_KEY}&language=en-US&page=1`
   );
   return response.data.results;
 };
+
+// Sfsfsafsfefewfge@sdWfewf112123

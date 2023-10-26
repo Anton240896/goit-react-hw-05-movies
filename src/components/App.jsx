@@ -13,12 +13,12 @@ import { Layout } from 'components/Layout/Layout';
 
 /*   ====== IMPORT-LAZY ======*/
 
-export const Home = lazy(() => 'pages/Home/Home');
-export const Movies = lazy(() => 'pages/MovieDetails/MovieDetails');
-export const MovieDetails = lazy(() => 'pages/MovieDetails/MovieDetails');
-export const NotFound = lazy(() => 'pages/NotFound/NotFound');
-export const Cast = lazy(() => 'components/Cast/Cast');
-export const Reviews = lazy(() => 'components/Reviews/Reviews');
+const Home = lazy(() => import('pages/Home/Home'));
+// const Movies = lazy(() => import('pages/MovieDetails/MovieDetails'));
+// const MovieDetails = lazy(() => import('pages/MovieDetails/MovieDetails'));
+// const NotFound = lazy(() => import('pages/NotFound/NotFound'));
+const Cast = lazy(() => import('components/Cast/Cast'));
+// const Reviews = lazy(() => import('components/Reviews/Reviews'));
 
 /*   ====== ROUTES ======*/
 
@@ -27,14 +27,14 @@ export const App = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="/movies" element={<Movies />} />
-        <Route path="/movies/:movieId" element={<MovieDetails />}>
-          <Route path="/movies/:movieId/cast" element={<Cast />} />
-          <Route path="/movies/:movieId/reviews" element={<Reviews />} />
-        </Route>
-
-        {/* <Route path="*" element={<NotFound />} /> */}
+        {/* <Route path="/movies" element={<Movies />} />
+        <Route path="/movies/:movieId" element={<MovieDetails />}> */}
+        <Route path="/movies/:movieId/cast" element={<Cast />} />
+        {/* <Route path="/movies/:movieId/reviews" element={<Reviews />} /> */}
       </Route>
+
+      {/* <Route path="*" element={<NotFound />} /> */}
+      {/* </Route> */}
     </Routes>
   );
 };

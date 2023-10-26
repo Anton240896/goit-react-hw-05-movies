@@ -4,11 +4,10 @@ import { NavLink } from 'react-router-dom';
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  gap: 260px;
 `;
 
 export const Nav = styled.nav`
-  border-bottom: solid 2px yellowgreen;
+  border-bottom: solid 2px red;
   margin-bottom: 20px;
 `;
 
@@ -22,6 +21,6 @@ export const Link = styled(NavLink)`
   color: #191d1e;
 
   &:hover {
-    color: yellowgreen;
+    color: red;
   }
 `;

@@ -17,7 +17,6 @@ const Home = () => {
       try {
         const trendingFilms = await requestTrending();
         setFilms(trendingFilms);
-        toast.success('😊 Yes, we found films');
       } catch (error) {
         toast.error('🥺 Sorry, we found nothing');
       } finally {

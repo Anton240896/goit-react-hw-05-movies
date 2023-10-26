@@ -45,5 +45,3 @@ export const requestReviews = async movieId => {
   );
   return response.data.results;
 };
-
-// Sfsfsafsfefewfge@sdWfewf112123

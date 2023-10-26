@@ -4,8 +4,11 @@ import { requestActors } from 'components/Api/Api';
 import Loader from 'components/Loader/Loader';
 import toast, { Toaster } from 'react-hot-toast';
 
-/*   ====== HOOKS ======*/
+/*   ====== DEFAULT IMAGES ======*/
+const defaultNoImages =
+  'https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg';
 
+/*   ====== HOOKS ======*/
 const Cast = () => {
   const [movieId] = useParams();
   const [actors, setActors] = useState([]);
@@ -14,20 +17,10 @@ const Cast = () => {
   /*   ======  REQUEST FILMS ACTORS ======*/
 
   useEffect(() => {
-    const actorsFilms = async () => {
-      setLoading(true);
-
-      try {
-        const actorsFilms = await requestActors(movieId);
-        setActors(actorsFilms);
-        toast.success('😊 Yes, we found actors');
-      } catch (error) {
-        toast.error('🥺 Sorry, we found nothing');
-      } finally {
-        setLoading(false);
-      }
-    };
-    actorsFilms();
+    requestActors(movieId)
+      .then(results => setActors(results.cast))
+      .catch(error => toast.error('Sorry, we didnt find anything'))
+      .finally(() => setLoading(false));
   }, [movieId]);
 
   /*   ====== RENDER ======*/
@@ -36,16 +29,16 @@ const Cast = () => {
       {loading && <Loader />}
 
       <ul>
-        {actors.map(({ id, name, profile_path, original_name, character }) => (
+        {actors.map(({ id, name, profile_path, character }) => (
           <li key={id}>
             <img
               width="300px"
               src={
                 profile_path
                   ? `https://image.tmdb.org/t/p/w500${profile_path}`
-                  : `https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg`
+                  : `${defaultNoImages}`
               }
-              alt={original_name}
+              alt={name}
             />
             <p>{name}</p>
             <p>Character: {character}</p>

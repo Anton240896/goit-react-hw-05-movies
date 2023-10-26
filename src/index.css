@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  background-color: rgb(218, 249, 249);
+  background-image: radial-gradient(circle, #a6a6d9 60%, rgb(80, 113, 231) 80%);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

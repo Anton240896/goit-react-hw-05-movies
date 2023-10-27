@@ -9,6 +9,7 @@ import {
   ListInfo,
   LinkInfo,
   ActorsFilms,
+  AddInfo,
 } from './MovieDetails.styled';
 
 /*   ====== HOOKS ======*/
@@ -63,15 +64,17 @@ const MovieDetails = () => {
     <main>
       {movieInfo && (
         <Container>
-          <img
-            width="400px"
-            src={
-              poster_path
-                ? `https://image.tmdb.org/t/p/w500${poster_path}`
-                : `${defaultNoImages} }`
-            }
-            alt={original_title}
-          />
+          <div>
+            <img
+              width="300px"
+              src={
+                poster_path
+                  ? `https://image.tmdb.org/t/p/w500${poster_path}`
+                  : `${defaultNoImages} }`
+              }
+              alt={original_title}
+            />
+          </div>
 
           <div>
             <h1>
@@ -86,7 +89,7 @@ const MovieDetails = () => {
                 <li key={genre.id}>{genre.name}</li>
               ))}
 
-              <div>
+              <AddInfo>
                 <h3>Additional information</h3>
                 <ListInfo>
                   <LinkInfo to="cast">Actors</LinkInfo>
@@ -95,7 +98,7 @@ const MovieDetails = () => {
                   </ActorsFilms>
                 </ListInfo>
                 <Outlet />
-              </div>
+              </AddInfo>
             </List>
           </div>
 

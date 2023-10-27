@@ -6,6 +6,7 @@ export const Container = styled.div`
   margin: 7px;
   gap: 11px;
   align-items: flex-start;
+  margin-top: 69px;
 `;
 
 export const List = styled.ul`
@@ -38,4 +39,10 @@ export const LinkInfo = styled(Link)`
 `;
 export const ActorsFilms = styled.li`
   display: flex;
+`;
+
+export const AddInfo = styled.div`
+  position: relative;
+  top: 103px;
+  right: 300px;
 `;

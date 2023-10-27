@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ListFilms from 'pages/ListFilms/ListFilms';
+import ListFilms from 'components/ListFilms/ListFilms';
 import Form from 'components/Form/Form';
 import { requestSearch } from 'components/Api/Api';
 import toast, { Toaster } from 'react-hot-toast';
@@ -9,7 +9,7 @@ import Loader from 'components/Loader/Loader';
 const Movies = () => {
   const [queryFilms, setQueryFilms] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [noMoviesText, setNoMoviesText] = useState(false);
+  const [emptyText, setEmptyText] = useState(false);
 
   /*   ====== FETCH REQUEST ======*/
   const searchMovies = queryMovie => {
@@ -18,7 +18,7 @@ const Movies = () => {
     requestSearch(queryMovie)
       .then(results => {
         setQueryFilms(results);
-        setNoMoviesText(results.length === '');
+        setEmptyText(results.length === '');
       })
       .catch(error => {
         toast.error(
@@ -35,7 +35,7 @@ const Movies = () => {
     <div>
       <Form searchMovies={searchMovies} />
       {loading && <Loader />}
-      {noMoviesText &&
+      {emptyText &&
         toast.error('There is no movies with this request. Please, try again')}
       {queryFilms && <ListFilms films={queryFilms} />}
       <Toaster position="top-right" />

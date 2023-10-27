@@ -12,9 +12,23 @@ const MovieDetails = () => {
   const [loading, setLoading] = useState(false);
   const location = useLocation();
 
+  /*   ====== DESTRUCTURIZATION  ======*/
+  const {
+    title,
+    release_date,
+    popularity,
+    overview,
+    genres,
+    poster_path,
+    original_title,
+  } = movieInfo || {};
+
+  const defaultNoImages =
+    'https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg';
+
   /*   ====== FETCH REQUEST ======*/
   useEffect(() => {
-    const fetchMovieDetailsFilms = () => {
+    const getMovieDetailsFilms = () => {
       setLoading(true);
 
       requestMovieDetails(movieId)
@@ -31,19 +45,12 @@ const MovieDetails = () => {
         });
     };
 
-    fetchMovieDetailsFilms();
+    getMovieDetailsFilms();
   }, [movieId]);
 
-  /*   ======  ======*/
-  const {
-    title,
-    release_date,
-    popularity,
-    overview,
-    genres,
-    poster_path,
-    original_title,
-  } = movieInfo || {};
+  if (!movieInfo) {
+    return;
+  }
 
   /*   ====== RENDER ======*/
   return (
@@ -55,7 +62,7 @@ const MovieDetails = () => {
             src={
               poster_path
                 ? `https://image.tmdb.org/t/p/w500${poster_path}`
-                : `https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg`
+                : `${defaultNoImages}`
             }
             alt={original_title}
           />

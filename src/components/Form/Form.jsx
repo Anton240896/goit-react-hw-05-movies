@@ -1,15 +1,16 @@
 import { useState } from 'react';
-import { SearchForm, Input, Button } from './Form.styled';
+import { SearchForm, Input } from './Form.styled';
+import { BiSearchAlt2 } from 'react-icons/bi';
 
 const Form = ({ searchMovies }) => {
   const [query, setQuery] = useState('');
 
-  const handleInputChange = event => {
-    setQuery(event.target.value);
+  const handleInputChange = evt => {
+    setQuery(evt.target.value);
   };
 
-  const handleSubmit = event => {
-    event.preventDefault();
+  const handleSubmit = evt => {
+    evt.preventDefault();
     searchMovies(query.toLowerCase());
   };
 
@@ -22,7 +23,12 @@ const Form = ({ searchMovies }) => {
         autoFocus
         onChange={handleInputChange}
       />
-      <Button type="submit">Search</Button>
+      <BiSearchAlt2
+        size={40}
+        style={{ cursor: 'pointer' }}
+        type="submit"
+        onClick={searchMovies}
+      />
     </SearchForm>
   );
 };

@@ -17,10 +17,21 @@ const Cast = () => {
   /*   ======  REQUEST FILMS ACTORS ======*/
 
   useEffect(() => {
-    requestActors(movieId)
-      .then(results => setActors(results.cast))
-      .catch(error => toast.error('Sorry, we didnt find anything'))
-      .finally(() => setLoading(false));
+    const getCast = () => {
+      setLoading(true);
+
+      requestActors(movieId)
+        .then(resp => {
+          setActors(resp);
+        })
+        .catch(error => {
+          toast.error('Sorry, we dint find, please try again');
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+    };
+    getCast();
   }, [movieId]);
 
   /*   ====== RENDER ======*/

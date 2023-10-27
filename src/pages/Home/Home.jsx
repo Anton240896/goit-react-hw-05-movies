@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import ListFilms from 'pages/ListFilms/ListFilms';
+import ListFilms from 'components/ListFilms/ListFilms';
+import { ContFilms } from 'pages/Home/Home.styled';
 import { requestTrending } from 'components/Api/Api';
 import toast, { Toaster } from 'react-hot-toast';
 import { Loader } from 'components/Loader/Loader';
@@ -18,7 +19,7 @@ const Home = () => {
         const trendingFilms = await requestTrending();
         setFilms(trendingFilms);
       } catch (error) {
-        toast.error('🥺 Sorry, we found nothing');
+        toast.error('🥺 Sorry, we didnt find anything');
       } finally {
         setLoading(false);
       }
@@ -29,13 +30,13 @@ const Home = () => {
 
   /*   ====== RENDER ======*/
   return (
-    <div>
+    <ContFilms>
       <h1>Trending today</h1>
       <ListFilms films={films} />
 
       {loading && <Loader />}
       <Toaster position="top-right" />
-    </div>
+    </ContFilms>
   );
 };
 

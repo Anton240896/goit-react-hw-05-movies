@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react';
 import { requestActors } from 'components/Api/Api';
 import Loader from 'components/Loader/Loader';
 import toast, { Toaster } from 'react-hot-toast';
+import { ItemFilms } from 'components/ListFilms/ListFilms.styled';
+import { ListFilms } from './Cast.styled';
 
 /*   ====== DEFAULT IMAGES ======*/
 const defaultNoImages =
@@ -10,7 +12,7 @@ const defaultNoImages =
 
 /*   ====== HOOKS ======*/
 const Cast = () => {
-  const [movieId] = useParams();
+  const { movieId } = useParams();
   const [actors, setActors] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -36,14 +38,14 @@ const Cast = () => {
 
   /*   ====== RENDER ======*/
   return (
-    <div>
+    <ul>
       {loading && <Loader />}
 
-      <ul>
+      <ListFilms>
         {actors.map(({ id, name, profile_path, character }) => (
           <li key={id}>
             <img
-              width="300px"
+              width="180px"
               src={
                 profile_path
                   ? `https://image.tmdb.org/t/p/w500${profile_path}`
@@ -51,13 +53,17 @@ const Cast = () => {
               }
               alt={name}
             />
-            <p>{name}</p>
-            <p>Character: {character}</p>
+            <p>
+              <b>{name}</b>
+            </p>
+            <p>
+              <b>Character:</b> {character}
+            </p>
           </li>
         ))}
-      </ul>
+      </ListFilms>
       <Toaster position="top-right" />
-    </div>
+    </ul>
   );
 };
 

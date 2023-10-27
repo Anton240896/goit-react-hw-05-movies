@@ -3,7 +3,13 @@ import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
 import { requestMovieDetails } from 'components/Api/Api';
 import Loader from 'components/Loader/Loader';
 import toast from 'react-hot-toast';
-import { Container, List, ListInfo, LinkInfo } from './MovieDetails.styled';
+import {
+  Container,
+  List,
+  ListInfo,
+  LinkInfo,
+  ActorsFilms,
+} from './MovieDetails.styled';
 
 /*   ====== HOOKS ======*/
 const MovieDetails = () => {
@@ -62,7 +68,7 @@ const MovieDetails = () => {
             src={
               poster_path
                 ? `https://image.tmdb.org/t/p/w500${poster_path}`
-                : `${defaultNoImages}`
+                : `${defaultNoImages} }`
             }
             alt={original_title}
           />
@@ -83,12 +89,10 @@ const MovieDetails = () => {
               <div>
                 <h3>Additional information</h3>
                 <ListInfo>
-                  <li>
-                    <LinkInfo to="cast">Actors</LinkInfo>
-                  </li>
-                  <li>
+                  <LinkInfo to="cast">Actors</LinkInfo>
+                  <ActorsFilms>
                     <LinkInfo to="reviews">Reviews</LinkInfo>
-                  </li>
+                  </ActorsFilms>
                 </ListInfo>
                 <Outlet />
               </div>

@@ -10,6 +10,7 @@ import {
   ActorsFilms,
   TextOverview,
   ButtonLink,
+  LinkActors,
 } from './MovieDetails.styled';
 
 /*   ====== HOOKS ======*/
@@ -107,7 +108,8 @@ const MovieDetails = () => {
               <div>
                 <h3>Additional information</h3>
                 <ListInfo>
-                  <Link to="cast">Actors</Link>
+                  <LinkActors to="cast">Actors</LinkActors>
+
                   <ActorsFilms>
                     <LinkInfo to="reviews">Reviews</LinkInfo>
                   </ActorsFilms>

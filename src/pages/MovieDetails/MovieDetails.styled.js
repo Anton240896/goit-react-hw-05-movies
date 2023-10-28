@@ -35,7 +35,6 @@ export const LinkInfo = styled(Link)`
   &:hover {
     color: red;
   }
-  //
 `;
 export const ActorsFilms = styled.li`
   display: flex;
@@ -52,10 +51,20 @@ export const ButtonLink = styled.li`
   font-weight: 500;
   font-size: 22px;
   color: #191d1e;
-  background-color: transparent;
   border: none;
   cursor: pointer;
   list-style: none;
+
+  &:hover {
+    color: red;
+  }
+`;
+
+export const LinkActors = styled(Link)`
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
 
   &:hover {
     color: red;

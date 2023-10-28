@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { requestReviews } from 'components/Api/Api';
 import { Loader } from 'components/Loader/Loader';
-import { ListReview } from './Reviews.styled';
+import { ListReview } from 'components/Reviews/Reviews.styled';
 import toast, { Toaster } from 'react-hot-toast';
 
 /*   ====== HOOKS ======*/

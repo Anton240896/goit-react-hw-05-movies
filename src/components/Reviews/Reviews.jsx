@@ -36,21 +36,22 @@ const Reviews = () => {
       {loading && <Loader />}
       <Toaster position="top-right" />
 
-      {reviews.length > 0 && (
-          <ul>
-            {reviews.map(review => {
-              return (
-                <li key={review.author}>
-                  <h2>{review.author}</h2>
-                  <p>{review.content}</p>
-                </li>
-              );
-            })}
-          </ul>
-        ) &&
+      {reviews.length > 0 ? (
+        <ul>
+          {reviews.map(review => {
+            return (
+              <li key={review.author}>
+                <h2>{review.author}</h2>
+                <p>{review.content}</p>
+              </li>
+            );
+          })}
+        </ul>
+      ) : (
         toast('Sorry, but we found nothing', {
           duration: 3000,
-        })}
+        })
+      )}
     </div>
   );
 };

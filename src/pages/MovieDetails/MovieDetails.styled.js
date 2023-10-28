@@ -43,6 +43,6 @@ export const ActorsFilms = styled.li`
 
 export const AddInfo = styled.div`
   position: relative;
-  top: 103px;
+  top: 139px;
   right: 300px;
 `;

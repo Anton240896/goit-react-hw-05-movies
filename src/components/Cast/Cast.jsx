@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { requestActors } from 'components/Api/Api';
 import Loader from 'components/Loader/Loader';
 import toast, { Toaster } from 'react-hot-toast';
-import { ItemFilms } from 'components/ListFilms/ListFilms.styled';
 import { ListFilms } from './Cast.styled';
 
 /*   ====== DEFAULT IMAGES ======*/

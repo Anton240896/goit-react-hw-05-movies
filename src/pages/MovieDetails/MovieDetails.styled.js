@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: 7px;
   gap: 11px;
   align-items: flex-start;
-  margin-top: 69px;
+  margin-top: 70px;
 `;
 
 export const List = styled.ul`
@@ -41,12 +41,23 @@ export const ActorsFilms = styled.li`
   display: flex;
 `;
 
-export const AddInfo = styled.div`
-  position: relative;
-  top: 100px;
-  right: 300px;
+export const TextOverview = styled.p`
+  max-width: 406px;
 `;
 
-export const TextOverview = styled.p`
-  margin-right: 206px;
+export const ButtonLink = styled.li`
+  position: absolute;
+  top: 54px;
+  left: 19px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #191d1e;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  list-style: none;
+
+  &:hover {
+    color: red;
+  }
 `;

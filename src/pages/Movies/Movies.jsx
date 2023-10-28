@@ -20,11 +20,7 @@ const Movies = () => {
         setQueryFilms(results);
         setEmptyText(results.length === '');
       })
-      .catch(error => {
-        toast.error(
-          'Sorry, we didnt find what you were looking for, try again '
-        );
-      })
+      .catch(error => {})
       .finally(() => {
         setLoading(false);
       });
@@ -38,7 +34,6 @@ const Movies = () => {
       {emptyText &&
         toast.error('There is no movies with this request. Please, try again')}
       {queryFilms && <ListFilms films={queryFilms} />}
-      <Toaster position="top-right" />
     </div>
   );
 };

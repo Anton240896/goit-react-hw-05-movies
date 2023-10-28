@@ -6,7 +6,6 @@ import {
   ListReview,
   UnOrderedReviews,
 } from 'components/Reviews/Reviews.styled';
-import toast, { Toaster } from 'react-hot-toast';
 
 /*   ====== HOOKS ======*/
 const Reviews = () => {
@@ -24,9 +23,7 @@ const Reviews = () => {
         .then(resp => {
           setReviews(resp);
         })
-        .catch(error => {
-          toast.error('Sorry, we dint find, please try again');
-        })
+        .catch(error => {})
         .finally(() => {
           setLoading(false);
         });
@@ -38,24 +35,19 @@ const Reviews = () => {
   return (
     <div>
       {loading && <Loader />}
-      <Toaster position="top-right" />
-
-      {reviews.length > 0 ? (
-        <UnOrderedReviews>
-          {reviews.map(review => {
-            return (
-              <ListReview key={review.author}>
-                <h2>{review.author}</h2>
+      {reviews.length !== 0 && (
+        <div>
+          <UnOrderedReviews>
+            {reviews.map(review => (
+              <ListReview key={review.id}>
+                <h2>Author: {review.author}</h2>
                 <p>{review.content}</p>
               </ListReview>
-            );
-          })}
-        </UnOrderedReviews>
-      ) : (
-        toast('Sorry, but we found nothing', {
-          duration: 3000,
-        })
+            ))}
+          </UnOrderedReviews>
+        </div>
       )}
+      {reviews.length === 0 && <div>Sorry, we didn't find any comments</div>}
     </div>
   );
 };

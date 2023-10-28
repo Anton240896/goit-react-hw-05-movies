@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const UnOrderedReviews = styled.ul`
-  margin-right: 40px;
-  margin-left: -40px;
+  max-width: 400px;
+  margin-left: -320px;
 `;
 
 export const ListReview = styled.li`

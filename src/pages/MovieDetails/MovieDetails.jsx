@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react';
-import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
+import { useParams, Outlet, Link, useLocation } from 'react-router-dom';
 import { requestMovieDetails } from 'components/Api/Api';
 import Loader from 'components/Loader/Loader';
-import toast from 'react-hot-toast';
 import {
   Container,
   List,
   ListInfo,
   LinkInfo,
   ActorsFilms,
-  AddInfo,
   TextOverview,
+  ButtonLink,
 } from './MovieDetails.styled';
 
 /*   ====== HOOKS ======*/
@@ -19,20 +18,6 @@ const MovieDetails = () => {
   const [movieInfo, setMovieInfo] = useState(null);
   const [loading, setLoading] = useState(false);
   const location = useLocation();
-
-  /*   ====== DESTRUCTURIZATION  ======*/
-  const {
-    title,
-    release_date,
-    popularity,
-    overview,
-    genres,
-    poster_path,
-    original_title,
-  } = movieInfo || {};
-
-  const defaultNoImages =
-    'https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg';
 
   /*   ====== FETCH REQUEST ======*/
   useEffect(() => {
@@ -43,11 +28,7 @@ const MovieDetails = () => {
         .then(detailMovie => {
           setMovieInfo(detailMovie);
         })
-        .catch(error => {
-          toast.error(
-            'Sorry, we didnt find what you were looking for, try again'
-          );
-        })
+        .catch(error => {})
         .finally(() => {
           setLoading(false);
         });
@@ -56,21 +37,54 @@ const MovieDetails = () => {
     getMovieDetailsFilms();
   }, [movieId]);
 
+  // useEffect(() => {
+  //   const getMovieDetailsFilms = async () => {
+  //     setLoading(true);
+
+  //     try {
+  //       const requestMovieDetailsFilms = await requestMovieDetails();
+  //       setMovieInfo(requestMovieDetailsFilms);
+  //     } catch (error) {
+  //       toast.error('🥺 Sorry, we didnt find anything');
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+
+  //   getMovieDetailsFilms();
+  // }, [movieId]);
+
   if (!movieInfo) {
     return;
   }
 
+  /*   ====== DESTRUCTURIZATION  ======*/
+  const defaultNoImages =
+    'https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg';
+
+  const posterPathOrigin = 'https://image.tmdb.org/t/p/w500';
+
+  const {
+    title,
+    release_date,
+    popularity,
+    overview,
+    genres,
+    poster_path,
+    original_title,
+  } = movieInfo;
+
   /*   ====== RENDER ======*/
   return (
     <main>
-      {movieInfo && (
+      {
         <Container>
           <div>
             <img
               width="300px"
               src={
                 poster_path
-                  ? `https://image.tmdb.org/t/p/w500${poster_path}`
+                  ? `${posterPathOrigin}${poster_path}`
                   : `${defaultNoImages} }`
               }
               alt={original_title}
@@ -90,23 +104,26 @@ const MovieDetails = () => {
                 <li key={genre.id}>{genre.name}</li>
               ))}
 
-              <AddInfo>
+              <div>
                 <h3>Additional information</h3>
                 <ListInfo>
-                  <LinkInfo to="cast">Actors</LinkInfo>
+                  <Link to="cast">Actors</Link>
                   <ActorsFilms>
                     <LinkInfo to="reviews">Reviews</LinkInfo>
                   </ActorsFilms>
                 </ListInfo>
                 <Outlet />
-              </AddInfo>
+              </div>
             </List>
           </div>
 
-          <Link to={location.state?.from ?? '/'}></Link>
+          <Link to={location.state?.from ?? '/'}>
+            <ButtonLink type="button">Go back</ButtonLink>
+          </Link>
+
           {loading && <Loader />}
         </Container>
-      )}
+      }
     </main>
   );
 };

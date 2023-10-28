@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { requestReviews } from 'components/Api/Api';
 import { Loader } from 'components/Loader/Loader';
+import { ListReview } from './Reviews.styled';
 import toast, { Toaster } from 'react-hot-toast';
 
 /*   ====== HOOKS ======*/
@@ -40,10 +41,10 @@ const Reviews = () => {
         <ul>
           {reviews.map(review => {
             return (
-              <li key={review.author}>
+              <ListReview key={review.author}>
                 <h2>{review.author}</h2>
                 <p>{review.content}</p>
-              </li>
+              </ListReview>
             );
           })}
         </ul>

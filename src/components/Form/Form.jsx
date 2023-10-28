@@ -1,33 +1,34 @@
-import { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { SearchForm, Input } from './Form.styled';
 import { BiSearchAlt2 } from 'react-icons/bi';
 
-const Form = ({ searchMovies }) => {
-  const [query, setQuery] = useState('');
+const Form = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const productName = searchParams.get('name') ?? '';
 
-  const handleInputChange = evt => {
-    setQuery(evt.target.value);
-  };
+  const visibleProducts = products.filter(product =>
+    product.name.toLowerCase().includes(productName.toLowerCase())
+  );
 
-  const handleSubmit = evt => {
-    evt.preventDefault();
-    searchMovies(query.toLowerCase());
+  const updateQueryString = name => {
+    const nextParams = name !== '' ? { name } : {};
+    setSearchParams(nextParams);
   };
 
   return (
     <SearchForm onSubmit={handleSubmit}>
       <Input
-        name="query"
+        name={productName}
         type="text"
         value={query}
         autoFocus
-        onChange={handleInputChange}
+        onChange={updateQueryString}
       />
       <BiSearchAlt2
         size={40}
         style={{ cursor: 'pointer' }}
         type="submit"
-        onClick={searchMovies}
+        onClick={visibleProducts}
       />
     </SearchForm>
   );

@@ -2,7 +2,6 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { requestActors } from 'components/Api/Api';
 import Loader from 'components/Loader/Loader';
-import toast, { Toaster } from 'react-hot-toast';
 import { ListFilms } from './Cast.styled';
 
 /*   ====== DEFAULT IMAGES ======*/
@@ -25,9 +24,7 @@ const Cast = () => {
         .then(resp => {
           setActors(resp);
         })
-        .catch(error => {
-          toast.error('Sorry, we dint find, please try again');
-        })
+        .catch(error => {})
         .finally(() => {
           setLoading(false);
         });
@@ -61,7 +58,6 @@ const Cast = () => {
           </li>
         ))}
       </ListFilms>
-      <Toaster position="top-right" />
     </ul>
   );
 };

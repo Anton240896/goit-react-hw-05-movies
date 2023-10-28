@@ -48,5 +48,5 @@ export const AddInfo = styled.div`
 `;
 
 export const TextOverview = styled.p`
-  margin-right: 306px;
+  margin-right: 206px;
 `;

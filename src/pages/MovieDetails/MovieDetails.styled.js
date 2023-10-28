@@ -46,3 +46,7 @@ export const AddInfo = styled.div`
   top: 139px;
   right: 300px;
 `;
+
+export const TextOverview = styled.p`
+  margin-right: 306px;
+`;

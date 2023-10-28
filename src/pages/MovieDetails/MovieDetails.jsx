@@ -10,6 +10,7 @@ import {
   LinkInfo,
   ActorsFilms,
   AddInfo,
+  TextOverview,
 } from './MovieDetails.styled';
 
 /*   ====== HOOKS ======*/
@@ -82,7 +83,7 @@ const MovieDetails = () => {
             </h1>
             <p>User score: {popularity}</p>
             <h2>Overview</h2>
-            <p>{overview}</p>
+            <TextOverview>{overview}</TextOverview>
             <h2>Genres</h2>
             <List>
               {genres.map(genre => (

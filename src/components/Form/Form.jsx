@@ -23,7 +23,7 @@ const Form = ({ submitAction, startInputText }) => {
         size={40}
         style={{ cursor: 'pointer' }}
         type="submit"
-        // onClick={inputValue}
+        // onClick={startInputText}
       />
     </FormBox>
   );

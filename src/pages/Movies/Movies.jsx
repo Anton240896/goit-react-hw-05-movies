@@ -17,7 +17,7 @@ const Movies = () => {
     const effectAction = async () => {
       try {
         const data = await requestSearch(query);
-        setMovies(data);
+        setMovies(data.results);
       } catch (error) {
         toast.error('Sorry, we didnt find anything');
       }

@@ -50,7 +50,7 @@ const Cast = () => {
               alt={name}
             />
             <p>
-              <b>{name}</b>
+              <b color="red">{name}</b>
             </p>
             <p>
               <b>Character:</b> {character}

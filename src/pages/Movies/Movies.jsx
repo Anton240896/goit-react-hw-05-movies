@@ -3,14 +3,13 @@ import { Outlet, useSearchParams } from 'react-router-dom';
 import ListFilms from 'components/ListFilms/ListFilms';
 import Form from 'components/Form/Form';
 import { requestSearch } from 'components/Api/Api';
-// import Loader from 'components/Loader/Loader';
 import toast from 'react-hot-toast';
 
 /*   ====== HOOKS ======*/
 const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [movies, setMovies] = useState([]);
-  // const [loading, setLoading] = useState(false);
+  const query = searchParams.get('query');
 
   /*   ====== FETCH REQUEST ======*/
   useEffect(() => {
@@ -26,7 +25,6 @@ const Movies = () => {
     effectAction();
   }, [query]);
 
-  const query = searchParams.get('query');
   const submitAction = value => {
     setSearchParams({ query: value });
   };
@@ -35,7 +33,6 @@ const Movies = () => {
   return (
     <div>
       <Form submitAction={submitAction} startInputText={query} />
-      {/* {loading && <Loader />} */}
 
       <ListFilms films={movies} />
       <Outlet />

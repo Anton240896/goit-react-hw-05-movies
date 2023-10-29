@@ -1,34 +1,29 @@
-import { useSearchParams } from 'react-router-dom';
-import { SearchForm, Input } from './Form.styled';
+import { Form, Input } from './Form.styled';
 import { BiSearchAlt2 } from 'react-icons/bi';
 
-const Form = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
-  const productName = searchParams.get('name') ?? '';
-
-  const visibleProducts = products.filter(product =>
-    product.name.toLowerCase().includes(productName.toLowerCase())
-  );
-
-  const updateQueryString = name => {
-    const nextParams = name !== '' ? { name } : {};
-    setSearchParams(nextParams);
+const Form = ({ submitAction, startInputText }) => {
+  const onFormSubmit = evt => {
+    evt.preventDefault();
+    const inputValue = evt.target.elements.query.value.trim();
+    if (!inputValue) return;
+    submitAction(inputValue);
   };
 
   return (
-    <SearchForm onSubmit={handleSubmit}>
+    <Form onSubmit={onFormSubmit}>
       <Input
-        name={productName}
+        defaultValue={startInputText}
+        name="query"
         type="text"
-        value={query}
-        autoFocus
-        onChange={updateQueryString}
+        autoComplete="off"
+        placeholder="Search films"
       />
+
       <BiSearchAlt2
         size={40}
         style={{ cursor: 'pointer' }}
         type="submit"
-        onClick={visibleProducts}
+        // onClick={inputValue}
       />
     </SearchForm>
   );

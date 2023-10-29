@@ -1,39 +1,44 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Outlet, useSearchParams } from 'react-router-dom';
 import ListFilms from 'components/ListFilms/ListFilms';
 import Form from 'components/Form/Form';
 import { requestSearch } from 'components/Api/Api';
-import toast, { Toaster } from 'react-hot-toast';
-import Loader from 'components/Loader/Loader';
+// import Loader from 'components/Loader/Loader';
+import toast from 'react-hot-toast';
 
 /*   ====== HOOKS ======*/
 const Movies = () => {
-  const [queryFilms, setQueryFilms] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [emptyText, setEmptyText] = useState(false);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [movies, setMovies] = useState([]);
+  const query = searchParams.get('query');
+  // const [loading, setLoading] = useState(false);
 
   /*   ====== FETCH REQUEST ======*/
-  const searchMovies = queryMovie => {
-    setLoading(true);
+  useEffect(() => {
+    if (!query) return;
+    const effectAction = async () => {
+      try {
+        const data = await requestSearch(query);
+        setMovies(data.results);
+      } catch (error) {
+        toast.error('Sorry, we didnt find anything');
+      }
+    };
+    effectAction();
+  }, [query]);
 
-    requestSearch(queryMovie)
-      .then(results => {
-        setQueryFilms(results);
-        setEmptyText(results.length === '');
-      })
-      .catch(error => {})
-      .finally(() => {
-        setLoading(false);
-      });
+  const submitAction = value => {
+    setSearchParams({ query: value });
   };
 
   /*   ====== RENDER ======*/
   return (
     <div>
-      <Form searchMovies={searchMovies} />
-      {loading && <Loader />}
-      {emptyText &&
-        toast.error('There is no movies with this request. Please, try again')}
-      {queryFilms && <ListFilms films={queryFilms} />}
+      <Form submitAction={submitAction} startInputText={query} />
+      {/* {loading && <Loader />} */}
+
+      <ListFilms films={movies} />
+      <Outlet />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import { Form, Input } from './Form.styled';
+import { FormBox, Input } from './Form.styled';
 import { BiSearchAlt2 } from 'react-icons/bi';
 
 const Form = ({ submitAction, startInputText }) => {
@@ -10,7 +10,7 @@ const Form = ({ submitAction, startInputText }) => {
   };
 
   return (
-    <Form onSubmit={onFormSubmit}>
+    <FormBox onSubmit={onFormSubmit}>
       <Input
         defaultValue={startInputText}
         name="query"
@@ -25,7 +25,7 @@ const Form = ({ submitAction, startInputText }) => {
         type="submit"
         // onClick={inputValue}
       />
-    </SearchForm>
+    </FormBox>
   );
 };
 

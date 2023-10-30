@@ -8,4 +8,5 @@ export const UnOrderedReviews = styled.ul`
 
 export const ListReview = styled.li`
   list-style: none;
+  color: red;
 `;

@@ -33,7 +33,7 @@ export const LinkInfo = styled(Link)`
   color: red;
 
   &:hover {
-    color: red;
+    color: black;
   }
 `;
 export const ActorsFilms = styled.li`
@@ -68,7 +68,7 @@ export const LinkActors = styled(Link)`
   color: red;
 
   &:hover {
-    color: red;
+    color: black;
   }
 `;
 

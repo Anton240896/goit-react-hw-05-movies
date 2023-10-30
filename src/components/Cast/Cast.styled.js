@@ -5,6 +5,6 @@ export const ListFilms = styled.ul`
   display: flex;
   flex-wrap: wrap;
   margin-top: 79px;
-  margin-left: -656px;
+  margin-left: -555px;
   gap: 10px;
 `;

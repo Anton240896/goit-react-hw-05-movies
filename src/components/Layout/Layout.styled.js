@@ -21,6 +21,7 @@ export const Link = styled(NavLink)`
   color: red;
 
   &:hover {
+    border: red;
     color: white;
   }
 `;

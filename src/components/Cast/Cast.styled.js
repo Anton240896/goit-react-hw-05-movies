@@ -8,3 +8,11 @@ export const ListFilms = styled.ul`
   margin-left: -575px;
   gap: 10px;
 `;
+
+export const Name = styled.p`
+  color: red;
+`;
+
+export const Character = styled.p`
+  color: red;
+`;

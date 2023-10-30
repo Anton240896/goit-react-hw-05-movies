@@ -30,7 +30,7 @@ export const LinkInfo = styled(Link)`
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
-  color: black;
+  color: red;
 
   &:hover {
     color: red;
@@ -42,6 +42,7 @@ export const ActorsFilms = styled.li`
 
 export const TextOverview = styled.p`
   max-width: 406px;
+  color: red;
 `;
 
 export const ButtonLink = styled.li`
@@ -64,7 +65,7 @@ export const LinkActors = styled(Link)`
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
-  color: black;
+  color: red;
 
   &:hover {
     color: red;
@@ -73,4 +74,26 @@ export const LinkActors = styled(Link)`
 
 export const ContMovieDetails = styled.div`
   margin-top: -18px;
+`;
+
+export const NameFilms = styled.p`
+  color: red;
+`;
+export const Plot = styled.p`
+  color: red;
+`;
+export const UserScore = styled.p`
+  color: red;
+`;
+
+export const Genres = styled.p`
+  color: red;
+`;
+
+export const Info = styled.p`
+  color: red;
+`;
+
+export const GenresName = styled.p`
+  color: red;
 `;

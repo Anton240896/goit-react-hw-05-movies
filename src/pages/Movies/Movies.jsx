@@ -16,7 +16,10 @@ const Movies = () => {
 
   /*   ====== FETCH REQUEST ======*/
   useEffect(() => {
-    if (!query) return;
+    if (!query) {
+      return toast.error('Sorry, we didnt find anything');
+    }
+
     const effectAction = async () => {
       try {
         setError(false);

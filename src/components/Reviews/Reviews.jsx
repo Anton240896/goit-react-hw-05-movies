@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { requestReviews } from 'components/Api/Api';
+import toast from 'react-hot-toast';
 import { Loader } from 'components/Loader/Loader';
 import {
   ListReview,
@@ -16,20 +17,35 @@ const Reviews = () => {
   /*   ====== FETCH REQUEST ======*/
 
   useEffect(() => {
-    const getReviews = () => {
-      setLoading(true);
-
-      requestReviews(movieId)
-        .then(resp => {
-          setReviews(resp);
-        })
-        .catch(error => {})
-        .finally(() => {
-          setLoading(false);
-        });
+    const getReviews = async () => {
+      try {
+        setLoading(true);
+        const data = await requestReviews(movieId);
+        setReviews(data);
+      } catch (error) {
+        toast.error('Sorry, we didnt find anything');
+      } finally {
+        setLoading(false);
+      }
     };
     getReviews();
   }, [movieId]);
+
+  // useEffect(() => {
+  //   const getReviews = () => {
+  //     setLoading(true);
+
+  //     requestReviews(movieId)
+  //       .then(resp => {
+  //         setReviews(resp);
+  //       })
+  //       .catch(error => {})
+  //       .finally(() => {
+  //         setLoading(false);
+  //       });
+  //   };
+  //   getReviews();
+  // }, [movieId]);
 
   /*   ====== RENDER ======*/
   return (

@@ -17,6 +17,21 @@ const Cast = () => {
   const [loading, setLoading] = useState(false);
 
   /*   ======  REQUEST FILMS ACTORS ======*/
+  useEffect(() => {
+    const getCast = async () => {
+      try {
+        setError(false);
+        setLoading(true);
+        const data = await requestActors(movieId);
+        setActors(data);
+      } catch (error) {
+        toast.error('Sorry, we didnt find anything');
+      } finally {
+        setLoading(false);
+      }
+    };
+    getCast();
+  }, [movieId]);
 
   // useEffect(() => {
   //   const getCast = () => {
@@ -36,22 +51,6 @@ const Cast = () => {
   //   getCast();
   // }, [movieId]);
 
-  useEffect(() => {
-    const getCast = async () => {
-      try {
-        setError(false);
-        setLoading(true);
-        const data = await requestActors(movieId);
-        setActors(data);
-      } catch (error) {
-        toast.error('Sorry, we didnt find anything');
-      } finally {
-        setLoading(false);
-      }
-    };
-    getCast();
-  }, [movieId]);
-
   /*   ====== RENDER ======*/
   return (
     <ul>
@@ -62,7 +61,7 @@ const Cast = () => {
         {actors.map(({ id, name, profile_path, character }) => (
           <li key={id}>
             <img
-              width="180px"
+              width="280px"
               src={
                 profile_path
                   ? `https://image.tmdb.org/t/p/w500${profile_path}`
@@ -70,9 +69,7 @@ const Cast = () => {
               }
               alt={name}
             />
-            <p>
-              <b color="red">{name}</b>
-            </p>
+            <p color="red">{name}</p>
             <p>
               <b>Character:</b> {character}
             </p>

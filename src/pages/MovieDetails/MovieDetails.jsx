@@ -39,23 +39,6 @@ const MovieDetails = () => {
     getMovieDetailsFilms();
   }, [movieId]);
 
-  // useEffect(() => {
-  //   const getMovieDetailsFilms = async () => {
-  //     setLoading(true);
-
-  //     try {
-  //       const requestMovieDetailsFilms = await requestMovieDetails();
-  //       setMovieInfo(requestMovieDetailsFilms);
-  //     } catch (error) {
-  //       toast.error('🥺 Sorry, we didnt find anything');
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   getMovieDetailsFilms();
-  // }, [movieId]);
-
   if (!movieInfo) {
     return;
   }

@@ -13,24 +13,41 @@ const defaultNoImages =
 const Cast = () => {
   const { movieId } = useParams();
   const [actors, setActors] = useState([]);
+  const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
 
   /*   ======  REQUEST FILMS ACTORS ======*/
 
-  useEffect(() => {
-    const getCast = () => {
-      setLoading(true);
+  // useEffect(() => {
+  //   const getCast = () => {
+  //     setLoading(true);
 
-      requestActors(movieId)
-        .then(resp => {
-          setActors(resp);
-        })
-        .catch(error => {
-          toast.error('Sorry we didnt find anythyng');
-        })
-        .finally(() => {
-          setLoading(false);
-        });
+  //     requestActors(movieId)
+  //       .then(resp => {
+  //         setActors(resp);
+  //       })
+  //       .catch(error => {
+  //         toast.error('Sorry we didnt find anythyng');
+  //       })
+  //       .finally(() => {
+  //         setLoading(false);
+  //       });
+  //   };
+  //   getCast();
+  // }, [movieId]);
+
+  useEffect(() => {
+    const getCast = async () => {
+      try {
+        setError(false);
+        setLoading(true);
+        const data = await requestActors(movieId);
+        setActors(data);
+      } catch (error) {
+        toast.error('Sorry, we didnt find anything');
+      } finally {
+        setLoading(false);
+      }
     };
     getCast();
   }, [movieId]);
@@ -39,6 +56,7 @@ const Cast = () => {
   return (
     <ul>
       {loading && <Loader />}
+      {error && toast.error(`Sorry,we didnt find anything`)}
 
       <ListFilms>
         {actors.map(({ id, name, profile_path, character }) => (

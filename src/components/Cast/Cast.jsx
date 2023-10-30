@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { requestActors } from 'components/Api/Api';
 import Loader from 'components/Loader/Loader';
-import { ListFilms, Name, Character } from './Cast.styled';
+import { ListFilms, Name } from './Cast.styled';
 import toast from 'react-hot-toast';
 
 /*   ====== DEFAULT IMAGES ======*/
@@ -72,9 +72,9 @@ const Cast = () => {
             <Name>
               <b>{name}</b>
             </Name>
-            <Character>
+            <Name>
               <b>Character: {character} </b>
-            </Character>
+            </Name>
           </li>
         ))}
       </ListFilms>

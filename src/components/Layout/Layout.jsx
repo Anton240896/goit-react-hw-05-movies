@@ -14,7 +14,7 @@ export const Layout = () => {
           </Link>
           <Link to="/movies">Movies</Link>
         </Nav>
-        <PiFilmSlateBold size={300} />
+        <PiFilmSlateBold size={300} color="red" />
       </header>
 
       <Suspense fallback={<Loader />}>

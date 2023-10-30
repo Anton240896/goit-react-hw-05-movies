@@ -13,12 +13,7 @@ import {
   ButtonLink,
   LinkActors,
   ContMovieDetails,
-  NameFilms,
-  Plot,
-  UserScore,
-  Genres,
-  Info,
-  GenresName,
+  NameDetails,
 } from './MovieDetails.styled';
 
 /*   ====== HOOKS ======*/
@@ -100,31 +95,30 @@ const MovieDetails = () => {
           </div>
 
           <ContMovieDetails>
-            <NameFilms>
+            <NameDetails>
               <b>
                 {title} ({release_date.slice(0, 4)})
               </b>
-            </NameFilms>
-            <Plot>
+            </NameDetails>
+            <NameDetails>
               <b>Overview</b>
-            </Plot>
+            </NameDetails>
             <TextOverview>{overview}</TextOverview>
-            <UserScore>
-              {' '}
+            <NameDetails>
               <b>User score: </b> {popularity}
-            </UserScore>
-            <Genres>
+            </NameDetails>
+            <NameDetails>
               <b>Genres</b>
-            </Genres>
+            </NameDetails>
             <List>
               {genres.map(genre => (
-                <GenresName key={genre.id}>{genre.name}</GenresName>
+                <NameDetails key={genre.id}>{genre.name}</NameDetails>
               ))}
 
               <div>
-                <Info>
+                <NameDetails>
                   <b>Additional information</b>
-                </Info>
+                </NameDetails>
                 <ListInfo>
                   <LinkActors to="cast">Actors</LinkActors>
 

@@ -76,24 +76,6 @@ export const ContMovieDetails = styled.div`
   margin-top: -18px;
 `;
 
-export const NameFilms = styled.p`
-  color: red;
-`;
-export const Plot = styled.p`
-  color: red;
-`;
-export const UserScore = styled.p`
-  color: red;
-`;
-
-export const Genres = styled.p`
-  color: red;
-`;
-
-export const Info = styled.p`
-  color: red;
-`;
-
-export const GenresName = styled.p`
+export const NameDetails = styled.p`
   color: red;
 `;

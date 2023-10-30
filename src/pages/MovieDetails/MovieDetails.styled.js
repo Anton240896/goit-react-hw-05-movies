@@ -50,7 +50,7 @@ export const ButtonLink = styled.li`
   left: 19px;
   font-weight: 500;
   font-size: 22px;
-  color: #191d1e;
+  color: white;
   border: none;
   cursor: pointer;
   list-style: none;

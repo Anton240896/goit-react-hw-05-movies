@@ -31,10 +31,6 @@ export const LinkInfo = styled(Link)`
   font-weight: 600;
   font-size: 18px;
   color: red;
-
-  &:hover {
-    color: black;
-  }
 `;
 export const ActorsFilms = styled.li`
   display: flex;
@@ -66,10 +62,6 @@ export const LinkActors = styled(Link)`
   font-weight: 600;
   font-size: 18px;
   color: red;
-
-  &:hover {
-    color: black;
-  }
 `;
 
 export const ContMovieDetails = styled.div`

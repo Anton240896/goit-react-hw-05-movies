@@ -70,3 +70,7 @@ export const LinkActors = styled(Link)`
     color: red;
   }
 `;
+
+export const ContMovieDetails = styled.div`
+  margin-top: -18px;
+`;

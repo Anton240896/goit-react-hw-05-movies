@@ -2,12 +2,15 @@ import { useState, useEffect } from 'react';
 import { Outlet, useSearchParams } from 'react-router-dom';
 import ListFilms from 'components/ListFilms/ListFilms';
 import Form from 'components/Form/Form';
+import { Loader } from 'components/Loader/Loader';
 import { requestSearch } from 'components/Api/Api';
 import toast from 'react-hot-toast';
 
 /*   ====== HOOKS ======*/
 const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
   const query = searchParams.get('query');
 
@@ -16,6 +19,8 @@ const Movies = () => {
     if (!query) return;
     const effectAction = async () => {
       try {
+        setError(false);
+        setLoading(true);
         const data = await requestSearch(query);
         setMovies(data);
       } catch (error) {
@@ -33,6 +38,9 @@ const Movies = () => {
   return (
     <div>
       <Form submitAction={submitAction} startInputText={query} />
+
+      {loading ?? <Loader />}
+      {error && toast.error(`Sorry,we didnt find anything`)}
 
       <ListFilms films={movies} />
       <Outlet />

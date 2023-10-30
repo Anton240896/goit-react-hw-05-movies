@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { requestActors } from 'components/Api/Api';
 import Loader from 'components/Loader/Loader';
 import { ListFilms } from './Cast.styled';
+import toast from 'react-hot-toast';
 
 /*   ====== DEFAULT IMAGES ======*/
 const defaultNoImages =
@@ -24,7 +25,9 @@ const Cast = () => {
         .then(resp => {
           setActors(resp);
         })
-        .catch(error => {})
+        .catch(error => {
+          toast.error('Sorry we didnt find anythyng');
+        })
         .finally(() => {
           setLoading(false);
         });

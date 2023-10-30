@@ -11,6 +11,7 @@ import {
   TextOverview,
   ButtonLink,
   LinkActors,
+  ContMovieDetails,
 } from './MovieDetails.styled';
 
 /*   ====== HOOKS ======*/
@@ -92,7 +93,7 @@ const MovieDetails = () => {
             />
           </div>
 
-          <div>
+          <ContMovieDetails>
             <h1>
               {title} ({release_date.slice(0, 4)})
             </h1>
@@ -117,7 +118,7 @@ const MovieDetails = () => {
                 <Outlet />
               </div>
             </List>
-          </div>
+          </ContMovieDetails>
 
           <Link to={location.state?.from ?? '/'}>
             <ButtonLink type="button">Go back</ButtonLink>

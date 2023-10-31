@@ -8,6 +8,7 @@ import { Loader } from 'components/Loader/Loader';
 import {
   ListReview,
   UnOrderedReviews,
+  MessageNoComments,
 } from 'components/Reviews/Reviews.styled';
 
 /*   ====== HOOKS ======*/
@@ -65,7 +66,11 @@ const Reviews = () => {
           </UnOrderedReviews>
         </div>
       )}
-      {reviews.length === 0 && <div>Sorry, we didn't find any comments</div>}
+      {reviews.length === 0 && (
+        <MessageNoComments>
+          Sorry, we didn't find any comments
+        </MessageNoComments>
+      )}
     </div>
   );
 };

@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import { requestActors } from 'components/Api/Api';
 
 import Loader from 'components/Loader/Loader';
-import { ListFilms, Name } from './Cast.styled';
+import { ListFilms, Name, ListImage } from './Cast.styled';
 
 /*   ====== DEFAULT IMAGES ======*/
 const defaultNoImages =
@@ -61,7 +61,7 @@ const Cast = () => {
 
       <ListFilms>
         {actors.map(({ id, name, profile_path, character }) => (
-          <li key={id}>
+          <ListImage key={id}>
             <img
               width="280px"
               src={
@@ -77,7 +77,7 @@ const Cast = () => {
             <Name>
               <b>Character: {character} </b>
             </Name>
-          </li>
+          </ListImage>
         ))}
       </ListFilms>
     </ul>

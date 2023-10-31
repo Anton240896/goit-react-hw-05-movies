@@ -12,3 +12,8 @@ export const ListFilms = styled.ul`
 export const Name = styled.p`
   color: red;
 `;
+
+export const ListImage = styled.li`
+  border: 2px solid gray;
+  text-align: center;
+`;

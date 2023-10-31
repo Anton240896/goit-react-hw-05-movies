@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useParams, Outlet, Link, useLocation } from 'react-router-dom';
+
+import { TbArrowBigLeftLine } from 'react-icons/tb';
 import toast from 'react-hot-toast';
+
 import { requestMovieDetails } from 'components/Api/Api';
 import Loader from 'components/Loader/Loader';
 import {
@@ -132,7 +135,9 @@ const MovieDetails = () => {
           </ContMovieDetails>
 
           <Link to={location.state?.from ?? '/'}>
-            <ButtonLink type="button">Go back</ButtonLink>
+            <ButtonLink type="button">
+              <TbArrowBigLeftLine size={50} />
+            </ButtonLink>
           </Link>
 
           {loading && <Loader />}

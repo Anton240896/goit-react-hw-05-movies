@@ -43,14 +43,18 @@ export const TextOverview = styled.p`
 
 export const ButtonLink = styled.li`
   position: absolute;
-  top: 54px;
+  top: 40px;
   left: 19px;
   font-weight: 500;
   font-size: 22px;
   color: white;
   border: none;
   cursor: pointer;
-  list-style: none;
+  list-style-type: none;
+
+  &:hover {
+    color: red;
+  }
 `;
 
 export const LinkActors = styled(Link)`

@@ -1,9 +1,15 @@
 import { useState, useEffect } from 'react';
 import { Outlet, useSearchParams } from 'react-router-dom';
+import { TbArrowBigLeftLine } from 'react-icons/tb';
+import { Link, useLocation } from 'react-router-dom';
+
 import ListFilms from 'components/ListFilms/ListFilms';
 import Form from 'components/Form/Form';
 import { Loader } from 'components/Loader/Loader';
+
 import { requestSearch } from 'components/Api/Api';
+import { ButtonLink } from 'pages/MovieDetails/MovieDetails.styled';
+
 import toast from 'react-hot-toast';
 
 /*   ====== HOOKS ======*/
@@ -12,6 +18,7 @@ const Movies = () => {
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
   const query = searchParams.get('query');
+  const location = useLocation();
 
   /*   ====== FETCH REQUEST ======*/
   useEffect(() => {
@@ -39,6 +46,12 @@ const Movies = () => {
   return (
     <div>
       <Form submitAction={submitAction} startInputText={query} />
+
+      <Link to={location.state?.from ?? '/'}>
+        <ButtonLink type="button">
+          <TbArrowBigLeftLine size={50} />
+        </ButtonLink>
+      </Link>
 
       {loading ?? <Loader />}
 

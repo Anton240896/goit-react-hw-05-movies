@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
 import ListFilms from 'components/ListFilms/ListFilms';
-import { ContFilms } from 'pages/Home/Home.styled';
+import { ContFilms, Trending } from 'pages/Home/Home.styled';
 import { Loader } from 'components/Loader/Loader';
 
 import { requestTrending } from 'components/Api/Api';
@@ -33,7 +33,7 @@ const Home = () => {
   /*   ====== RENDER ======*/
   return (
     <ContFilms>
-      <h1>Trending today</h1>
+      <Trending>Trending today</Trending>
       <ListFilms films={films} />
 
       {loading && <Loader />}

@@ -104,15 +104,21 @@ const MovieDetails = () => {
                 {title}-({release_date.slice(0, 4)})
               </b>
             </NameFilms>
+
             <NameDetailsMovie>
               <b>Overview:</b>
             </NameDetailsMovie>
+
             <TextOverview>{overview}</TextOverview>
-            <NameDetailsMovie>User score:</NameDetailsMovie>{' '}
+
+            <NameDetailsMovie>User score:</NameDetailsMovie>
+
             <TextOverview>{popularity}</TextOverview>
+
             <NameDetailsMovie>
               <b>Genres:</b>
             </NameDetailsMovie>
+
             <List>
               {genres.map(genre => (
                 <NameDetails key={genre.id}>{genre.name}</NameDetails>

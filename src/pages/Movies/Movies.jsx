@@ -9,7 +9,6 @@ import toast from 'react-hot-toast';
 /*   ====== HOOKS ======*/
 const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
   const query = searchParams.get('query');
@@ -17,12 +16,11 @@ const Movies = () => {
   /*   ====== FETCH REQUEST ======*/
   useEffect(() => {
     if (!query) {
-      return toast.error('Sorry, we didnt find anything');
+      return;
     }
 
     const effectAction = async () => {
       try {
-        setError(false);
         setLoading(true);
         const data = await requestSearch(query);
         setMovies(data);
@@ -43,7 +41,6 @@ const Movies = () => {
       <Form submitAction={submitAction} startInputText={query} />
 
       {loading ?? <Loader />}
-      {error && toast.error(`Sorry,we didnt find anything`)}
 
       <ListFilms films={movies} />
       <Outlet />

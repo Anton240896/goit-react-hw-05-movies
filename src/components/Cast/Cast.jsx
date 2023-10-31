@@ -1,9 +1,11 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import toast from 'react-hot-toast';
+
 import { requestActors } from 'components/Api/Api';
+
 import Loader from 'components/Loader/Loader';
 import { ListFilms, Name } from './Cast.styled';
-import toast from 'react-hot-toast';
 
 /*   ====== DEFAULT IMAGES ======*/
 const defaultNoImages =

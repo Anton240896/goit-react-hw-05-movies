@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+
 import ListFilms from 'components/ListFilms/ListFilms';
 import { ContFilms } from 'pages/Home/Home.styled';
-import { requestTrending } from 'components/Api/Api';
-import toast, { Toaster } from 'react-hot-toast';
 import { Loader } from 'components/Loader/Loader';
+
+import { requestTrending } from 'components/Api/Api';
 
 /*   ====== HOOKS ======*/
 const Home = () => {

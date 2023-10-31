@@ -1,8 +1,10 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { requestReviews } from 'components/Api/Api';
 import toast from 'react-hot-toast';
+
+import { requestReviews } from 'components/Api/Api';
 import { Loader } from 'components/Loader/Loader';
+
 import {
   ListReview,
   UnOrderedReviews,

@@ -68,7 +68,7 @@ const Reviews = () => {
       )}
       {reviews.length === 0 && (
         <MessageNoComments>
-          Sorry, we didn't find any comments
+          ❌ Sorry, we didn't find any comments
         </MessageNoComments>
       )}
     </div>

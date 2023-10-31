@@ -28,7 +28,7 @@ export const ListInfo = styled.ul`
 
 export const LinkInfo = styled(Link)`
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   color: red;
 `;
@@ -57,17 +57,18 @@ export const ButtonLink = styled.li`
   }
 `;
 
-export const LinkActors = styled(Link)`
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  color: red;
-`;
-
 export const ContMovieDetails = styled.div`
   margin-top: -18px;
 `;
 
 export const NameDetails = styled.p`
+  color: red;
+`;
+
+export const NameFilms = styled.h2`
+  color: red;
+`;
+
+export const NameDetailsMovie = styled.h3`
   color: red;
 `;

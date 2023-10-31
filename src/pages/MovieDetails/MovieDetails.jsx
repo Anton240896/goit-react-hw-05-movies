@@ -101,17 +101,17 @@ const MovieDetails = () => {
           <ContMovieDetails>
             <NameFilms>
               <b>
-                {title} ({release_date.slice(0, 4)})
+                {title}-({release_date.slice(0, 4)})
               </b>
             </NameFilms>
             <NameDetailsMovie>
-              <b>Overview</b>
+              <b>Overview:</b>
             </NameDetailsMovie>
             <TextOverview>{overview}</TextOverview>
             <NameDetailsMovie>User score:</NameDetailsMovie>{' '}
             <TextOverview>{popularity}</TextOverview>
             <NameDetailsMovie>
-              <b>Genres</b>
+              <b>Genres:</b>
             </NameDetailsMovie>
             <List>
               {genres.map(genre => (
@@ -120,7 +120,7 @@ const MovieDetails = () => {
 
               <div>
                 <NameDetailsMovie>
-                  <b>Additional information</b>
+                  <b>Additional information:</b>
                 </NameDetailsMovie>
                 <ListInfo>
                   <LinkInfo to="cast">Actors</LinkInfo>

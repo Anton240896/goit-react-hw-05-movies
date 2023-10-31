@@ -67,9 +67,9 @@ const MovieDetails = () => {
 
   /*   ====== DESTRUCTURIZATION  ======*/
   const defaultNoImages =
-    'https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg';
+    'https://st4.depositphotos.com/14953852/22772/v/450/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg';
 
-  const posterPathOrigin = 'https://image.tmdb.org/t/p/w500';
+  const posterPath = 'https://image.tmdb.org/t/p/w500';
 
   const {
     title,
@@ -88,10 +88,10 @@ const MovieDetails = () => {
         <Container>
           <div>
             <img
-              width="300px"
+              width="250px"
               src={
                 poster_path
-                  ? `${posterPathOrigin}${poster_path}`
+                  ? `${posterPath}${poster_path}`
                   : `${defaultNoImages} }`
               }
               alt={original_title}

@@ -9,8 +9,7 @@ import { ListFilms, Name, ListImage } from './Cast.styled';
 
 /*   ====== DEFAULT IMAGES ======*/
 const defaultNoImages =
-  'https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg';
-
+  'https://st4.depositphotos.com/14953852/22772/v/450/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg';
 /*   ====== HOOKS ======*/
 const Cast = () => {
   const { movieId } = useParams();
@@ -63,7 +62,7 @@ const Cast = () => {
         {actors.map(({ id, name, profile_path, character }) => (
           <ListImage key={id}>
             <img
-              width="280px"
+              width="300px"
               src={
                 profile_path
                   ? `https://image.tmdb.org/t/p/w500${profile_path}`

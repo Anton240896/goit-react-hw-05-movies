@@ -51,10 +51,6 @@ export const ButtonLink = styled.li`
   border: none;
   cursor: pointer;
   list-style: none;
-
-  &:hover {
-    color: red;
-  }
 `;
 
 export const LinkActors = styled(Link)`

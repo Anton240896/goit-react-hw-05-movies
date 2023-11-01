@@ -16,7 +16,9 @@ export const Layout = () => {
           </Link>
           <Link to="/movies">Movies</Link>
         </Nav>
-        <SiThemoviedatabase size={300} color="red" />
+        <Link to="/https://www.themoviedb.org/">
+          <SiThemoviedatabase size={300} color="red" />
+        </Link>
       </header>
 
       <Suspense fallback={<Loader />}>

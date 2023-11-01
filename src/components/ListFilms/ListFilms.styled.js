@@ -12,6 +12,11 @@ export const Item = styled.li`
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 10px;
+
+  &:hover {
+    transform: scale(1.03);
+    transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 `;
 
 export const MovieLink = styled(Link)`
@@ -30,11 +35,11 @@ export const NameFilms = styled.p`
   font-size: 20px;
   color: white;
   font-weight: 500;
-  margin-left: 34px;
-  margin-top: -2px;
+  margin-left: 28px;
+  margin-top: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 
-  background-color: red;
+  background-color: #ff000096;
 `;

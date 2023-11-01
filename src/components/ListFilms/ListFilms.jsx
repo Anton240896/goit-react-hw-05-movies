@@ -10,23 +10,21 @@ const ListFilms = ({ films }) => {
 
   return (
     <section>
-      <>
-        <List>
-          {films.map(({ id, title, poster_path }) => (
-            <Item key={id}>
-              <MovieLink to={`/movies/${id}`} state={{ from: location }}>
-                <NameFilms> {title}</NameFilms>
-                <img
-                  src={poster_path ? `${posterPath}${poster_path}` : defaultImg}
-                  alt={title}
-                  width="200"
-                  loading="lazy"
-                />
-              </MovieLink>
-            </Item>
-          ))}
-        </List>
-      </>
+      <List>
+        {films.map(({ id, title, poster_path }) => (
+          <Item key={id}>
+            <MovieLink to={`/movies/${id}`} state={{ from: location }}>
+              <NameFilms> {title}</NameFilms>
+              <img
+                src={poster_path ? `${posterPath}${poster_path}` : defaultImg}
+                alt={title}
+                width="200"
+                loading="lazy"
+              />
+            </MovieLink>
+          </Item>
+        ))}
+      </List>
     </section>
   );
 };

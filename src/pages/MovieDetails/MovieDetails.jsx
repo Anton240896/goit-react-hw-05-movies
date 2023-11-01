@@ -74,7 +74,7 @@ const MovieDetails = () => {
   const {
     title,
     release_date,
-    popularity,
+    vote_average,
     overview,
     genres,
     poster_path,
@@ -101,7 +101,7 @@ const MovieDetails = () => {
           <ContMovieDetails>
             <NameFilms>
               <b>
-                {title} ({release_date.slice(0, 4)})
+                {title} ({release_date.slice(0, 10)})
               </b>
             </NameFilms>
 
@@ -113,7 +113,7 @@ const MovieDetails = () => {
 
             <NameDetailsMovie>User score:</NameDetailsMovie>
 
-            <TextOverview>{popularity}</TextOverview>
+            <TextOverview>{Math.round(vote_average * 10)}%</TextOverview>
 
             <NameDetailsMovie>
               <b>Genres:</b>

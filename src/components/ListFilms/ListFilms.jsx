@@ -18,7 +18,7 @@ const ListFilms = ({ films }) => {
               <img
                 src={poster_path ? `${posterPath}${poster_path}` : defaultImg}
                 alt={title}
-                width="200"
+                width="150"
               />
             </MovieLink>
           </Item>

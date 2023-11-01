@@ -35,11 +35,13 @@ export const NameFilms = styled.p`
   font-size: 20px;
   color: white;
   font-weight: 500;
-  margin-left: 28px;
+  margin-left: 6px;
   margin-top: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
   background-color: #ff000096;
+
+  &:hover {
+  }
 `;

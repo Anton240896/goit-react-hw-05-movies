@@ -34,8 +34,6 @@ export const App = () => {
 
         <Route path="*" element={<Home />} />
       </Route>
-
-      <Route path="https://www.themoviedb.org/"></Route>
     </Routes>
   );
 };

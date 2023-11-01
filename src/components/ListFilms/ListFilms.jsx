@@ -19,7 +19,6 @@ const ListFilms = ({ films }) => {
                 src={poster_path ? `${posterPath}${poster_path}` : defaultImg}
                 alt={title}
                 width="200"
-                loading="lazy"
               />
             </MovieLink>
           </Item>

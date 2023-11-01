@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import { PiFilmSlateBold } from 'react-icons/pi';
+import { SiThemoviedatabase } from 'react-icons/si';
 
 import { Container, Nav, Link } from './Layout.styled';
 import { Loader } from 'components/Loader/Loader';
@@ -16,7 +16,7 @@ export const Layout = () => {
           </Link>
           <Link to="/movies">Movies</Link>
         </Nav>
-        <PiFilmSlateBold size={300} color="red" />
+        <SiThemoviedatabase size={300} color="red" />
       </header>
 
       <Suspense fallback={<Loader />}>

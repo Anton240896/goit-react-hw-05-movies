@@ -15,7 +15,7 @@ export const Nav = styled.nav`
 export const Link = styled(NavLink)`
   display: inline-block;
   text-decoration: none;
-  padding: 22px;
+  padding: 40px;
   font-weight: 500;
   font-size: 22px;
   color: red;

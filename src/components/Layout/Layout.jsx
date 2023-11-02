@@ -16,13 +16,13 @@ export const Layout = () => {
           </Link>
           <Link to="/movies">Movies</Link>
         </Nav>
-        <Link to="https://www.themoviedb.org/">
+        <a href="https://www.themoviedb.org/">
           <SiThemoviedatabase
-            size={350}
+            size={450}
             color="red"
-            style={{ marginTop: ' 80px' }}
+            style={{ marginTop: ' 80px', marginLeft: '50px' }}
           />
-        </Link>
+        </a>
       </header>
 
       <Suspense fallback={<Loader />}>

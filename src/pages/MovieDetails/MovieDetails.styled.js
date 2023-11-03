@@ -72,3 +72,9 @@ export const NameFilms = styled.h2`
 export const NameDetailsMovie = styled.h3`
   color: red;
 `;
+
+export const UserCont = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`;

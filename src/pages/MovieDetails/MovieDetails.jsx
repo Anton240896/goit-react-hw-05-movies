@@ -18,6 +18,7 @@ import {
   NameDetails,
   NameFilms,
   NameDetailsMovie,
+  UserCont,
 } from './MovieDetails.styled';
 
 /*   ====== HOOKS ======*/
@@ -100,10 +101,9 @@ const MovieDetails = () => {
 
           <ContMovieDetails>
             <NameFilms>
-              <b>
-                {title} ({release_date.slice(0, 10)})
-              </b>
+              <b>{title}</b>
             </NameFilms>
+            <NameFilms>({release_date.slice(0, 10)})</NameFilms>
 
             <NameDetailsMovie>
               <b>Overview:</b>
@@ -111,19 +111,21 @@ const MovieDetails = () => {
 
             <TextOverview>{overview}</TextOverview>
 
-            <NameDetailsMovie>User score:</NameDetailsMovie>
+            <UserCont>
+              <NameDetailsMovie>User score:</NameDetailsMovie>
+              <TextOverview>{vote_average}</TextOverview>
+            </UserCont>
 
-            <TextOverview>{Math.round(vote_average * 10)}%</TextOverview>
-
-            <NameDetailsMovie>
-              <b>Genres:</b>
-            </NameDetailsMovie>
-
-            <List>
+            <UserCont>
+              <NameDetailsMovie>
+                <b>Genres:</b>
+              </NameDetailsMovie>
               {genres.map(genre => (
                 <NameDetails key={genre.id}>{genre.name}</NameDetails>
               ))}
+            </UserCont>
 
+            <List>
               <div>
                 <NameDetailsMovie>
                   <b>Additional information:</b>

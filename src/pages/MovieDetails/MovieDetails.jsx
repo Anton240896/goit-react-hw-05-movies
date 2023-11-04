@@ -15,7 +15,6 @@ import {
   TextOverview,
   ButtonLink,
   ContMovieDetails,
-  NameDetails,
   NameFilms,
   NameDetailsMovie,
   UserCont,

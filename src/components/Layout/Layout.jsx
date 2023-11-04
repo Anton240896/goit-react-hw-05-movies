@@ -12,9 +12,11 @@ export const Layout = () => {
       <header>
         <Nav>
           <Link to="/" end>
-            Home
+            <b>Home</b>
           </Link>
-          <Link to="/movies">Movies</Link>
+          <Link to="/movies">
+            <b>Movies</b>
+          </Link>
         </Nav>
         <a href="https://www.themoviedb.org/">
           <SiThemoviedatabase

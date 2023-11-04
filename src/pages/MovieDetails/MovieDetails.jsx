@@ -120,9 +120,10 @@ const MovieDetails = () => {
               <NameDetailsMovie>
                 <b>Genres:</b>
               </NameDetailsMovie>
-              {genres.map(genre => (
-                <NameDetails key={genre.id}>{genre.name}</NameDetails>
-              ))}
+
+              <TextOverview>
+                {genres.map(({ name }) => name).join(' , ')}
+              </TextOverview>
             </UserCont>
 
             <List>

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const FormBox = styled.form`
   display: flex;
-  margin-top: 105px;
-  margin-left: 22px;
+  margin-top: 98px;
+  margin-left: -256px;
 `;
 
 export const Input = styled.input`

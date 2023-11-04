@@ -6,7 +6,7 @@ export const ContFilms = styled.div`
 `;
 
 export const Trending = styled.h1`
-  margin-left: 254px;
+  margin-left: 36px;
   margin-top: -25px;
   color: red;
 `;

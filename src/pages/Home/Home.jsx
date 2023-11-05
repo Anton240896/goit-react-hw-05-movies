@@ -19,6 +19,9 @@ const Home = () => {
 
       try {
         const trendingFilms = await requestTrending();
+        if (requestTrending.lenght > 0) {
+          toast.success('We find films');
+        }
         setFilms(trendingFilms);
       } catch (error) {
         toast.error('🥺 Sorry, we didnt find anything');

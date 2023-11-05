@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const FormBox = styled.form`
   display: flex;
-  margin-top: 98px;
+  margin-top: 150px;
   margin-left: -256px;
 `;
 

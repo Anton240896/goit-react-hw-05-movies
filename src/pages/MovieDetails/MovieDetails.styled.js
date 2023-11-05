@@ -61,10 +61,6 @@ export const ContMovieDetails = styled.div`
   margin-top: -18px;
 `;
 
-export const NameDetails = styled.p`
-  color: red;
-`;
-
 export const NameFilms = styled.h2`
   color: red;
 `;

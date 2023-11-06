@@ -47,13 +47,12 @@ export const ButtonLink = styled.li`
   left: 19px;
   font-weight: 500;
   font-size: 22px;
-  color: white;
-  border: none;
+  color: yellowgreen;
   cursor: pointer;
   list-style-type: none;
 
   &:hover {
-    color: yellowgreen;
+    color: red;
   }
 `;
 

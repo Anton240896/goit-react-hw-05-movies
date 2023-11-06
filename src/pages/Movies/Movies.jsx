@@ -49,7 +49,14 @@ const Movies = () => {
 
       <Link to={location.state?.from ?? '/'}>
         <ButtonLink type="button">
-          <TbArrowBigLeftLine size={50} />
+          <TbArrowBigLeftLine
+            size={50}
+            style={{
+              position: 'fixed',
+              color: 'yellowgreen',
+              border: 'black',
+            }}
+          />
         </ButtonLink>
       </Link>
 

@@ -62,7 +62,7 @@ const Reviews = () => {
               const { author, content } = review;
               return (
                 <ListReview>
-                  <h2>Author: {author}</h2>
+                  <h2>{author}:</h2>
                   <TextAutor>{content}</TextAutor>
                 </ListReview>
               );

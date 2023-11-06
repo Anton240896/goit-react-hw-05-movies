@@ -53,7 +53,7 @@ export const ButtonLink = styled.li`
   list-style-type: none;
 
   &:hover {
-    color: red;
+    color: yellowgreen;
   }
 `;
 

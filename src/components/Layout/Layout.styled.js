@@ -27,7 +27,7 @@ export const Link = styled(NavLink)`
   overflow: hidden;
 
   &:hover {
-    color: white;
+    color: yellowgreen;
   }
 
   &.active {

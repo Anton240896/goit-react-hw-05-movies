@@ -16,7 +16,7 @@ export const Input = styled.input`
   outline: none;
 
   &:hover {
-    color: red;
-    border: 2px solid red;
+    color: yellowgreen;
+    border: 2px solid yellowgreen;
   }
 `;

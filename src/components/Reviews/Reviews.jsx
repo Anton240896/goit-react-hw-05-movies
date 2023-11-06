@@ -9,6 +9,7 @@ import {
   ListReview,
   UnOrderedReviews,
   MessageNoComments,
+  TextAutor,
 } from 'components/Reviews/Reviews.styled';
 
 /*   ====== HOOKS ======*/
@@ -57,12 +58,15 @@ const Reviews = () => {
       {reviews.length !== 0 && (
         <div>
           <UnOrderedReviews>
-            {reviews.map(review => (
-              <ListReview key={review.id}>
-                <h2>Author: {review.author}</h2>
-                <p>{review.content}</p>
-              </ListReview>
-            ))}
+            {reviews.map(review => {
+              const { author, content } = review;
+              return (
+                <ListReview key={author}>
+                  <h2>Author: {author}</h2>
+                  <TextAutor>{content}</TextAutor>
+                </ListReview>
+              );
+            })}
           </UnOrderedReviews>
         </div>
       )}

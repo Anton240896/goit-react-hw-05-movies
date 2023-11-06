@@ -15,3 +15,7 @@ export const MessageNoComments = styled.div`
   color: red;
   margin-top: 10px;
 `;
+
+export const TextAutor = styled.p`
+  max-width: 994px;
+`;

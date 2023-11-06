@@ -61,7 +61,7 @@ const Reviews = () => {
             {reviews.map(review => {
               const { author, content } = review;
               return (
-                <ListReview key={author}>
+                <ListReview>
                   <h2>Author: {author}</h2>
                   <TextAutor>{content}</TextAutor>
                 </ListReview>

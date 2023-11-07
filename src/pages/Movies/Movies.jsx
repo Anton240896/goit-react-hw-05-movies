@@ -52,9 +52,8 @@ const Movies = () => {
           <TbArrowBigLeftLine
             size={50}
             style={{
-              position: 'fixed',
               color: 'yellowgreen',
-              border: 'black',
+              position: 'fixed',
             }}
           />
         </ButtonLink>

@@ -35,3 +35,45 @@ export const Link = styled(NavLink)`
     border: thick double yellowgreen;
   }
 `;
+
+export const ToggleContainer = styled.div`
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const BtnToggle = styled.div`
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  background-color: black;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+`;
+
+export const BtnSwitch = styled.div`
+  position: absolute;
+  margin-bottom: 92px;
+  margin-right: 714px;
+  height: 30px;
+  width: 55px;
+  border-radius: 250px;
+  background-color: white;
+  transition: 0.5s;
+
+  &.active {
+    background: black;
+
+    ${BtnToggle} {
+      left: 30px;
+      background-color: white;
+    }
+  }
+`;

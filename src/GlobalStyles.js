@@ -4,7 +4,8 @@ export const GlobalStyles = createGlobalStyle`
 
 body {
   margin: 0;
-  background-image: radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%);
+background-image: radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%);
+ 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -17,3 +18,6 @@ code {
     monospace;
 }
 `;
+
+// background-color: radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%);
+// background-image: radial-gradient(circle, #060606 60%, rgb(249 249 249)75%);

@@ -21,14 +21,14 @@ export const Layout = () => {
 
   /*   ====== HOOKS ======*/
   const [toggle, setToggle] = useState(false);
-  const [bodyColor, setBodyColor] = useState('grey');
+  const [bodyColor, setBodyColor] = useState(whiteTheme);
 
   const handleToggle = () => {
     setToggle(!toggle);
-    if (bodyColor === 'grey') {
+    if (bodyColor === whiteTheme) {
       setBodyColor(blackTheme);
     } else {
-      setBodyColor('grey');
+      setBodyColor(whiteTheme);
     }
   };
 

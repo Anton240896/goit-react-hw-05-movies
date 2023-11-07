@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: 7px;
   gap: 11px;
   align-items: flex-start;
-  margin-top: 105px;
+  margin-top: 113px;
 `;
 
 export const List = styled.ul`

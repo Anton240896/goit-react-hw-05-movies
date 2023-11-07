@@ -19,6 +19,7 @@ import {
   NameDetailsMovie,
   UserCont,
 } from './MovieDetails.styled';
+import { MessageNoComments } from 'components/Reviews/Reviews.styled';
 
 /*   ====== HOOKS ======*/
 const MovieDetails = () => {
@@ -109,6 +110,13 @@ const MovieDetails = () => {
             </NameDetailsMovie>
 
             <TextOverview>{overview}</TextOverview>
+            <TextOverview>
+              {overview.length === 0 && (
+                <MessageNoComments>
+                  ❌ Sorry, we didn't find any oveview
+                </MessageNoComments>
+              )}
+            </TextOverview>
 
             <UserCont>
               <NameDetailsMovie>User score:</NameDetailsMovie>
@@ -121,7 +129,7 @@ const MovieDetails = () => {
               </NameDetailsMovie>
 
               <TextOverview>
-                {genres.map(({ name }) => name).join(' , ')}
+                {genres.map(({ name }) => name).join(', ')}
               </TextOverview>
             </UserCont>
 

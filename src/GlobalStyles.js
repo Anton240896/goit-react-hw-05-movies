@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 
+
 body {
   margin: 0;
 background-image: radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%);
@@ -18,6 +19,3 @@ code {
     monospace;
 }
 `;
-
-// background-color: radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%);
-// background-image: radial-gradient(circle, #060606 60%, rgb(249 249 249)75%);

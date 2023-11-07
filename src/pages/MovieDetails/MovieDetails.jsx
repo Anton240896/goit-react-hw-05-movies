@@ -156,6 +156,7 @@ const MovieDetails = () => {
                 size={50}
                 style={{
                   position: 'fixed',
+                  border: '2px',
                 }}
               />
             </ButtonLink>

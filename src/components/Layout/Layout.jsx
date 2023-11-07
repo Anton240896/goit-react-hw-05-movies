@@ -3,32 +3,26 @@ import { Outlet } from 'react-router-dom';
 
 import { SiThemoviedatabase } from 'react-icons/si';
 
-import {
-  Container,
-  Nav,
-  Link,
-  ToggleContainer,
-  BtnSwitch,
-  BtnToggle,
-} from './Layout.styled';
+import { Container, Nav, Link, LabelSwitch, Slider } from './Layout.styled';
 import { Loader } from 'components/Loader/Loader';
 
 export const Layout = () => {
+  /*   ====== SWITCH-THEME ======*/
   const whiteTheme =
-    'bacground-image:radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%)';
+    'background-image:radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%)';
   const blackTheme =
-    'bacground-image:radial-gradient(circle, #060606 60%, rgb(249 249 249)75%)';
+    'background-image:radial-gradient(circle, #060606 60%, rgb(249 249 249)75%)';
 
   /*   ====== HOOKS ======*/
   const [toggle, setToggle] = useState(false);
-  const [bodyColor, setBodyColor] = useState(whiteTheme);
+  const [bodyColor, setBodyColor] = useState('whiteTheme');
 
   const handleToggle = () => {
     setToggle(!toggle);
-    if (bodyColor === whiteTheme) {
-      setBodyColor(blackTheme);
-    } else {
+    if (bodyColor === blackTheme) {
       setBodyColor(whiteTheme);
+    } else {
+      setBodyColor(blackTheme);
     }
   };
 
@@ -57,11 +51,10 @@ export const Layout = () => {
           />
         </a>
 
-        <ToggleContainer>
-          <BtnSwitch className={toggle ? 'active' : ''} onClick={handleToggle}>
-            <BtnToggle className={toggle ? 'active' : ''}></BtnToggle>
-          </BtnSwitch>
-        </ToggleContainer>
+        <LabelSwitch>
+          <input type="checkbox" onClick={handleToggle} />
+          <Slider></Slider>
+        </LabelSwitch>
       </header>
 
       <Suspense fallback={<Loader />}>
@@ -71,7 +64,7 @@ export const Layout = () => {
       <style>
         {`
           body {
-            background-color: ${bodyColor};
+            background-image; ${bodyColor};
           }
         `}
       </style>

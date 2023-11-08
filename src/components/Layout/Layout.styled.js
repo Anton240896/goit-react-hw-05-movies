@@ -73,9 +73,11 @@ export const LabelSwitch = styled.label`
     &:checked + ${Slider} {
       box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
       border: 2px solid yellowgreen;
+      background-color: black;
     }
     &:checked + ${Slider}:before {
       transform: translateX(1.5em);
+      background-color: red;
     }
   }
 `;

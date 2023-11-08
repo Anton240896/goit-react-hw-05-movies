@@ -64,6 +64,7 @@ export const LabelSwitch = styled.label`
   left: 150px;
   width: 3.5em;
   height: 2em;
+  position: fixed;
 
   input {
     opacity: 0;

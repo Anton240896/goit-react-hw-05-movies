@@ -2,13 +2,15 @@ import styled from 'styled-components';
 
 export const UnOrderedReviews = styled.ul`
   max-width: 1078px;
-  margin-left: -749px;
+  margin-left: -838px;
   margin-top: 149px;
 `;
 
 export const ListReview = styled.li`
   list-style: none;
   color: red;
+  border: 1px grey solid;
+  padding: 10px;
 `;
 
 export const MessageNoComments = styled.div`

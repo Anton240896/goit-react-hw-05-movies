@@ -60,10 +60,15 @@ export const Slider = styled.span`
 export const LabelSwitch = styled.label`
   font-size: 17px;
   position: absolute;
-  top: 142px;
+  top: 55px;
   left: 150px;
   width: 3.5em;
   height: 2em;
+
+  @media (max-width: 922px) {
+    left: 505px;
+    max-width: 670px;
+  }
 
   input {
     opacity: 0;

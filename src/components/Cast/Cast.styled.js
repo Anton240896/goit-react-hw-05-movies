@@ -7,6 +7,10 @@ export const ListFilms = styled.ul`
   margin-top: 172px;
   margin-left: -700px;
   gap: 10px;
+
+  @media (max-width: 922px) {
+    margin-left: -547px;
+  }
 `;
 
 export const Name = styled.p`

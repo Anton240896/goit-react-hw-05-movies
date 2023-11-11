@@ -103,14 +103,18 @@ const MovieDetails = () => {
             <NameFilms>
               <b>{title}</b>
             </NameFilms>
-            <NameFilms>
-              <b>Release date:</b> ({release_date.slice(0, 10)})
-            </NameFilms>
+
+            <UserCont>
+              <NameDetailsMovie>
+                <b>Release date:</b>
+              </NameDetailsMovie>
+
+              <TextOverview>{release_date.slice(0, 10)}</TextOverview>
+            </UserCont>
 
             <NameDetailsMovie>
               <b>Overview:</b>
             </NameDetailsMovie>
-
             <TextOverview>{overview}</TextOverview>
             <TextOverview>
               {overview.length === 0 && (
@@ -119,12 +123,10 @@ const MovieDetails = () => {
                 </MessageNoComments>
               )}
             </TextOverview>
-
             <UserCont>
               <NameDetailsMovie>User score:</NameDetailsMovie>
               <TextOverview>{vote_average}</TextOverview>
             </UserCont>
-
             <UserCont>
               <NameDetailsMovie>
                 <b>Genres:</b>
@@ -134,7 +136,6 @@ const MovieDetails = () => {
                 {genres.map(({ name }) => name).join(', ')}
               </TextOverview>
             </UserCont>
-
             <List>
               <div>
                 <NameDetailsMovie>

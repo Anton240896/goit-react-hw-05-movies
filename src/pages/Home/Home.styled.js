@@ -6,7 +6,7 @@ export const ContFilms = styled.div`
 
   @media (max-width: 922px) {
     margin-top: 206px;
-    margin-left: -263px;
+    margin-left: -260px;
   }
 `;
 

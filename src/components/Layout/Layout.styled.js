@@ -8,10 +8,12 @@ export const Container = styled.div`
 `;
 
 export const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
   border-bottom: solid 2px red;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  margin-left: 273px;
+  margin-left: 136px;
   margin-top: 44px;
 `;
 
@@ -61,12 +63,13 @@ export const LabelSwitch = styled.label`
   font-size: 17px;
   position: absolute;
   top: 55px;
-  left: 150px;
+  left: 297px;
   width: 3.5em;
   height: 2em;
 
   @media (max-width: 950px) {
-    left: 484px;
+    left: 136px;
+    top: 144px;
     max-width: 670px;
   }
 

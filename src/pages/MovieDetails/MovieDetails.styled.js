@@ -58,6 +58,10 @@ export const ButtonLink = styled.li`
   cursor: pointer;
   list-style-type: none;
 
+  @media (max-width: 540px) {
+    top: 139px;
+  }
+
   &:hover {
     color: red;
   }

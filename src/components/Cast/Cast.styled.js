@@ -10,7 +10,7 @@ export const ListFilms = styled.ul`
 
   @media (max-width: 922px) {
     display: flex;
-    margin-left: -263px;
+    margin-left: -145px;
     flex-wrap: wrap;
   }
 `;

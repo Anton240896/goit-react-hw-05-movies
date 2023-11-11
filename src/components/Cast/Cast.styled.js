@@ -9,7 +9,9 @@ export const ListFilms = styled.ul`
   gap: 10px;
 
   @media (max-width: 922px) {
-    margin-left: -547px;
+    display: flex;
+    margin-left: -263px;
+    flex-wrap: wrap;
   }
 `;
 

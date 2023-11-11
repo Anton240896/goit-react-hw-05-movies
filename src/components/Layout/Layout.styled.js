@@ -86,3 +86,9 @@ export const LabelSwitch = styled.label`
     }
   }
 `;
+
+export const LinkMovie = styled.a`
+  @media (max-width: 922px) {
+    display: none;
+  }
+`;

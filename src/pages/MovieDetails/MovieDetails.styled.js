@@ -7,8 +7,9 @@ export const Container = styled.div`
   gap: 11px;
   align-items: flex-start;
   margin-top: 113px;
+
   @media (max-width: 922px) {
-    margin-top: 131px;
+    margin-top: 201px;
     margin-left: -306px;
   }
 `;

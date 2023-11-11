@@ -3,7 +3,14 @@ import { Outlet } from 'react-router-dom';
 
 import { SiThemoviedatabase } from 'react-icons/si';
 
-import { Container, Nav, Link, LabelSwitch, Slider } from './Layout.styled';
+import {
+  Container,
+  Nav,
+  Link,
+  LabelSwitch,
+  Slider,
+  LinkMovie,
+} from './Layout.styled';
 import { Loader } from 'components/Loader/Loader';
 
 export const Layout = () => {
@@ -40,7 +47,7 @@ export const Layout = () => {
           </Link>
         </Nav>
 
-        <a href="https://www.themoviedb.org/">
+        <LinkMovie href="https://www.themoviedb.org/">
           <SiThemoviedatabase
             size={450}
             color="red"
@@ -49,7 +56,7 @@ export const Layout = () => {
               marginLeft: '50px',
             }}
           />
-        </a>
+        </LinkMovie>
 
         <LabelSwitch>
           <input type="checkbox" onClick={handleToggle} />

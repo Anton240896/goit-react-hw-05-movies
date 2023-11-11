@@ -65,7 +65,7 @@ export const LabelSwitch = styled.label`
   width: 3.5em;
   height: 2em;
 
-  @media (max-width: 922px) {
+  @media (max-width: 950px) {
     left: 505px;
     max-width: 670px;
   }

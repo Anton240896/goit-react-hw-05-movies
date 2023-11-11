@@ -4,6 +4,10 @@ export const UnOrderedReviews = styled.ul`
   max-width: 1078px;
   margin-left: -838px;
   margin-top: 149px;
+
+  @media (max-width: 922px) {
+    margin-left: -436px;
+  }
 `;
 
 export const ListReview = styled.li`

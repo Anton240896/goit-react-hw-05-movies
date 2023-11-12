@@ -109,7 +109,7 @@ const MovieDetails = () => {
                 <b>Release date:</b>
               </NameDetailsMovie>
 
-              <TextOverview>{release_date.slice(0, 10)}</TextOverview>
+              <TextOverview>{release_date}</TextOverview>
             </UserCont>
 
             <NameDetailsMovie>

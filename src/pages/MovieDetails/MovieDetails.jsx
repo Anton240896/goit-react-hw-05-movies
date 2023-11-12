@@ -100,16 +100,11 @@ const MovieDetails = () => {
           </div>
 
           <ContMovieDetails>
-            <NameFilms>
-              <b>{title}</b>
-            </NameFilms>
-
             <UserCont>
-              <NameDetailsMovie>
-                <b>Release date:</b>
-              </NameDetailsMovie>
-
-              <TextOverview>{release_date}</TextOverview>
+              <NameFilms>
+                <b>{title}</b>
+              </NameFilms>
+              <TextOverview>({release_date.slice(0, 4)})</TextOverview>
             </UserCont>
 
             <NameDetailsMovie>
@@ -127,6 +122,7 @@ const MovieDetails = () => {
               <NameDetailsMovie>User score:</NameDetailsMovie>
               <TextOverview>{vote_average}</TextOverview>
             </UserCont>
+
             <UserCont>
               <NameDetailsMovie>
                 <b>Genres:</b>

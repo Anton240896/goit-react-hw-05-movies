@@ -18,6 +18,7 @@ import {
   NameFilms,
   NameDetailsMovie,
   UserCont,
+  ReleaseText,
 } from './MovieDetails.styled';
 import { MessageNoComments } from 'components/Reviews/Reviews.styled';
 
@@ -104,7 +105,7 @@ const MovieDetails = () => {
               <NameFilms>
                 <b>{title}</b>
               </NameFilms>
-              <TextOverview>({release_date.slice(0, 4)})</TextOverview>
+              <ReleaseText>({release_date.slice(0, 4)})</ReleaseText>
             </UserCont>
 
             <NameDetailsMovie>

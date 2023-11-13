@@ -84,3 +84,8 @@ export const UserCont = styled.div`
   align-items: center;
   gap: 10px;
 `;
+
+export const ReleaseText = styled.p`
+  font-size: 25px;
+  color: red;
+`;

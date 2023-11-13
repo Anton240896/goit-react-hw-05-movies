@@ -54,6 +54,7 @@ const Movies = () => {
             style={{
               color: 'yellowgreen',
               position: 'fixed',
+              top: '193px',
             }}
           />
         </ButtonLink>

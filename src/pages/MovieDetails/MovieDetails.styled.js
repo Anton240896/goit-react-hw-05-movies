@@ -58,6 +58,7 @@ export const ButtonLink = styled.li`
   color: yellowgreen;
   cursor: pointer;
   list-style-type: none;
+  top: 135px;
 
   @media (max-width: 540px) {
     top: 139px;

@@ -45,5 +45,3 @@ export const requestReviews = async movieId => {
   );
   return response.data.results;
 };
-
-//ggger45@3@@!wrf

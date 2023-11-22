@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const UnOrderedReviews = styled.ul`
   max-width: 1078px;
-  margin-left: -838px;
+  margin-left: -776px;
   margin-top: 149px;
 
   @media (max-width: 922px) {
-    margin-left: -436px;
+    margin-left: -193px;
   }
 `;
 

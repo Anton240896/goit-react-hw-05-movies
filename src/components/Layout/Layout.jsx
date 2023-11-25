@@ -13,8 +13,8 @@ import {
 } from './Layout.styled';
 import { Loader } from 'components/Loader/Loader';
 
+/*   ====== SWITCH-THEME ======*/
 export const Layout = () => {
-  /*   ====== SWITCH-THEME ======*/
   const whiteTheme =
     'background-image:radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%)';
   const blackTheme =

@@ -24,7 +24,6 @@ export const Layout = () => {
   const [toggle, setToggle] = useState(false);
   const [bodyColor, setBodyColor] = useState('whiteTheme');
 
-  /*   ====== SWITCH-THEME ======*/
   const handleToggle = () => {
     setToggle(!toggle);
     if (bodyColor === blackTheme) {

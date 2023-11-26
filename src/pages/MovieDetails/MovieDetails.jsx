@@ -151,6 +151,7 @@ const MovieDetails = () => {
               </div>
             </List>
           </ContMovieDetails>
+
           <Link to={location.state?.from ?? '/'}>
             <ButtonLink type="button">
               <TbArrowBigLeftLine

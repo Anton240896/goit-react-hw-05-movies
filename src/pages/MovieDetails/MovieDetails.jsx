@@ -99,19 +99,19 @@ const MovieDetails = () => {
               alt={original_title}
             />
           </div>
+
           <ContMovieDetails>
             <UserCont>
               <NameFilms>
                 <b>{title}</b>
               </NameFilms>
-              <ReleaseText>({release_date})</ReleaseText>
+              <ReleaseText>({release_date.slice(0, 4)})</ReleaseText>
             </UserCont>
 
             <NameDetailsMovie>
               <b>Overview:</b>
             </NameDetailsMovie>
             <TextOverview>{overview}</TextOverview>
-
             <TextOverview>
               {overview.length === 0 && (
                 <MessageNoComments>
@@ -119,7 +119,6 @@ const MovieDetails = () => {
                 </MessageNoComments>
               )}
             </TextOverview>
-
             <UserCont>
               <NameDetailsMovie>User score:</NameDetailsMovie>
               <TextOverview>{vote_average}</TextOverview>
@@ -134,7 +133,6 @@ const MovieDetails = () => {
                 {genres.map(({ name }) => name).join(', ')}
               </TextOverview>
             </UserCont>
-
             <List>
               <div>
                 <NameDetailsMovie>
@@ -163,6 +161,7 @@ const MovieDetails = () => {
               />
             </ButtonLink>
           </Link>
+
           {loading && <Loader />}
           {error && toast.error(`Sorry,we didnt find anything`)}
         </Container>

@@ -105,7 +105,7 @@ const MovieDetails = () => {
               <NameFilms>
                 <b>{title}</b>
               </NameFilms>
-              <ReleaseText>({release_date.slice(0, 4)})</ReleaseText>
+              <ReleaseText>({release_date})</ReleaseText>
             </UserCont>
 
             <NameDetailsMovie>

@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: 7px;
   gap: 11px;
   align-items: flex-start;
-  margin-top: 113px;
+  margin-top: 107px;
 
   @media (max-width: 922px) {
     margin-top: 201px;
@@ -70,7 +70,7 @@ export const ButtonLink = styled.li`
 `;
 
 export const ContMovieDetails = styled.div`
-  margin-top: -18px;
+  margin-top: -33px;
 `;
 
 export const NameFilms = styled.h2`
@@ -85,9 +85,23 @@ export const UserCont = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: -18px;
 `;
 
 export const ReleaseText = styled.p`
   font-size: 25px;
   color: red;
+`;
+
+export const Title = styled.h1`
+  color: red;
+  margin-top: -51px;
+  margin-left: -341px;
+
+  @media (max-width: 921px) {
+    margin-top: 52px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
 `;

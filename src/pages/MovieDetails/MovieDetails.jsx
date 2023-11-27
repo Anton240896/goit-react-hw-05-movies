@@ -15,10 +15,10 @@ import {
   TextOverview,
   ButtonLink,
   ContMovieDetails,
-  NameFilms,
   NameDetailsMovie,
   UserCont,
   ReleaseText,
+  Title,
 } from './MovieDetails.styled';
 import { MessageNoComments } from 'components/Reviews/Reviews.styled';
 
@@ -102,10 +102,15 @@ const MovieDetails = () => {
 
           <ContMovieDetails>
             <UserCont>
-              <NameFilms>
+              <Title>
                 <b>{title}</b>
-              </NameFilms>
-              <ReleaseText>({release_date.slice(0, 4)})</ReleaseText>
+              </Title>
+              <ReleaseText></ReleaseText>
+            </UserCont>
+
+            <UserCont>
+              <NameDetailsMovie>Release Date:</NameDetailsMovie>
+              <TextOverview>{release_date}</TextOverview>
             </UserCont>
 
             <NameDetailsMovie>

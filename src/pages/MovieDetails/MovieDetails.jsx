@@ -119,6 +119,7 @@ const MovieDetails = () => {
                 </MessageNoComments>
               )}
             </TextOverview>
+
             <UserCont>
               <NameDetailsMovie>User score:</NameDetailsMovie>
               <TextOverview>{vote_average}</TextOverview>
@@ -130,9 +131,10 @@ const MovieDetails = () => {
               </NameDetailsMovie>
 
               <TextOverview>
-                {genres.map(({ name }) => name).join(', ')}
+                {genres.map(({ name }) => name).join(' | ')}
               </TextOverview>
             </UserCont>
+
             <List>
               <div>
                 <NameDetailsMovie>

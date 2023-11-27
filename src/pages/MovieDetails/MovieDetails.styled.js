@@ -95,8 +95,8 @@ export const ReleaseText = styled.p`
 
 export const Title = styled.h1`
   color: red;
-  margin-top: -51px;
-  margin-left: -341px;
+  margin-top: -43px;
+  margin-left: -361px;
 
   @media (max-width: 921px) {
     margin-top: 52px;

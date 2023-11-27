@@ -11,12 +11,11 @@ export const List = styled.ul`
 export const NameFilms = styled.p`
   position: absolute;
   width: 10%;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   font-weight: 500;
   margin-left: 6px;
   margin-top: 5px;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   background-color: #ff000096;

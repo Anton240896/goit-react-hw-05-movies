@@ -15,7 +15,7 @@ export const NameFilms = styled.p`
   color: white;
   font-weight: 500;
   margin-left: 6px;
-  margin-top: 0;
+  margin-top: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -32,7 +32,7 @@ export const Item = styled.li`
     transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
 
     & ${NameFilms} {
-      top: -200%;
+      display: none;
     }
   }
 `;

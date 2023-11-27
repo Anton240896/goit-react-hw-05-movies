@@ -19,7 +19,7 @@ export const Layout = () => {
   const whiteTheme =
     'background-image:radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%)';
   const blackTheme =
-    'background-image:radial-gradient(circle, rgb(0, 0, 0) 60%, #dbdbe3 75%)';
+    'background-image:radial-gradient(circle, rgb(0, 0, 0) 70%, #dbdbe3 75%)';
 
   /*   ====== HOOKS ======*/
   const [toggle, setToggle] = useState(false);

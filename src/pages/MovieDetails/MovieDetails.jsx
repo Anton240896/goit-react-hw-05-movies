@@ -142,9 +142,6 @@ const MovieDetails = () => {
 
             <List>
               <div>
-                <NameDetailsMovie>
-                  <b>Additional information:</b>
-                </NameDetailsMovie>
                 <ListInfo>
                   <LinkInfo to="cast">Actors</LinkInfo>
 

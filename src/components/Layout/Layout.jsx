@@ -25,7 +25,7 @@ export const Layout = () => {
   const [toggle, setToggle] = useState(false);
   const [bodyColor, setBodyColor] = useState('whiteTheme');
 
-  const handleToggle = () => {
+  const handleSwitch = () => {
     setToggle(!toggle);
     if (bodyColor === blackTheme) {
       setBodyColor(whiteTheme);
@@ -60,7 +60,7 @@ export const Layout = () => {
         </LinkMovie>
 
         <LabelSwitch>
-          <input type="checkbox" onClick={handleToggle} />
+          <input type="checkbox" onClick={handleSwitch} />
           <Slider></Slider>
         </LabelSwitch>
       </header>

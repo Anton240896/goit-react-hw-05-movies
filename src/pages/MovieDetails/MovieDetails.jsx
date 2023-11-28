@@ -131,7 +131,7 @@ const MovieDetails = () => {
 
             <UserCont>
               <NameDetailsMovie>Run Time:</NameDetailsMovie>
-              <TextOverview>{runtime} minute</TextOverview>
+              <TextOverview>{runtime} (minute)</TextOverview>
             </UserCont>
 
             <UserCont>

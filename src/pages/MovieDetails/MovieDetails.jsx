@@ -82,6 +82,7 @@ const MovieDetails = () => {
     genres,
     poster_path,
     original_title,
+    runtime,
   } = movieInfo;
 
   /*   ====== RENDER ======*/
@@ -127,6 +128,11 @@ const MovieDetails = () => {
                 </MessageNoComments>
               )}
             </TextOverview>
+
+            <UserCont>
+              <NameDetailsMovie>Run Time:</NameDetailsMovie>
+              <TextOverview>{runtime} minute</TextOverview>
+            </UserCont>
 
             <UserCont>
               <NameDetailsMovie>User score:</NameDetailsMovie>

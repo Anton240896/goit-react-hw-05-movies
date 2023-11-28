@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import dayjs from 'dayjs';
 import { useParams, Outlet, Link, useLocation } from 'react-router-dom';
 
 import { TbArrowBigLeftLine } from 'react-icons/tb';
@@ -110,7 +111,9 @@ const MovieDetails = () => {
 
             <UserCont>
               <NameDetailsMovie>Release Date:</NameDetailsMovie>
-              <TextOverview>{release_date}</TextOverview>
+              <TextOverview>
+                {dayjs(release_date).format('D | MM | YYYY')}
+              </TextOverview>
             </UserCont>
 
             <NameDetailsMovie>
@@ -127,7 +130,9 @@ const MovieDetails = () => {
 
             <UserCont>
               <NameDetailsMovie>User score:</NameDetailsMovie>
-              <TextOverview>{vote_average}</TextOverview>
+              <TextOverview>
+                {Math.ceil(vote_average)} (average vote)
+              </TextOverview>
             </UserCont>
 
             <UserCont>

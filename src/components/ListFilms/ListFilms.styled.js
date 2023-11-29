@@ -5,7 +5,7 @@ export const List = styled.ul`
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 27px;
 `;
 
 export const NameFilms = styled.p`
@@ -27,8 +27,8 @@ export const Item = styled.li`
   margin-bottom: 10px;
 
   &:hover {
-    -webkit-transform: rotate(15deg);
-    transition: -webkit-transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: rotate(15deg);
+    transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
 
     & ${NameFilms} {
       display: none;

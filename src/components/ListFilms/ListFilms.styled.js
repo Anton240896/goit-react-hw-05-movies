@@ -27,8 +27,8 @@ export const Item = styled.li`
   margin-bottom: 10px;
 
   &:hover {
-    transform: scale(1.03);
-    transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transform: rotate(15deg);
+    transition: -webkit-transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
 
     & ${NameFilms} {
       display: none;

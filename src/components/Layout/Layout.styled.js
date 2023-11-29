@@ -86,7 +86,7 @@ export const LabelSwitch = styled.label`
 
     &:checked + ${Slider} {
       box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
-      border: 2px solid yellowgreen;
+      border: 2px solid red;
       background-color: white;
     }
     &:checked + ${Slider}:before {

@@ -112,7 +112,7 @@ const MovieDetails = () => {
             <UserCont>
               <NameDetailsMovie>Release Date:</NameDetailsMovie>
               <TextOverview>
-                {dayjs(release_date).format('D | MM | YYYY')}
+                {dayjs(release_date).format('DD | MM | YYYY')}
               </TextOverview>
             </UserCont>
 
@@ -121,8 +121,8 @@ const MovieDetails = () => {
             </NameDetailsMovie>
 
             <TextOverview>
-              {overview.length > 240 ? (
-                <TextOverview>{overview.slice(0, 240)} ...</TextOverview>
+              {overview.length > 230 ? (
+                <TextOverview>{overview.slice(0, 230)} ...</TextOverview>
               ) : (
                 <TextOverview>{overview}</TextOverview>
               )}

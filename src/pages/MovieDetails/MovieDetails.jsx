@@ -21,7 +21,6 @@ import {
   ReleaseText,
   Title,
 } from './MovieDetails.styled';
-import { MessageNoComments } from 'components/Reviews/Reviews.styled';
 
 /*   ====== HOOKS ======*/
 const MovieDetails = () => {
@@ -120,24 +119,24 @@ const MovieDetails = () => {
             <NameDetailsMovie>
               <b>Overview:</b>
             </NameDetailsMovie>
-            <TextOverview>{overview}</TextOverview>
+
             <TextOverview>
-              {overview.length === 0 && (
-                <MessageNoComments>
-                  ❌ Sorry, we didn't find any oveview
-                </MessageNoComments>
+              {overview.length > 240 ? (
+                <TextOverview>{overview.slice(0, 240)} ...</TextOverview>
+              ) : (
+                <TextOverview>{overview}</TextOverview>
               )}
             </TextOverview>
 
             <UserCont>
-              <NameDetailsMovie>Run Time:</NameDetailsMovie>
+              <NameDetailsMovie>Run time:</NameDetailsMovie>
               <TextOverview>{runtime} (minute)</TextOverview>
             </UserCont>
 
             <UserCont>
               <NameDetailsMovie>User score:</NameDetailsMovie>
               <TextOverview>
-                {Math.ceil(vote_average)} (average vote)
+                {Math.ceil(vote_average * 10)} % (average vote)
               </TextOverview>
             </UserCont>
 
@@ -149,6 +148,12 @@ const MovieDetails = () => {
               <TextOverview>
                 {genres.map(({ name }) => name).join(' | ')}
               </TextOverview>
+            </UserCont>
+
+            <UserCont>
+              <NameDetailsMovie>
+                <b>Additonal information:</b>
+              </NameDetailsMovie>
             </UserCont>
 
             <List>

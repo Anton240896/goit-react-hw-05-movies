@@ -70,7 +70,7 @@ export const ButtonLink = styled.li`
 `;
 
 export const ContMovieDetails = styled.div`
-  margin-top: -33px;
+  margin-top: -2px;
 `;
 
 export const NameFilms = styled.h2`

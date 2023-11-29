@@ -53,7 +53,7 @@ export const Slider = styled.span`
     width: 1.4em;
     left: 0.2em;
     bottom: 0.2em;
-    background-color: white;
+    background-color: #dbdbe3;
     border-radius: inherit;
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -87,7 +87,7 @@ export const LabelSwitch = styled.label`
     &:checked + ${Slider} {
       box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
       border: 2px solid red;
-      background-color: white;
+      background-color: #dbdbe3;
     }
     &:checked + ${Slider}:before {
       transform: translateX(1.5em);

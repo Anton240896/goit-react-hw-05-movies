@@ -2,7 +2,6 @@ import { Suspense, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { SiThemoviedatabase } from 'react-icons/si';
-import { FaInstagram } from 'react-icons/fa';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaWikipediaW } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
@@ -14,7 +13,6 @@ import {
   LabelSwitch,
   Slider,
   LinkMovie,
-  LinkInsta,
   LinkFace,
   LinkWiki,
   LinkLnkdn,
@@ -65,15 +63,6 @@ export const Layout = () => {
             }}
           />
         </LinkMovie>
-
-        <LinkInsta href="https://www.instagram.com/tmdbmovies/">
-          <FaInstagram
-            size={40}
-            style={{
-              marginTop: ' 20px',
-            }}
-          />
-        </LinkInsta>
 
         <LinkFace href="https://www.facebook.com/themoviedb/">
           <FaFacebookSquare

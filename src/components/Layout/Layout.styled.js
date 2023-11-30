@@ -109,21 +109,17 @@ export const LinkMovie = styled.a`
   }
 `;
 
-export const LinkInsta = styled.a`
+export const LinkFace = styled.a`
+  color: #00008b;
   display: inline-block;
-  color: #b8860b;
   cursor: pointer;
   margin-left: 129px;
 
-  &:hover {
-    color: red;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-`;
-
-export const LinkFace = styled.a`
-  color: #00008b;
   margin-left: 10px;
+
+  @media (max-width: 596px) {
+    margin-left: 195px;
+  }
 
   &:hover {
     color: red;

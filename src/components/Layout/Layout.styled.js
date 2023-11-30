@@ -97,29 +97,36 @@ export const LabelSwitch = styled.label`
 `;
 
 export const LinkMovie = styled.a`
+  color: red;
+
   @media (max-width: 922px) {
     display: none;
+  }
+
+  &:hover {
+    color: #1e90ff;
+    transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;
 
 export const LinkInsta = styled.a`
   display: inline-block;
-  color: red;
+  color: #b8860b;
   cursor: pointer;
   margin-left: 129px;
 
   &:hover {
-    color: #b8860b;
+    color: red;
     transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;
 
 export const LinkFace = styled.a`
-  color: red;
+  color: #00008b;
   margin-left: 10px;
 
   &:hover {
-    color: #00008b;
+    color: red;
     transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;
@@ -129,17 +136,17 @@ export const LinkWiki = styled.a`
   margin-left: 10px;
 
   &:hover {
-    color: #000000;
+    color: #0000ff;
     transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;
 
 export const LinkLnkdn = styled.a`
-  color: red;
+  color: #0000ff;
   margin-left: 10px;
 
   &:hover {
-    color: #0000ff;
+    color: red;
     transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;

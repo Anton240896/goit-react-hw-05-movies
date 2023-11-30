@@ -59,7 +59,6 @@ export const Layout = () => {
         <LinkMovie href="https://www.themoviedb.org/">
           <SiThemoviedatabase
             size={350}
-            color="red"
             style={{
               marginTop: ' 80px',
               marginLeft: '50px',

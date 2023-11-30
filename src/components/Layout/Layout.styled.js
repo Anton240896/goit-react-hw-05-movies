@@ -110,7 +110,7 @@ export const LinkMovie = styled.a`
 `;
 
 export const LinkFace = styled.a`
-  color: #00008b;
+  color: red;
   display: inline-block;
   cursor: pointer;
   margin-left: -147px;
@@ -120,7 +120,7 @@ export const LinkFace = styled.a`
   }
 
   &:hover {
-    color: red;
+    color: #00008b;
     transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;
@@ -136,11 +136,11 @@ export const LinkWiki = styled.a`
 `;
 
 export const LinkLnkdn = styled.a`
-  color: #0000ff;
+  color: red;
   margin-left: 10px;
 
   &:hover {
-    color: red;
+    color: #0000ff;
     transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;

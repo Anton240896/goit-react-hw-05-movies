@@ -2,6 +2,10 @@ import { Suspense, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { SiThemoviedatabase } from 'react-icons/si';
+import { FaInstagram } from 'react-icons/fa';
+import { FaFacebookSquare } from 'react-icons/fa';
+import { FaWikipediaW } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 
 import {
   Container,
@@ -10,6 +14,10 @@ import {
   LabelSwitch,
   Slider,
   LinkMovie,
+  LinkInsta,
+  LinkFace,
+  LinkWiki,
+  LinkLnkdn,
 } from './Layout.styled';
 
 import { Loader } from 'components/Loader/Loader';
@@ -58,6 +66,42 @@ export const Layout = () => {
             }}
           />
         </LinkMovie>
+
+        <LinkInsta href="https://www.instagram.com/tmdbmovies/">
+          <FaInstagram
+            size={40}
+            style={{
+              marginTop: ' 20px',
+            }}
+          />
+        </LinkInsta>
+
+        <LinkFace href="https://www.facebook.com/themoviedb/">
+          <FaFacebookSquare
+            size={40}
+            style={{
+              marginTop: ' 20px',
+            }}
+          />
+        </LinkFace>
+
+        <LinkWiki href="https://uk.wikipedia.org/wiki/TMDb">
+          <FaWikipediaW
+            size={40}
+            style={{
+              marginTop: ' 20px',
+            }}
+          />
+        </LinkWiki>
+
+        <LinkLnkdn href="https://www.linkedin.com/company/themoviedb.org/about/">
+          <FaLinkedin
+            size={40}
+            style={{
+              marginTop: ' 20px',
+            }}
+          />
+        </LinkLnkdn>
 
         <LabelSwitch>
           <input type="checkbox" onClick={handleSwitch} />

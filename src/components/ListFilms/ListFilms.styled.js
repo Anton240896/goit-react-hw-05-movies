@@ -41,6 +41,6 @@ export const MovieLink = styled(Link)`
   color: #191d1e;
 
   &:hover {
-    color: red;
+    color: #ffffff;
   }
 `;

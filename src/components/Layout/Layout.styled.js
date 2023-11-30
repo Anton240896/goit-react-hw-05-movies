@@ -101,3 +101,45 @@ export const LinkMovie = styled.a`
     display: none;
   }
 `;
+
+export const LinkInsta = styled.a`
+  display: inline-block;
+  color: red;
+  cursor: pointer;
+  margin-left: 129px;
+
+  &:hover {
+    color: #b8860b;
+    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+`;
+
+export const LinkFace = styled.a`
+  color: red;
+  margin-left: 10px;
+
+  &:hover {
+    color: #00008b;
+    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+`;
+
+export const LinkWiki = styled.a`
+  color: red;
+  margin-left: 10px;
+
+  &:hover {
+    color: #000000;
+    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+`;
+
+export const LinkLnkdn = styled.a`
+  color: red;
+  margin-left: 10px;
+
+  &:hover {
+    color: #0000ff;
+    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+`;

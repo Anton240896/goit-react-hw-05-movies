@@ -113,9 +113,7 @@ export const LinkFace = styled.a`
   color: #00008b;
   display: inline-block;
   cursor: pointer;
-  margin-left: 129px;
-
-  margin-left: 10px;
+  margin-left: -147px;
 
   @media (max-width: 596px) {
     margin-left: 195px;

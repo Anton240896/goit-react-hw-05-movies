@@ -115,8 +115,8 @@ export const LinkFace = styled.a`
   cursor: pointer;
   margin-left: -147px;
 
-  @media (max-width: 596px) {
-    margin-left: 195px;
+  @media (max-width: 922px) {
+    margin-left: 197px;
   }
 
   &:hover {

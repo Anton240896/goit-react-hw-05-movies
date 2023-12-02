@@ -47,8 +47,8 @@ export const Slider = styled.span`
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   &:before {
-    position: absolute;
     content: '';
+    position: absolute;
     height: 1.4em;
     width: 1.4em;
     left: 0.2em;

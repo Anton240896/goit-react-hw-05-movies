@@ -116,7 +116,7 @@ export const LinkFace = styled.a`
   margin-left: -147px;
 
   @media (max-width: 922px) {
-    margin-left: 134px;
+    margin-left: 198px;
   }
 
   &:hover {

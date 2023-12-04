@@ -104,7 +104,9 @@ const MovieDetails = () => {
           <ContMovieDetails>
             <UserCont>
               <Title>
-                <b>{title}</b>
+                <b>
+                  {title} ({release_date.slice(0, 4)})
+                </b>
               </Title>
               <ReleaseText></ReleaseText>
             </UserCont>

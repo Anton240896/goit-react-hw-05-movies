@@ -38,6 +38,10 @@ export const LinkInfo = styled(Link)`
   font-weight: 400;
   font-size: 18px;
   color: red;
+
+  &:hover {
+    color: darkblue;
+  }
 `;
 export const ActorsFilms = styled.li`
   display: flex;

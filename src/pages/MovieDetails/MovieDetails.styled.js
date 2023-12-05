@@ -40,7 +40,8 @@ export const LinkInfo = styled(Link)`
   color: red;
 
   &:hover {
-    color: darkblue;
+    color: yellowgreen;
+    transition: color 350ms;
   }
 `;
 export const ActorsFilms = styled.li`

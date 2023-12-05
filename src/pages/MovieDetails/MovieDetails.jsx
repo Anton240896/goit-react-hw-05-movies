@@ -114,7 +114,7 @@ const MovieDetails = () => {
             <UserCont>
               <NameDetailsMovie>Release Date ·</NameDetailsMovie>
               <TextOverview>
-                {dayjs(release_date).format('DD / MM / YYYY')} (US)
+                {dayjs(release_date).format('DD / MM / YYYY')}
               </TextOverview>
             </UserCont>
 

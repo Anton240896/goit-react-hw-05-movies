@@ -114,7 +114,7 @@ const MovieDetails = () => {
             <UserCont>
               <NameDetailsMovie>Release Date ·</NameDetailsMovie>
               <TextOverview>
-                {dayjs(release_date).format('DD | MM | YYYY')}
+                {dayjs(release_date).format('DD / MM / YYYY')} (US)
               </TextOverview>
             </UserCont>
 
@@ -148,7 +148,7 @@ const MovieDetails = () => {
               </NameDetailsMovie>
 
               <TextOverview>
-                {genres.map(({ name }) => name).join(' | ')}
+                {genres.map(({ name }) => name).join(' / ')}
               </TextOverview>
             </UserCont>
 

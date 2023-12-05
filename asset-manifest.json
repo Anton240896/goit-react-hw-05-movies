@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/goit-react-hw-05-movies/static/js/main.2bb1ed69.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.bb556ae8.js",
     "static/js/304.3c71b177.chunk.js": "/goit-react-hw-05-movies/static/js/304.3c71b177.chunk.js",
     "static/js/880.40759386.chunk.js": "/goit-react-hw-05-movies/static/js/880.40759386.chunk.js",
-    "static/js/961.0b2c4b14.chunk.js": "/goit-react-hw-05-movies/static/js/961.0b2c4b14.chunk.js",
+    "static/js/961.563faab6.chunk.js": "/goit-react-hw-05-movies/static/js/961.563faab6.chunk.js",
     "static/js/387.8b19bac9.chunk.js": "/goit-react-hw-05-movies/static/js/387.8b19bac9.chunk.js",
     "static/js/779.12cd7145.chunk.js": "/goit-react-hw-05-movies/static/js/779.12cd7145.chunk.js",
     "static/js/279.82f6d450.chunk.js": "/goit-react-hw-05-movies/static/js/279.82f6d450.chunk.js",
     "static/js/578.7b247d58.chunk.js": "/goit-react-hw-05-movies/static/js/578.7b247d58.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
-    "main.2bb1ed69.js.map": "/goit-react-hw-05-movies/static/js/main.2bb1ed69.js.map",
+    "main.bb556ae8.js.map": "/goit-react-hw-05-movies/static/js/main.bb556ae8.js.map",
     "304.3c71b177.chunk.js.map": "/goit-react-hw-05-movies/static/js/304.3c71b177.chunk.js.map",
     "880.40759386.chunk.js.map": "/goit-react-hw-05-movies/static/js/880.40759386.chunk.js.map",
-    "961.0b2c4b14.chunk.js.map": "/goit-react-hw-05-movies/static/js/961.0b2c4b14.chunk.js.map",
+    "961.563faab6.chunk.js.map": "/goit-react-hw-05-movies/static/js/961.563faab6.chunk.js.map",
     "387.8b19bac9.chunk.js.map": "/goit-react-hw-05-movies/static/js/387.8b19bac9.chunk.js.map",
     "779.12cd7145.chunk.js.map": "/goit-react-hw-05-movies/static/js/779.12cd7145.chunk.js.map",
     "279.82f6d450.chunk.js.map": "/goit-react-hw-05-movies/static/js/279.82f6d450.chunk.js.map",
     "578.7b247d58.chunk.js.map": "/goit-react-hw-05-movies/static/js/578.7b247d58.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.2bb1ed69.js"
+    "static/js/main.bb556ae8.js"
   ]
 }

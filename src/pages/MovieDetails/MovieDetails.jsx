@@ -161,10 +161,10 @@ const MovieDetails = () => {
             <List>
               <div>
                 <ListInfo>
-                  <LinkInfo to="cast">Actors 🔽</LinkInfo>
+                  <LinkInfo to="cast">Actors ·</LinkInfo>
 
                   <ActorsFilms>
-                    <LinkInfo to="reviews">Reviews 🔽</LinkInfo>
+                    <LinkInfo to="reviews">Reviews ·</LinkInfo>
                   </ActorsFilms>
                 </ListInfo>
                 <Outlet />

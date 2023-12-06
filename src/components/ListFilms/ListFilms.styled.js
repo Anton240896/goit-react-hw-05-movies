@@ -10,24 +10,20 @@ export const List = styled.ul`
 
 export const NameFilms = styled.p`
   position: absolute;
-  width: 10%;
   font-size: 15px;
   color: white;
   font-weight: 500;
   margin-left: 6px;
   margin-top: 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+
   background-color: #ff000096;
 
   @media (min-width: 122px) {
-    position: absolute;
-    width: 10%;
+    width: 138px;
     font-size: 10px;
   }
 
   @media (min-width: 1288px) {
-    position: absolute;
     width: 138px;
     font-size: 15px;
     font-weight: 500;

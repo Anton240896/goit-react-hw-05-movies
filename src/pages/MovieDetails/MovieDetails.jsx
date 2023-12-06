@@ -73,6 +73,18 @@ const MovieDetails = () => {
 
   const posterPath = 'https://image.tmdb.org/t/p/w500';
 
+  /*   ====== CONVERT MINUTES TO HOURS  ======*/
+  function getTimeFromMins(mins) {
+    let hours = Math.floor(mins / 60);
+    let minutes = mins % 60;
+
+    if (minutes === 0) {
+      return hours + 'h';
+    }
+    return hours + 'h' + ' ' + minutes + 'm';
+  }
+
+  /*   ====== DESTRUCTURIZATION  ======*/
   const {
     title,
     release_date,
@@ -132,7 +144,7 @@ const MovieDetails = () => {
 
             <UserCont>
               <NameDetailsMovie>Run time ·</NameDetailsMovie>
-              <TextOverview>{runtime} (minute)</TextOverview>
+              <TextOverview>{getTimeFromMins(runtime)}</TextOverview>
             </UserCont>
 
             <UserCont>

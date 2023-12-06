@@ -105,7 +105,7 @@ export const LinkMovie = styled.a`
 
   &:hover {
     color: #1e90ff;
-    transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 450ms;
   }
 `;
 

@@ -58,7 +58,7 @@ export const Layout = () => {
           <SiThemoviedatabase
             size={350}
             style={{
-              marginTop: ' 156px',
+              marginTop: ' 47px',
               marginLeft: '127px',
             }}
           />

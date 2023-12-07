@@ -106,7 +106,7 @@ const MovieDetails = () => {
         <Container>
           <div>
             <img
-              width="350px"
+              width="360px"
               src={
                 poster_path
                   ? `${posterPath}${poster_path}`
@@ -135,15 +135,13 @@ const MovieDetails = () => {
 
             <NameDetailsMovie>
               <b>Overview ·</b>
-            </NameDetailsMovie>
 
-            <TextOverview>
               {overview.length > 230 ? (
                 <TextOverview>{overview.slice(0, 230)} ...</TextOverview>
               ) : (
                 <TextOverview>{overview}</TextOverview>
               )}
-            </TextOverview>
+            </NameDetailsMovie>
 
             <UserCont>
               <NameDetailsMovie>Run time ·</NameDetailsMovie>

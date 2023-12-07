@@ -59,7 +59,7 @@ export const Layout = () => {
             size={350}
             style={{
               marginTop: ' 156px',
-              marginLeft: '7px',
+              marginLeft: '127px',
             }}
           />
         </LinkMovie>

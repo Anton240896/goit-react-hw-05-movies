@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
-  margin: 7px;
+  margin: 32px;
   gap: 11px;
   align-items: flex-start;
   margin-top: 107px;

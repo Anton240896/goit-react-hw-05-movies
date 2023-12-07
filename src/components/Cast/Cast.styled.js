@@ -5,7 +5,7 @@ export const ListFilms = styled.ul`
   display: flex;
   flex-wrap: wrap;
   margin-top: 172px;
-  margin-left: -607px;
+  margin-left: -747px;
   gap: 10px;
 
   @media (max-width: 922px) {

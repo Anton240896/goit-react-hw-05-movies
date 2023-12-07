@@ -19,7 +19,7 @@ export const ListReview = styled.li`
 
 export const MessageNoComments = styled.div`
   color: red;
-  margin-top: 10px;
+  margin-top: 17px;
 `;
 
 export const TextAutor = styled.p`

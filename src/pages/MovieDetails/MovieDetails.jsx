@@ -84,7 +84,7 @@ const MovieDetails = () => {
     if (hours === 0) {
       return minutes + 'm';
     }
-    return hours + 'h' + minutes + 'm';
+    return ` ${hours}h ${minutes}m`;
   }
 
   /*   ====== DESTRUCTURIZATION  ======*/

@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: flex-start;
   margin-top: 107px;
 
-  @media (max-width: 922px) {
+  @media (max-width: 1220px) {
     margin-top: 201px;
     margin-left: -158px;
     display: flex;
@@ -103,7 +103,7 @@ export const Title = styled.h1`
   margin-left: -373px;
   font-size: 35px;
 
-  @media (max-width: 921px) {
+  @media (max-width: 1220px) {
     margin-top: 52px;
     margin-left: 0;
     display: flex;

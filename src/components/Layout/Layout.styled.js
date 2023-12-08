@@ -99,7 +99,7 @@ export const LabelSwitch = styled.label`
 export const LinkMovie = styled.a`
   color: red;
 
-  @media (max-width: 922px) {
+  @media (max-width: 1220px) {
     display: none;
   }
 
@@ -115,7 +115,7 @@ export const LinkFace = styled.a`
   cursor: pointer;
   margin-left: -147px;
 
-  @media (max-width: 922px) {
+  @media (max-width: 1220px) {
     margin-left: 198px;
   }
 

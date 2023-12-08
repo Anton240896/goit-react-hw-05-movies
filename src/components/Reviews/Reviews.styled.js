@@ -5,7 +5,7 @@ export const UnOrderedReviews = styled.ul`
   margin-left: -776px;
   margin-top: 149px;
 
-  @media (max-width: 922px) {
+  @media (max-width: 1220px) {
     margin-left: 0px;
   }
 `;

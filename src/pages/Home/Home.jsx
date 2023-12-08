@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <ContFilms>
       <Trending>Trending today</Trending>
-      <Description>Welcome to movie descriptions</Description>
+      <Description>Welcome to Movie dataBase descriptions</Description>
       <ListFilms films={films} />
 
       {loading && <Loader />}

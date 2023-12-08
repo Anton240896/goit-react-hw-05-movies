@@ -85,9 +85,6 @@ const MovieDetails = () => {
       return minutes + 'm';
     }
 
-    if (`${hours}${minutes}` === 0) {
-      return <p>unknown time</p>;
-    }
     return ` ${hours}h ${minutes}m`;
   }
 
@@ -149,7 +146,7 @@ const MovieDetails = () => {
 
             <UserCont>
               <NameDetailsMovie>Run time ·</NameDetailsMovie>
-              <TextOverview>{getTimeFromMins(runtime)}</TextOverview>
+              <TextOverview>{getTimeFromMins(runtime)} (duration)</TextOverview>
             </UserCont>
 
             <UserCont>

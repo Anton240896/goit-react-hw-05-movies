@@ -51,7 +51,6 @@ export const ActorsFilms = styled.li`
 export const TextOverview = styled.p`
   max-width: 287px;
   color: red;
-  padding-top: 4px;
 `;
 
 export const ButtonLink = styled.li`

@@ -17,7 +17,7 @@ export const Trending = styled.h1`
 `;
 
 export const Description = styled.p`
-  margin-top: 32px;
+  margin-top: -14px;
   margin-left: 32px;
   color: red;
   font-size: 50px;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
 import ListFilms from 'components/ListFilms/ListFilms';
-import { ContFilms, Trending } from 'pages/Home/Home.styled';
+import { ContFilms, Trending, Description } from 'pages/Home/Home.styled';
 import { Loader } from 'components/Loader/Loader';
 
 import { requestTrending } from 'components/Api/Api';
@@ -37,6 +37,7 @@ const Home = () => {
   return (
     <ContFilms>
       <Trending>Trending today</Trending>
+      <Description>Welcome to movie descriptions</Description>
       <ListFilms films={films} />
 
       {loading && <Loader />}

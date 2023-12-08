@@ -151,7 +151,13 @@ const MovieDetails = () => {
             <UserCont>
               <NameDetailsMovie>User score ·</NameDetailsMovie>
               <TextOverview>
-                {Math.ceil(vote_average * 10)} % (average vote)
+                {vote_average > 0 ? (
+                  <TextOverview>
+                    {Math.ceil(vote_average * 10)} % (average vote)
+                  </TextOverview>
+                ) : (
+                  <TextOverview>{vote_average === 0} No votes</TextOverview>
+                )}
               </TextOverview>
             </UserCont>
 

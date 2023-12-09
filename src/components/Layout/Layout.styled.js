@@ -168,7 +168,7 @@ export const ButtonRegistration = styled.button`
     background-color: #ffffff;
 
     color: #1e90ff;
-    transition: color 250ms;
+    transition: color 1s ease-in-out;
     border: none;
   }
 `;

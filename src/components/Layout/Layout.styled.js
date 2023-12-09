@@ -120,7 +120,7 @@ export const LinkFace = styled.a`
 
   &:hover {
     color: #00008b;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 1s ease-in-out;
   }
 `;
 
@@ -130,7 +130,7 @@ export const LinkWiki = styled.a`
 
   &:hover {
     color: #0000ff;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 1s ease-in-out;
   }
 `;
 
@@ -140,7 +140,7 @@ export const LinkLnkdn = styled.a`
 
   &:hover {
     color: #0000ff;
-    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 1s ease-in-out;
   }
 `;
 

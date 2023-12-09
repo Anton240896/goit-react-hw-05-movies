@@ -10,7 +10,6 @@ export const Container = styled.div`
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 2px red;
   margin-bottom: 20px;
   padding-bottom: 10px;
   margin-left: 136px;

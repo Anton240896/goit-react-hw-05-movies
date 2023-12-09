@@ -23,3 +23,9 @@ export const ListImage = styled.li`
   border: 2px solid gray;
   text-align: center;
 `;
+
+export const MessageNoActors = styled.p`
+  color: red;
+  margin-top: -164px;
+  margin-left: -44px;
+`;

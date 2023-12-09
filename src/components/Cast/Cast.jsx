@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import { requestActors } from 'components/Api/Api';
 
 import Loader from 'components/Loader/Loader';
-import { ListFilms, Name, ListImage } from './Cast.styled';
+import { ListFilms, Name, ListImage, MessageNoActors } from './Cast.styled';
 
 /*   ====== DEFAULT IMAGES ======*/
 const defaultNoImages =
@@ -80,10 +80,14 @@ const Cast = () => {
           </ListImage>
         ))}
       </ListFilms>
+
+      <div>
+        {actors.length === 0 && (
+          <MessageNoActors>¯\_(ツ)_/¯ Sorry. No actors found</MessageNoActors>
+        )}
+      </div>
     </ul>
   );
 };
 
 export default Cast;
-
-<b></b>;

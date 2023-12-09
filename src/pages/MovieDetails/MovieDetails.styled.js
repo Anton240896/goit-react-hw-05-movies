@@ -110,3 +110,7 @@ export const Title = styled.h1`
     flex-direction: column;
   }
 `;
+
+export const UnknownData = styled.p`
+  color: red;
+`;

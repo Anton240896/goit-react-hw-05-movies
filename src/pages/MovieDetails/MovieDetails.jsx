@@ -20,6 +20,7 @@ import {
   UserCont,
   ReleaseText,
   Title,
+  UnknownData,
 } from './MovieDetails.styled';
 
 /*   ====== HOOKS ======*/
@@ -121,7 +122,11 @@ const MovieDetails = () => {
             <UserCont>
               <Title>
                 <b>
-                  {title} ({release_date.slice(0, 4)})
+                  {title} (
+                  {release_date.slice(0, 4) || (
+                    <UnknownData>Unknown data</UnknownData>
+                  )}
+                  )
                 </b>
               </Title>
               <ReleaseText></ReleaseText>

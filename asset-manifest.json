@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/goit-react-hw-05-movies/static/js/main.5216f2b7.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.e80c2740.js",
     "static/js/304.abfc6de2.chunk.js": "/goit-react-hw-05-movies/static/js/304.abfc6de2.chunk.js",
     "static/js/880.d9a4d4de.chunk.js": "/goit-react-hw-05-movies/static/js/880.d9a4d4de.chunk.js",
-    "static/js/961.df8975be.chunk.js": "/goit-react-hw-05-movies/static/js/961.df8975be.chunk.js",
+    "static/js/961.e1dc5996.chunk.js": "/goit-react-hw-05-movies/static/js/961.e1dc5996.chunk.js",
     "static/js/387.608fec77.chunk.js": "/goit-react-hw-05-movies/static/js/387.608fec77.chunk.js",
     "static/js/779.176e0f8c.chunk.js": "/goit-react-hw-05-movies/static/js/779.176e0f8c.chunk.js",
     "static/js/279.82f6d450.chunk.js": "/goit-react-hw-05-movies/static/js/279.82f6d450.chunk.js",
     "static/js/578.7b247d58.chunk.js": "/goit-react-hw-05-movies/static/js/578.7b247d58.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
-    "main.5216f2b7.js.map": "/goit-react-hw-05-movies/static/js/main.5216f2b7.js.map",
+    "main.e80c2740.js.map": "/goit-react-hw-05-movies/static/js/main.e80c2740.js.map",
     "304.abfc6de2.chunk.js.map": "/goit-react-hw-05-movies/static/js/304.abfc6de2.chunk.js.map",
     "880.d9a4d4de.chunk.js.map": "/goit-react-hw-05-movies/static/js/880.d9a4d4de.chunk.js.map",
-    "961.df8975be.chunk.js.map": "/goit-react-hw-05-movies/static/js/961.df8975be.chunk.js.map",
+    "961.e1dc5996.chunk.js.map": "/goit-react-hw-05-movies/static/js/961.e1dc5996.chunk.js.map",
     "387.608fec77.chunk.js.map": "/goit-react-hw-05-movies/static/js/387.608fec77.chunk.js.map",
     "779.176e0f8c.chunk.js.map": "/goit-react-hw-05-movies/static/js/779.176e0f8c.chunk.js.map",
     "279.82f6d450.chunk.js.map": "/goit-react-hw-05-movies/static/js/279.82f6d450.chunk.js.map",
     "578.7b247d58.chunk.js.map": "/goit-react-hw-05-movies/static/js/578.7b247d58.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.5216f2b7.js"
+    "static/js/main.e80c2740.js"
   ]
 }

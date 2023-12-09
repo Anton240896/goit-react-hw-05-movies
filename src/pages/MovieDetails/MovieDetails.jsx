@@ -136,13 +136,15 @@ const MovieDetails = () => {
 
             <NameDetailsMovie>
               <b>Overview ·</b>
-
-              {overview.length > 160 ? (
-                <TextOverview>{overview.slice(0, 160)} ...</TextOverview>
-              ) : (
-                <TextOverview>{overview}</TextOverview>
-              )}
             </NameDetailsMovie>
+
+            <TextOverview>
+              {overview.length === 0 ? (
+                <TextOverview>No overview</TextOverview>
+              ) : (
+                <TextOverview>{overview.slice(0, 160)} ...</TextOverview>
+              )}
+            </TextOverview>
 
             <UserCont>
               <NameDetailsMovie>Run time ·</NameDetailsMovie>
@@ -168,7 +170,15 @@ const MovieDetails = () => {
               </NameDetailsMovie>
 
               <TextOverview>
-                {genres.map(({ name }) => name).join(' / ')}
+                <TextOverview>
+                  {genres.length > 0 ? (
+                    <TextOverview>
+                      {genres.map(({ name }) => name).join(' / ')}
+                    </TextOverview>
+                  ) : (
+                    <TextOverview>No genres</TextOverview>
+                  )}
+                </TextOverview>
               </TextOverview>
             </UserCont>
 

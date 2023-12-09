@@ -99,7 +99,7 @@ export const ReleaseText = styled.p`
 
 export const Title = styled.h1`
   color: red;
-  margin-top: -71px;
+  margin-top: -82px;
   margin-left: -373px;
   font-size: 35px;
 

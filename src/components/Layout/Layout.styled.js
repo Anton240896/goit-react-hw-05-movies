@@ -143,3 +143,38 @@ export const LinkLnkdn = styled.a`
     transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 `;
+
+export const ButtonRegistration = styled.button`
+  position: absolute;
+  top: -74px;
+  left: -12px;
+  background-color: #1e90ff;
+  transition: background-color 1s ease-in-out;
+  width: 172px;
+  height: 37px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+
+  @media (max-width: 1220px) {
+    position: absolute;
+    top: -390px;
+    left: 364px;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+
+    color: #1e90ff;
+    transition: color 250ms;
+    border: none;
+  }
+`;
+
+export const LinkRegistration = styled.a`
+  position: absolute;
+  margin-left: -314px;
+  margin-top: 413px;
+`;

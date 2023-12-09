@@ -16,6 +16,8 @@ import {
   LinkFace,
   LinkWiki,
   LinkLnkdn,
+  LinkRegistration,
+  ButtonRegistration,
 } from './Layout.styled';
 
 import { Loader } from 'components/Loader/Loader';
@@ -90,6 +92,10 @@ export const Layout = () => {
             }}
           />
         </LinkLnkdn>
+
+        <LinkRegistration href="https://www.themoviedb.org/signup">
+          <ButtonRegistration>JOIN THE COMMUNITY</ButtonRegistration>
+        </LinkRegistration>
 
         <LabelSwitch>
           <input type="checkbox" onClick={handleSwitch} />

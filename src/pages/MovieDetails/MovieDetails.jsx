@@ -137,8 +137,8 @@ const MovieDetails = () => {
             <NameDetailsMovie>
               <b>Overview ·</b>
 
-              {overview.length > 230 ? (
-                <TextOverview>{overview.slice(0, 230)} ...</TextOverview>
+              {overview.length > 160 ? (
+                <TextOverview>{overview.slice(0, 160)} ...</TextOverview>
               ) : (
                 <TextOverview>{overview}</TextOverview>
               )}

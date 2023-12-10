@@ -9,6 +9,7 @@ import { Loader } from 'components/Loader/Loader';
 
 import { requestSearch } from 'components/Api/Api';
 import { ButtonLink } from 'pages/MovieDetails/MovieDetails.styled';
+import { NotFilms } from './Movies.styled';
 
 import toast from 'react-hot-toast';
 
@@ -64,6 +65,10 @@ const Movies = () => {
 
       <ListFilms films={movies} />
       <Outlet />
+
+      {movies && !movies.length && (
+        <NotFilms>Result has not founded, try other qeury.</NotFilms>
+      )}
     </div>
   );
 };

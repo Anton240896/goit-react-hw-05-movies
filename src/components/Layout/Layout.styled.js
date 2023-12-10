@@ -104,7 +104,7 @@ export const LinkMovie = styled.a`
 
   &:hover {
     color: #1e90ff;
-    transition: color 1s ease-in-out;
+    transition: color 0.5s ease-in-out;
   }
 `;
 
@@ -120,7 +120,7 @@ export const LinkFace = styled.a`
 
   &:hover {
     color: #00008b;
-    transition: color 1s ease-in-out;
+    transition: color 0.5s ease-in-out;
   }
 `;
 
@@ -130,7 +130,7 @@ export const LinkWiki = styled.a`
 
   &:hover {
     color: #0000ff;
-    transition: color 1s ease-in-out;
+    transition: color 0.5s ease-in-out;
   }
 `;
 
@@ -140,7 +140,7 @@ export const LinkLnkdn = styled.a`
 
   &:hover {
     color: #0000ff;
-    transition: color 1s ease-in-out;
+    transition: color 0.5s ease-in-out;
   }
 `;
 
@@ -149,7 +149,7 @@ export const ButtonRegistration = styled.button`
   top: -74px;
   left: -12px;
   background-color: #1e90ff;
-  transition: background-color 1s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
   width: 172px;
   height: 37px;
   border-radius: 5px;
@@ -168,7 +168,7 @@ export const ButtonRegistration = styled.button`
     background-color: #ffffff;
 
     color: #1e90ff;
-    transition: color 1s ease-in-out;
+    transition: color 0.5s ease-in-out;
     border: none;
   }
 `;

@@ -147,7 +147,7 @@ export const LinkLnkdn = styled.a`
 export const ButtonRegistration = styled.button`
   position: absolute;
   top: -74px;
-  left: -12px;
+  left: -18px;
   background-color: #1e90ff;
   transition: background-color 0.5s ease-in-out;
   width: 172px;

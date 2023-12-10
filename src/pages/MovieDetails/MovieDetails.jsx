@@ -123,10 +123,7 @@ const MovieDetails = () => {
               <Title>
                 <b>
                   {title} (
-                  {release_date.slice(0, 4) || (
-                    <UnknownData>Unknown data</UnknownData>
-                  )}
-                  )
+                  {release_date.slice(0, 4) || -(<UnknownData></UnknownData>)})
                 </b>
               </Title>
               <ReleaseText></ReleaseText>
@@ -135,7 +132,7 @@ const MovieDetails = () => {
             <UserCont>
               <NameDetailsMovie>Release Date ·</NameDetailsMovie>
               <TextOverview>
-                {dayjs(release_date).format('DD / MM / YYYY')}
+                {dayjs(release_date).format('DD. MM. YYYY')}
               </TextOverview>
             </UserCont>
 

@@ -100,7 +100,7 @@ export const ReleaseText = styled.p`
 export const Title = styled.h1`
   color: red;
   margin-top: -82px;
-  margin-left: -373px;
+  margin-left: -384px;
   font-size: 35px;
 
   @media (max-width: 1220px) {
@@ -113,4 +113,6 @@ export const Title = styled.h1`
 
 export const UnknownData = styled.p`
   color: red;
+  margin-top: -45px;
+  margin-left: 373px;
 `;

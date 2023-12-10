@@ -177,7 +177,7 @@ const MovieDetails = () => {
                 <TextOverview>
                   {genres.length > 0 ? (
                     <TextOverview>
-                      {genres.map(({ name }) => name).join(' / ')}
+                      {genres.map(({ name }) => name).join(', ')}
                     </TextOverview>
                   ) : (
                     <TextOverview>No genres</TextOverview>

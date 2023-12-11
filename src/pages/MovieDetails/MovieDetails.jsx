@@ -40,7 +40,7 @@ const MovieDetails = () => {
         const data = await requestMovieDetails(movieId);
         setMovieInfo(data);
       } catch (error) {
-        toast.error('Sorry, we didnt find anything');
+        toast.error('Sorry, nothing found');
       } finally {
         setLoading(false);
       }

@@ -67,9 +67,9 @@ const Movies = () => {
 
       <Outlet />
 
-      {movies.length > 0 && <ListFilms films={movies} />}
-
-      {movies.length === 0 && <NotFilms>No films, enter your request</NotFilms>}
+      {(movies.length > 0 && <ListFilms films={movies} />) || (
+        <NotFilms>No films, enter your request</NotFilms>
+      )}
     </div>
   );
 };

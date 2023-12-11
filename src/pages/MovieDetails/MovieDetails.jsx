@@ -79,11 +79,12 @@ const MovieDetails = () => {
     let hours = Math.floor(mins / 60);
     let minutes = mins % 60;
 
-    if (minutes === 0) {
-      return hours + 'h';
-    }
     if (hours === 0) {
       return minutes + 'm';
+    }
+
+    if (minutes === 0) {
+      return 'Unknown time';
     }
 
     return ` ${hours}h ${minutes}m`;
@@ -141,7 +142,7 @@ const MovieDetails = () => {
             </NameDetailsMovie>
             <TextOverview>
               {overview.length === 0 ? (
-                <TextOverview>No overview</TextOverview>
+                <TextOverview>Unknown overview</TextOverview>
               ) : (
                 <NameDetailsMovie>{overview}</NameDetailsMovie>
               )}
@@ -160,7 +161,9 @@ const MovieDetails = () => {
                     {Math.ceil(vote_average * 10)} % (average vote)
                   </TextOverview>
                 ) : (
-                  <TextOverview>{vote_average === 0} No votes</TextOverview>
+                  <TextOverview>
+                    {vote_average === 0} Unknown votes
+                  </TextOverview>
                 )}
               </TextOverview>
             </UserCont>
@@ -177,7 +180,7 @@ const MovieDetails = () => {
                       {genres.map(({ name }) => name).join(', ')}
                     </TextOverview>
                   ) : (
-                    <TextOverview>No genres</TextOverview>
+                    <TextOverview>Unknown genres</TextOverview>
                   )}
                 </TextOverview>
               </TextOverview>

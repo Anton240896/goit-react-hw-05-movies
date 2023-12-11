@@ -69,7 +69,7 @@ const Movies = () => {
 
       {movies.length > 0 && <ListFilms films={movies} />}
 
-      {movies.length === 0 && <NotFilms>No films</NotFilms>}
+      {movies.length === 0 && <NotFilms>No films, enter your request</NotFilms>}
     </div>
   );
 };

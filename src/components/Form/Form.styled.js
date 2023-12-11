@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const FormBox = styled.form`
   display: flex;
   margin-top: 238px;
-  margin-left: -177px;
+  margin-left: -219px;
 
   @media (min-width: 1200px) {
     margin-top: 119px;

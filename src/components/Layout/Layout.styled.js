@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  margin-left: 136px;
+  margin-left: 190px;
   margin-top: 44px;
 `;
 

@@ -67,7 +67,7 @@ const Movies = () => {
       <Outlet />
 
       {movies && !movies.length && (
-        <NotFilms>Result has not founded, try other qeury.</NotFilms>
+        <NotFilms>Result has not founded, try other query.</NotFilms>
       )}
     </div>
   );

@@ -9,3 +9,10 @@ export const NotFilms = styled.p`
     margin-left: -218px;
   }
 `;
+
+export const ButtonLink = styled.button`
+  position: fixed;
+  &:hover {
+    color: red;
+  }
+`;

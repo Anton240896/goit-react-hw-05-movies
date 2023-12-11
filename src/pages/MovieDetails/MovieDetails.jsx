@@ -142,7 +142,7 @@ const MovieDetails = () => {
             </NameDetailsMovie>
             <TextOverview>
               {overview.length === 0 ? (
-                <TextOverview>Unknown overview</TextOverview>
+                <TextOverview>No plot found</TextOverview>
               ) : (
                 <NameDetailsMovie>{overview}</NameDetailsMovie>
               )}
@@ -161,7 +161,7 @@ const MovieDetails = () => {
                     {Math.ceil(vote_average * 10)} % (average vote)
                   </TextOverview>
                 ) : (
-                  <TextOverview>Unknown votes</TextOverview>
+                  <TextOverview>Unknown rating</TextOverview>
                 )}
               </TextOverview>
             </UserCont>

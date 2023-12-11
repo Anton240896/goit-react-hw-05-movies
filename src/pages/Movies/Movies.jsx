@@ -64,9 +64,10 @@ const Movies = () => {
       {loading ?? <Loader />}
 
       <ListFilms films={movies} />
+
       <Outlet />
 
-      {movies && !movies.length && (
+      {movies.length > 0 || (
         <NotFilms>Result has not founded, try other query.</NotFilms>
       )}
     </div>

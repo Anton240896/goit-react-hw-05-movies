@@ -161,9 +161,7 @@ const MovieDetails = () => {
                     {Math.ceil(vote_average * 10)} % (average vote)
                   </TextOverview>
                 ) : (
-                  <TextOverview>
-                    {vote_average === 0} Unknown votes
-                  </TextOverview>
+                  <TextOverview>Unknown votes</TextOverview>
                 )}
               </TextOverview>
             </UserCont>

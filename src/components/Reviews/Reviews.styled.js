@@ -6,14 +6,14 @@ export const UnOrderedReviews = styled.ul`
   margin-top: 149px;
 
   @media (max-width: 1220px) {
-    margin-left: 0px;
+    margin-left: -85px;
   }
 `;
 
 export const ListReview = styled.li`
   list-style: none;
   color: red;
-  border: 1px grey solid;
+  border: thick double red;
   padding: 10px;
 `;
 

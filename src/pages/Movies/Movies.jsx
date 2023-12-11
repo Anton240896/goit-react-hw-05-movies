@@ -33,7 +33,7 @@ const Movies = () => {
         const data = await requestSearch(query);
         setMovies(data);
       } catch (error) {
-        toast.error('Sorry, we didnt find anything');
+        toast.error('Sorry, nothing found');
       }
     };
     effectAction();

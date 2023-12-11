@@ -5,7 +5,7 @@ export const FormBox = styled.form`
   margin-top: 238px;
   margin-left: -219px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1220px) {
     margin-top: 119px;
     margin-left: -327px;
   }

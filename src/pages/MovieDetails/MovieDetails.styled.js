@@ -54,8 +54,7 @@ export const TextOverview = styled.p`
 `;
 
 export const ButtonLink = styled.li`
-  position: absolute;
-  top: 40px;
+  position: fixed;
   left: 19px;
   font-weight: 500;
   font-size: 22px;
@@ -100,7 +99,7 @@ export const ReleaseText = styled.p`
 
 export const Title = styled.h1`
   color: red;
-  margin-top: -64px;
+  margin-top: -81px;
   margin-left: -384px;
   font-size: 35px;
 

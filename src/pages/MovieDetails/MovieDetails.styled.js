@@ -83,6 +83,7 @@ export const NameFilms = styled.h2`
 
 export const NameDetailsMovie = styled.h3`
   color: red;
+  font-size: 15px;
 `;
 
 export const UserCont = styled.div`

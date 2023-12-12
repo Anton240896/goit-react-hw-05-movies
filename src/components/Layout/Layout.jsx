@@ -2,9 +2,7 @@ import { Suspense, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { SiThemoviedatabase } from 'react-icons/si';
-import { FaFacebookSquare } from 'react-icons/fa';
-import { FaWikipediaW } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaFacebookSquare, FaWikipediaW, FaLinkedin } from 'react-icons/fa';
 
 import {
   Container,

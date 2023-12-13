@@ -49,7 +49,7 @@ export const ActorsFilms = styled.li`
 `;
 
 export const TextOverview = styled.p`
-  max-width: 287px;
+  max-width: 227px;
   color: red;
 `;
 

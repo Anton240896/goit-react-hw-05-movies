@@ -24,7 +24,7 @@ const Home = () => {
         }
         setFilms(trendingFilms);
       } catch (error) {
-        toast.error('🥺 Sorry, we didnt find anything');
+        toast.error(' Sorry, we didnt find anything');
       } finally {
         setLoading(false);
       }

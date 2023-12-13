@@ -84,7 +84,7 @@ const MovieDetails = () => {
     }
 
     if (minutes === 0) {
-      return 'Unknown time';
+      return hours + 'h';
     }
 
     return ` ${hours}h ${minutes}m`;

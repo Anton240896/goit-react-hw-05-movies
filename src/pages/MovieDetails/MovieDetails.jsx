@@ -170,7 +170,6 @@ const MovieDetails = () => {
               <NameDetailsMovie>
                 <b>Genres ·</b>
               </NameDetailsMovie>
-
               <TextOverview>
                 <TextOverview>
                   {genres.length > 0 ? (

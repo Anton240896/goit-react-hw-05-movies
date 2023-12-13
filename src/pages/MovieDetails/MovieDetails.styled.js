@@ -100,7 +100,7 @@ export const ReleaseText = styled.p`
 export const Title = styled.h1`
   color: red;
   margin-top: -81px;
-  margin-left: -379px;
+  margin-left: -381px;
   font-size: 35px;
   max-width: 600px;
 

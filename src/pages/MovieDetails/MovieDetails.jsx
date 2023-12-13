@@ -158,7 +158,7 @@ const MovieDetails = () => {
               <TextOverview>
                 {vote_average > 0 ? (
                   <TextOverview>
-                    {Math.ceil(vote_average * 10)} % (average vote)
+                    {Math.round(vote_average * 10)} % (average vote)
                   </TextOverview>
                 ) : (
                   <TextOverview>Unknown rating</TextOverview>

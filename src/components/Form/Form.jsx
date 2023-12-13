@@ -18,7 +18,7 @@ const Form = ({ submitAction, startInputText }) => {
         name="query"
         type="text"
         autoComplete="off"
-        placeholder="Search films"
+        placeholder="Search films..."
       />
     </FormBox>
   );

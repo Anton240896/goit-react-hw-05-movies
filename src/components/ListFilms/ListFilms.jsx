@@ -11,10 +11,12 @@ const ListFilms = ({ films }) => {
   return (
     <section>
       <List>
-        {films.map(({ id, title, poster_path }) => (
+        {films.map(({ id, title, poster_path, release_date }) => (
           <Item key={id}>
             <MovieLink to={`/movies/${id}`} state={{ from: location }}>
-              <NameFilms> {title}</NameFilms>
+              <NameFilms>
+                {title}, {release_date.slice(0, 4)}
+              </NameFilms>
               <img
                 src={poster_path ? `${posterPath}${poster_path}` : defaultImg}
                 alt={title}

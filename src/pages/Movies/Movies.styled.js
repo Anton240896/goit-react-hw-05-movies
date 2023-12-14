@@ -16,3 +16,9 @@ export const ButtonLink = styled.button`
     color: red;
   }
 `;
+
+export const ButtonLoadMore = styled.button`
+  width: 70px;
+  height: 50px;
+  color: red;
+`;

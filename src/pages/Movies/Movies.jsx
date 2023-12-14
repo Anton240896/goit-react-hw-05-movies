@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Outlet, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { TbArrowBigLeftLine } from 'react-icons/tb';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -57,8 +57,6 @@ const Movies = () => {
       {loading ?? <Loader />}
 
       <ListFilms films={movies} />
-
-      <Outlet />
 
       {(movies.length > 0 && <ListFilms films={movies} />) || (
         <NotFilms>No films, enter your request</NotFilms>

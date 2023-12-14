@@ -16,6 +16,7 @@ export const NameFilms = styled.p`
   font-weight: 500;
   margin-left: 6px;
   margin-top: 5px;
+  font-family: 'Courgette';
 
   @media (min-width: 122px) {
     width: 138px;

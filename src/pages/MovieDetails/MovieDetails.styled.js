@@ -38,10 +38,11 @@ export const LinkInfo = styled(Link)`
   font-weight: 400;
   font-size: 18px;
   color: red;
+  font-family: 'Marck Script';
 
   &:hover {
-    color: yellowgreen;
-    transition: color 350ms;
+    transform: scale(1, 2);
+    transition: transform 350ms;
   }
 `;
 export const ActorsFilms = styled.li`
@@ -121,4 +122,5 @@ export const UnknownData = styled.p`
   color: red;
   margin-top: -45px;
   margin-left: 373px;
+  font-family: 'Courgette';
 `;

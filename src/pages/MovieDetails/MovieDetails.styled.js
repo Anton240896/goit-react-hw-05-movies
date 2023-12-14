@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: 32px;
   gap: 11px;
   align-items: flex-start;
-  margin-top: 107px;
+  margin-top: 100px;
 
   @media (max-width: 1220px) {
     margin-top: 201px;
@@ -104,7 +104,7 @@ export const ReleaseText = styled.p`
 export const Title = styled.h1`
   color: red;
   margin-top: -81px;
-  margin-left: -381px;
+  margin-left: -414px;
   font-size: 35px;
   max-width: 600px;
   font-family: 'Courgette';

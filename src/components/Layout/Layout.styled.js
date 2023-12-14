@@ -26,6 +26,7 @@ export const Link = styled(NavLink)`
   letter-spacing: 0.15rem;
   transition: all 0.3s;
   overflow: hidden;
+  font-family: 'Courgette';
 
   &:hover {
     color: yellowgreen;

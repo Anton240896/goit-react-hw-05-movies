@@ -51,6 +51,8 @@ export const ActorsFilms = styled.li`
 export const TextOverview = styled.p`
   max-width: 227px;
   color: red;
+  font-family: 'Marck Script';
+  font-size: 18px;
 `;
 
 export const ButtonLink = styled.li`
@@ -83,6 +85,8 @@ export const NameFilms = styled.h2`
 export const NameDetailsMovie = styled.h3`
   color: red;
   font-size: 15px;
+  font-family: 'Marck Script';
+  font-size: 20px;
 `;
 
 export const UserCont = styled.div`
@@ -103,6 +107,7 @@ export const Title = styled.h1`
   margin-left: -381px;
   font-size: 35px;
   max-width: 600px;
+  font-family: 'Courgette';
 
   @media (max-width: 1220px) {
     margin-top: 52px;

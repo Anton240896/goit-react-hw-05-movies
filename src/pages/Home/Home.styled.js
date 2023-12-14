@@ -14,6 +14,7 @@ export const Trending = styled.h1`
   margin-left: 36px;
   margin-top: -25px;
   color: red;
+  font-family: 'Dancing Script';
 `;
 
 export const Description = styled.p`

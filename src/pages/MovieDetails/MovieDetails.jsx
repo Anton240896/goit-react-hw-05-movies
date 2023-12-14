@@ -109,7 +109,7 @@ const MovieDetails = () => {
         <Container>
           <div>
             <img
-              width="369px"
+              width="400px"
               src={
                 poster_path
                   ? `${posterPath}${poster_path}`

@@ -124,3 +124,8 @@ export const UnknownData = styled.p`
   margin-left: 373px;
   font-family: 'Courgette';
 `;
+
+export const Img = styled.img`
+  border: thick double red;
+  border-color: yellowgreen;
+`;

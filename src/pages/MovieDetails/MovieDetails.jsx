@@ -21,6 +21,7 @@ import {
   ReleaseText,
   Title,
   UnknownData,
+  Img,
 } from './MovieDetails.styled';
 
 /*   ====== HOOKS ======*/
@@ -108,7 +109,7 @@ const MovieDetails = () => {
       {
         <Container>
           <div>
-            <img
+            <Img
               width="400px"
               src={
                 poster_path

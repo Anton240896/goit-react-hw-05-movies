@@ -18,6 +18,7 @@ const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
+  // const [btnLoadMore, setBtnLoadMore] = useState(false);
   const query = searchParams.get('query');
   const location = useLocation();
 

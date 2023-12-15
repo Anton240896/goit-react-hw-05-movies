@@ -6,23 +6,25 @@ export const UnOrderedReviews = styled.ul`
   margin-top: 185px;
 
   @media (max-width: 1220px) {
-    margin-left: -85px;
+    margin-left: -64px;
   }
 `;
 
 export const ListReview = styled.li`
   list-style: none;
   color: red;
-  border: thick double yellowgreen;
   padding: 10px;
   margin-top: 14px;
+  font-family: 'Marck Script';
 `;
 
 export const MessageNoComments = styled.div`
   color: red;
   margin-top: 17px;
+  font-family: 'Marck Script';
 `;
 
 export const TextAutor = styled.p`
   max-width: 994px;
+  font-family: 'Marck Script';
 `;

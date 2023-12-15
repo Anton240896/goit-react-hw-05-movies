@@ -22,6 +22,7 @@ import {
   Title,
   UnknownData,
   Img,
+  NameDescription,
 } from './MovieDetails.styled';
 
 /*   ====== HOOKS ======*/
@@ -145,7 +146,9 @@ const MovieDetails = () => {
               {overview.length === 0 ? (
                 <TextOverview>No plot found</TextOverview>
               ) : (
-                <NameDetailsMovie>{overview}</NameDetailsMovie>
+                <b>
+                  <NameDescription>{overview}</NameDescription>
+                </b>
               )}
             </TextOverview>
 

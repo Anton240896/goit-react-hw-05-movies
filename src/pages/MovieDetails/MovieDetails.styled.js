@@ -129,3 +129,8 @@ export const Img = styled.img`
   border: thick double red;
   border-color: yellowgreen;
 `;
+
+export const NameDescription = styled.p`
+  color: red;
+  font-size: 17px;
+`;

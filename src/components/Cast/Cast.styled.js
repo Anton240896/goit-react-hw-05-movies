@@ -19,6 +19,8 @@ export const Name = styled.p`
   color: red;
   font-family: 'Marck Script';
   font-size: 25px;
+  padding-right: 13px;
+  padding-left: 13px;
 `;
 
 export const ListImage = styled.li`

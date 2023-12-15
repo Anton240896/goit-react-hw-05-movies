@@ -124,7 +124,7 @@ const MovieDetails = () => {
             <UserCont>
               <Title>
                 <b>
-                  {title} ({release_date.slice(0, 4) || 'NaN'})
+                  {title} ({release_date.slice(0, 4) || 'Invalid Date'})
                 </b>
               </Title>
               <ReleaseText></ReleaseText>

@@ -11,16 +11,24 @@ export const ContFilms = styled.div`
 `;
 
 export const Trending = styled.h1`
-  margin-left: 36px;
+  margin-left: 326px;
   margin-top: -25px;
   color: red;
   font-family: 'Marck Script';
+
+  @media (max-width: 1220px) {
+    margin-left: 58px;
+  }
 `;
 
 export const Description = styled.p`
   margin-top: -14px;
-  margin-left: 32px;
+  margin-left: 40px;
   color: red;
   font-size: 50px;
   font-family: 'Marck Script';
+
+  @media (max-width: 1220px) {
+    margin-left: 53px;
+  }
 `;

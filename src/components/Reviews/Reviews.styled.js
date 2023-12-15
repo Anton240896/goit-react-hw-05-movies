@@ -20,8 +20,9 @@ export const ListReview = styled.li`
 
 export const MessageNoComments = styled.div`
   color: red;
-  margin-top: 17px;
+  margin-top: 24px;
   font-family: 'Marck Script';
+  font-size: 20px;
 `;
 
 export const TextAutor = styled.p`

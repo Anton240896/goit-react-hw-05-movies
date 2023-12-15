@@ -83,7 +83,7 @@ const Cast = () => {
 
       <div>
         {actors.length === 0 && (
-          <MessageNoActors> ¯\_(ツ)_/¯ Sorry. No actors found</MessageNoActors>
+          <MessageNoActors> ¯\_(ツ)_/¯ No actors found</MessageNoActors>
         )}
       </div>
     </ul>

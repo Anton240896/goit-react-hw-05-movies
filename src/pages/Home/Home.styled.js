@@ -27,6 +27,7 @@ export const Description = styled.p`
   color: red;
   font-size: 50px;
   font-family: 'Marck Script';
+  transform: scale(0.75);
 
   @media (max-width: 1220px) {
     margin-left: 53px;

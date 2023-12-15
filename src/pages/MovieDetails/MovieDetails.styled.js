@@ -118,13 +118,6 @@ export const Title = styled.h1`
   }
 `;
 
-export const UnknownData = styled.p`
-  color: red;
-  margin-top: -45px;
-  margin-left: 373px;
-  font-family: 'Courgette';
-`;
-
 export const Img = styled.img`
   border: thick double red;
   border-color: yellowgreen;

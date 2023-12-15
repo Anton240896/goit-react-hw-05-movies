@@ -20,7 +20,6 @@ import {
   UserCont,
   ReleaseText,
   Title,
-  UnknownData,
   Img,
   NameDescription,
 } from './MovieDetails.styled';
@@ -125,8 +124,7 @@ const MovieDetails = () => {
             <UserCont>
               <Title>
                 <b>
-                  {title} (
-                  {release_date.slice(0, 4) || -(<UnknownData></UnknownData>)})
+                  {title} ({release_date.slice(0, 4) || 'NaN'})
                 </b>
               </Title>
               <ReleaseText></ReleaseText>

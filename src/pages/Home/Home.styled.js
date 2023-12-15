@@ -14,7 +14,7 @@ export const Trending = styled.h1`
   margin-left: 36px;
   margin-top: -25px;
   color: red;
-  font-family: 'Dancing Script';
+  font-family: 'Marck Script';
 `;
 
 export const Description = styled.p`
@@ -22,5 +22,5 @@ export const Description = styled.p`
   margin-left: 32px;
   color: red;
   font-size: 50px;
-  font-family: 'Dancing Script';
+  font-family: 'Marck Script';
 `;

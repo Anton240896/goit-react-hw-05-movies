@@ -11,7 +11,7 @@ export const List = styled.ul`
 export const NameFilms = styled.p`
   position: absolute;
   font-size: 15px;
-  background-color: #ff000096;
+  background-color: #00f46e6b;
   color: white;
   font-weight: 500;
   margin-left: 6px;
@@ -36,7 +36,7 @@ export const Item = styled.li`
   margin-bottom: 10px;
 
   &:hover {
-    transform: rotate(5deg);
+    transform: skew(5deg, 4deg);
     transition: transform 550ms;
 
     & ${NameFilms} {

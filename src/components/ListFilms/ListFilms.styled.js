@@ -36,8 +36,8 @@ export const Item = styled.li`
   margin-bottom: 10px;
 
   &:hover {
-    transform: skew(5deg, 4deg);
-    transition: transform 550ms;
+    transform: scale(0.9);
+    transition: transform 850ms;
 
     & ${NameFilms} {
       display: none;

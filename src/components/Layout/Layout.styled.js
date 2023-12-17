@@ -122,6 +122,8 @@ export const LinkFace = styled.a`
   &:hover {
     color: #00008b;
     transition: color 0.5s ease-in-out;
+    transform: scale(0.9);
+    transition: transform 850ms;
   }
 `;
 
@@ -130,8 +132,10 @@ export const LinkWiki = styled.a`
   margin-left: 10px;
 
   &:hover {
-    color: #0000ff;
+    color: green;
     transition: color 0.5s ease-in-out;
+    transform: scale(1.9);
+    transition: transform 850ms;
   }
 `;
 
@@ -142,6 +146,8 @@ export const LinkLnkdn = styled.a`
   &:hover {
     color: #0000ff;
     transition: color 0.5s ease-in-out;
+    transform: rotate(30deg);
+    transition: transform 850ms;
   }
 `;
 
@@ -171,6 +177,8 @@ export const ButtonRegistration = styled.button`
     color: #1e90ff;
     transition: color 0.5s ease-in-out;
     border: none;
+    transform: scale(0.9);
+    transition: transform 850ms;
   }
 `;
 

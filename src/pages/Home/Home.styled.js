@@ -67,7 +67,7 @@ export const Description = styled.div`
     }
   }
 
-  & > div {
+  & > span {
     font-size: 0px;
     opacity: 0;
     margin-left: -30px;
@@ -76,21 +76,24 @@ export const Description = styled.div`
     box-shadow: 0px 60px 25px -20px rgba(0, 0, 0, 0.5);
   }
 
-  & > div:nth-child(1) {
+  & > span:nth-child(1) {
     animation: roll 4s linear infinite 0s;
   }
 
-  & > div:nth-child(2) {
+  & > span:nth-child(2) {
     animation: roll 4s linear infinite 1s;
+    margin-left: 10px;
   }
 
-  & > div:nth-child(3) {
+  & > span:nth-child(3) {
     animation: roll 4s linear infinite 2s;
+    margin-left: 10px;
   }
-
-  & > div:nth-child(4) {
+  /* 
+  & > span:nth-child(4) {
     animation: roll2 4s linear infinite 3s;
-  }
+    margin-left: 10px;
+  } */
 
   @keyframes roll {
     0% {
@@ -171,4 +174,8 @@ export const Description = styled.div`
       transform: rotate(15deg);
     }
   }
+`;
+
+export const Span = styled.span`
+  padding-left: 10px;
 `;

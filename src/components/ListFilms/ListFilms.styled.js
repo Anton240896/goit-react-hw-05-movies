@@ -11,7 +11,7 @@ export const List = styled.ul`
 export const NameFilms = styled.p`
   position: absolute;
   font-size: 15px;
-  background-color: #00f46e6b;
+  background-color: #71d41775;
   color: white;
   font-weight: 500;
   margin-left: 6px;

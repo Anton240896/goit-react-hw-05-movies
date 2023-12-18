@@ -77,19 +77,19 @@ export const Description = styled.div`
   }
 
   & > div:nth-child(1) {
-    animation: roll 5s linear infinite 0s;
+    animation: roll 4s linear infinite 0s;
   }
 
   & > div:nth-child(2) {
-    animation: roll 5s linear infinite 1s;
+    animation: roll 4s linear infinite 1s;
   }
 
   & > div:nth-child(3) {
-    animation: roll 5s linear infinite 2s;
+    animation: roll 4s linear infinite 2s;
   }
 
   & > div:nth-child(4) {
-    animation: roll2 5s linear infinite 3s;
+    animation: roll2 4s linear infinite 3s;
   }
 
   @keyframes roll {

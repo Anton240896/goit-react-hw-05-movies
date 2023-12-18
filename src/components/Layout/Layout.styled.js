@@ -149,7 +149,7 @@ export const ButtonRegistration = styled.button`
   position: absolute;
   top: -74px;
   left: -18px;
-  background-color: #1e90ff;
+  background-color: yellowgreen;
   transition: background-color 0.5s ease-in-out;
   width: 172px;
   height: 37px;

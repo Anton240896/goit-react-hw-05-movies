@@ -36,7 +36,12 @@ const Home = () => {
   /*   ====== RENDER ======*/
   return (
     <ContFilms>
-      <Description>Welcome to Movie DB descriptions</Description>
+      <Description>
+        Welcome to Movie DB description ·<div>Plot</div>
+        <div>Actors</div>
+        <div>Reviews</div>
+        <div>Movie search</div>
+      </Description>
       <Trending>Trending today</Trending>
       <ListFilms films={films} />
 

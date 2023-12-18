@@ -30,6 +30,6 @@ export const Description = styled.p`
   transform: scale(0.75);
 
   @media (max-width: 1220px) {
-    margin-left: 53px;
+    margin-left: -80px;
   }
 `;

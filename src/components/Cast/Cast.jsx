@@ -5,7 +5,13 @@ import toast from 'react-hot-toast';
 import { requestActors } from 'components/Api/Api';
 
 import Loader from 'components/Loader/Loader';
-import { ListFilms, Name, ListImage, MessageNoActors } from './Cast.styled';
+import {
+  ListFilms,
+  Name,
+  ListImage,
+  MessageNoActors,
+  NameActor,
+} from './Cast.styled';
 
 /*   ====== DEFAULT IMAGES ======*/
 const defaultNoImages =
@@ -71,11 +77,9 @@ const Cast = () => {
               }
               alt={name}
             />
+            <NameActor>{name}</NameActor>
             <Name>
-              <b> Actor:</b> {name}
-            </Name>
-            <Name>
-              <b>Role:</b> {character}
+              <b>Character:</b> {character}
             </Name>
           </ListImage>
         ))}

@@ -35,3 +35,11 @@ export const MessageNoActors = styled.p`
   font-family: 'Marck Script';
   font-size: 20px;
 `;
+
+export const NameActor = styled.p`
+  font-size: 40px;
+  color: red;
+  font-family: 'Marck Script';
+  padding-right: 13px;
+  padding-left: 13px;
+`;

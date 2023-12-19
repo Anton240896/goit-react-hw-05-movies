@@ -40,7 +40,7 @@ export const Trending = styled.h1`
 
 export const Description = styled.div`
   margin-top: -14px;
-  margin-left: -47px;
+  margin-left: -81px;
   color: red;
   font-size: 50px;
   font-family: 'Marck Script';

@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/goit-react-hw-05-movies/static/js/main.47d95543.js",
+    "main.js": "/goit-react-hw-05-movies/static/js/main.c920ea72.js",
     "static/js/304.7462185c.chunk.js": "/goit-react-hw-05-movies/static/js/304.7462185c.chunk.js",
     "static/js/436.4186a58a.chunk.js": "/goit-react-hw-05-movies/static/js/436.4186a58a.chunk.js",
     "static/js/961.ef6ffe70.chunk.js": "/goit-react-hw-05-movies/static/js/961.ef6ffe70.chunk.js",
-    "static/js/387.b74cf6c6.chunk.js": "/goit-react-hw-05-movies/static/js/387.b74cf6c6.chunk.js",
+    "static/js/387.b67e2076.chunk.js": "/goit-react-hw-05-movies/static/js/387.b67e2076.chunk.js",
     "static/js/779.63547778.chunk.js": "/goit-react-hw-05-movies/static/js/779.63547778.chunk.js",
     "static/js/279.82f6d450.chunk.js": "/goit-react-hw-05-movies/static/js/279.82f6d450.chunk.js",
     "static/js/578.7b247d58.chunk.js": "/goit-react-hw-05-movies/static/js/578.7b247d58.chunk.js",
     "index.html": "/goit-react-hw-05-movies/index.html",
-    "main.47d95543.js.map": "/goit-react-hw-05-movies/static/js/main.47d95543.js.map",
+    "main.c920ea72.js.map": "/goit-react-hw-05-movies/static/js/main.c920ea72.js.map",
     "304.7462185c.chunk.js.map": "/goit-react-hw-05-movies/static/js/304.7462185c.chunk.js.map",
     "436.4186a58a.chunk.js.map": "/goit-react-hw-05-movies/static/js/436.4186a58a.chunk.js.map",
     "961.ef6ffe70.chunk.js.map": "/goit-react-hw-05-movies/static/js/961.ef6ffe70.chunk.js.map",
-    "387.b74cf6c6.chunk.js.map": "/goit-react-hw-05-movies/static/js/387.b74cf6c6.chunk.js.map",
+    "387.b67e2076.chunk.js.map": "/goit-react-hw-05-movies/static/js/387.b67e2076.chunk.js.map",
     "779.63547778.chunk.js.map": "/goit-react-hw-05-movies/static/js/779.63547778.chunk.js.map",
     "279.82f6d450.chunk.js.map": "/goit-react-hw-05-movies/static/js/279.82f6d450.chunk.js.map",
     "578.7b247d58.chunk.js.map": "/goit-react-hw-05-movies/static/js/578.7b247d58.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.47d95543.js"
+    "static/js/main.c920ea72.js"
   ]
 }

@@ -89,11 +89,11 @@ export const Description = styled.div`
     animation: roll 4s linear infinite 2s;
     margin-left: 10px;
   }
-  /* 
+
   & > span:nth-child(4) {
     animation: roll2 4s linear infinite 3s;
     margin-left: 10px;
-  } */
+  }
 
   @keyframes roll {
     0% {

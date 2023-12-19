@@ -6,6 +6,8 @@ export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 `;
 
 export const NameFilms = styled.p`

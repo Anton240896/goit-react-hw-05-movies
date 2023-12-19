@@ -27,6 +27,8 @@ export const Link = styled(NavLink)`
   transition: all 0.3s;
   overflow: hidden;
   font-family: 'Courgette';
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 
   &:hover {
     color: yellowgreen;

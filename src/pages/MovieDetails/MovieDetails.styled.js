@@ -81,6 +81,8 @@ export const ContMovieDetails = styled.div`
 
 export const NameFilms = styled.h2`
   color: red;
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 `;
 
 export const NameDetailsMovie = styled.h3`
@@ -88,6 +90,8 @@ export const NameDetailsMovie = styled.h3`
   font-size: 15px;
   font-family: 'Marck Script';
   font-size: 20px;
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 `;
 
 export const UserCont = styled.div`
@@ -100,6 +104,8 @@ export const UserCont = styled.div`
 export const ReleaseText = styled.p`
   font-size: 25px;
   color: red;
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 `;
 
 export const Title = styled.h1`
@@ -109,12 +115,16 @@ export const Title = styled.h1`
   font-size: 35px;
   max-width: 600px;
   font-family: 'Courgette';
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 
   @media (max-width: 1220px) {
     margin-top: 52px;
     margin-left: 0;
     display: flex;
     flex-direction: column;
+    animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1)
+      700ms both;
   }
 `;
 

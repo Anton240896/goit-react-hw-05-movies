@@ -136,4 +136,6 @@ export const Img = styled.img`
 export const NameDescription = styled.p`
   color: red;
   font-size: 17px;
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 `;

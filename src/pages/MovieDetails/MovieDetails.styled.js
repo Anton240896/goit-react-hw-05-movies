@@ -81,8 +81,8 @@ export const ContMovieDetails = styled.div`
 
 export const NameFilms = styled.h2`
   color: red;
-  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
-    both;
+  /* animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both; */
 `;
 
 export const NameDetailsMovie = styled.h3`

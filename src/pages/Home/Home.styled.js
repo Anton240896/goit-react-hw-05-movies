@@ -15,13 +15,33 @@ export const Trending = styled.h1`
   margin-top: 25px;
   color: red;
   font-family: 'Marck Script';
-  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
-    both;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typeWriter 10s steps(24) forwards;
+
+  /* animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both; */
 
   @media (max-width: 1220px) {
     margin-left: 58px;
   }
 
+  @keyframes typeWriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* 
   @keyframes tracking-in-expand {
     8% {
       letter-spacing: -3.5em;
@@ -35,7 +55,7 @@ export const Trending = styled.h1`
     100% {
       opacity: 1;
     }
-  }
+  }*/
 `;
 
 export const Description = styled.div`
@@ -89,11 +109,11 @@ export const Description = styled.div`
     animation: roll 4s linear infinite 2s;
     margin-left: 10px;
   }
-
+  /* 
   & > span:nth-child(4) {
-    animation: roll2 4s linear infinite 3s;
+    animation: roll2 5s linear infinite 1s;
     margin-left: 10px;
-  }
+  } */
 
   @keyframes roll {
     0% {

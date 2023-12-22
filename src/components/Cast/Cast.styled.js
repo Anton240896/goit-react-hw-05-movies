@@ -21,6 +21,8 @@ export const Name = styled.p`
   font-size: 25px;
   padding-right: 13px;
   padding-left: 13px;
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 `;
 
 export const ListImage = styled.li`
@@ -34,6 +36,8 @@ export const MessageNoActors = styled.p`
   margin-left: -44px;
   font-family: 'Marck Script';
   font-size: 20px;
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 `;
 
 export const NameActor = styled.p`
@@ -42,4 +46,6 @@ export const NameActor = styled.p`
   font-family: 'Marck Script';
   padding-right: 13px;
   padding-left: 13px;
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 `;

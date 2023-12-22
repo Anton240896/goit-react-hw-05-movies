@@ -16,6 +16,8 @@ export const ListReview = styled.li`
   padding: 10px;
   margin-top: 14px;
   font-family: 'Marck Script';
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 `;
 
 export const MessageNoComments = styled.div`
@@ -23,9 +25,13 @@ export const MessageNoComments = styled.div`
   margin-top: 24px;
   font-family: 'Marck Script';
   font-size: 20px;
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 `;
 
 export const TextAutor = styled.p`
   max-width: 994px;
   font-family: 'Marck Script';
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
 `;

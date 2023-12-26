@@ -161,7 +161,7 @@ const MovieDetails = () => {
                     {Math.round(vote_average * 10)} % (average vote)
                   </TextOverview>
                 ) : (
-                  <TextOverview>Unknown rating</TextOverview>
+                  'Unknown rating'
                 )}
               </TextOverview>
             </UserCont>
@@ -170,6 +170,7 @@ const MovieDetails = () => {
               <NameDetailsMovie>
                 <b>Genres ·</b>
               </NameDetailsMovie>
+
               <TextOverview>
                 <TextOverview>
                   {genres.length > 0 ? (
@@ -177,7 +178,7 @@ const MovieDetails = () => {
                       {genres.map(genre => genre.name).join(', ')}
                     </TextOverview>
                   ) : (
-                    <TextOverview>Unknown genres</TextOverview>
+                    'Unknown genres'
                   )}
                 </TextOverview>
               </TextOverview>

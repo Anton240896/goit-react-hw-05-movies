@@ -49,3 +49,8 @@ export const NameActor = styled.p`
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;
 `;
+
+export const ImgActor = styled.img`
+  width: 300px;
+  height: 400px;
+`;

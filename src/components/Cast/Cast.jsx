@@ -11,6 +11,7 @@ import {
   ListImage,
   MessageNoActors,
   NameActor,
+  ImgActor,
 } from './Cast.styled';
 
 /*   ====== DEFAULT IMAGES ======*/
@@ -67,9 +68,7 @@ const Cast = () => {
       <ListFilms>
         {actors.map(({ id, name, profile_path, character }) => (
           <ListImage key={id}>
-            <img
-              width="300px"
-              height="400px"
+            <ImgActor
               src={
                 profile_path
                   ? `https://image.tmdb.org/t/p/w500${profile_path}`

@@ -131,6 +131,7 @@ export const Title = styled.h1`
 export const Img = styled.img`
   border: thick double red;
   border-color: yellowgreen;
+  width: 400px;
 `;
 
 export const NameDescription = styled.p`

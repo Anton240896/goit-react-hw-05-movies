@@ -69,12 +69,6 @@ const MovieDetails = () => {
   //   getMovieDetailsFilms();
   // }, [movieId]);
 
-  /*   ====== DESTRUCTURIZATION  ======*/
-  const defaultNoImages =
-    'https://st4.depositphotos.com/14953852/22772/v/450/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg';
-
-  const posterPath = 'https://image.tmdb.org/t/p/w500';
-
   /*   ====== CONVERT MINUTES TO HOURS  ======*/
   function getTimeFromMins(mins) {
     let hours = Math.floor(mins / 60);
@@ -88,7 +82,7 @@ const MovieDetails = () => {
       return hours + 'h';
     }
 
-    return ` ${hours}h ${minutes}m`;
+    return ` ${hours}h ${minutes}m `;
   }
 
   /*   ====== DESTRUCTURIZATION  ======*/
@@ -103,6 +97,11 @@ const MovieDetails = () => {
     runtime,
   } = movieInfo;
 
+  const defaultNoImages =
+    'https://st4.depositphotos.com/14953852/22772/v/450/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg';
+
+  const posterActors = 'https://image.tmdb.org/t/p/w500';
+
   /*   ====== RENDER ======*/
   return (
     <main>
@@ -110,10 +109,9 @@ const MovieDetails = () => {
         <Container>
           <div>
             <Img
-              width="400px"
               src={
                 poster_path
-                  ? `${posterPath}${poster_path}`
+                  ? `${posterActors}${poster_path}`
                   : `${defaultNoImages} }`
               }
               alt={original_title}

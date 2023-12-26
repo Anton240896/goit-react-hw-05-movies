@@ -17,6 +17,10 @@ import {
 /*   ====== DEFAULT IMAGES ======*/
 const defaultNoImages =
   'https://st4.depositphotos.com/14953852/22772/v/450/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg';
+
+/*   ====== IMAGE ACTORS ======*/
+const imageActors = 'https://image.tmdb.org/t/p/w500';
+
 /*   ====== HOOKS ======*/
 const Cast = () => {
   const { movieId } = useParams();
@@ -71,7 +75,7 @@ const Cast = () => {
             <ImgActor
               src={
                 profile_path
-                  ? `https://image.tmdb.org/t/p/w500${profile_path}`
+                  ? `${imageActors}${profile_path}`
                   : `${defaultNoImages}`
               }
               alt={name}

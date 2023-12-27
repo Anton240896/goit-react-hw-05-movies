@@ -41,7 +41,7 @@ const Home = () => {
         <Span>Actors</Span>
         <Span>Reviews</Span>
       </Description>
-      <Trending>Trending today</Trending>
+      <Trending>Trending today •</Trending>
       <ListFilms films={films} />
 
       {loading && <Loader />}

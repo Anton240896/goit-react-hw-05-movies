@@ -1,6 +1,7 @@
 import { FormBox, Input } from './Form.styled';
 import toast from 'react-hot-toast';
 
+/*   ====== HOOKS ======*/
 const Form = ({ submitAction, startInputText }) => {
   const onFormSubmit = evt => {
     evt.preventDefault();
@@ -11,6 +12,7 @@ const Form = ({ submitAction, startInputText }) => {
     submitAction(inputValue);
   };
 
+  /*   ====== RENDER ======*/
   return (
     <FormBox onSubmit={onFormSubmit}>
       <Input

@@ -138,9 +138,10 @@ const MovieDetails = () => {
             <NameDetailsMovie>
               <b>Overview ·</b>
             </NameDetailsMovie>
+
             <TextOverview>
               {overview.length === 0 ? (
-                <TextOverview>No plot found</TextOverview>
+                'No plot found'
               ) : (
                 <b>
                   <NameDescription>{overview}</NameDescription>
@@ -150,18 +151,28 @@ const MovieDetails = () => {
 
             <UserCont>
               <NameDetailsMovie>Run time ·</NameDetailsMovie>
-              <TextOverview>{getTimeFromMins(runtime)} (duration)</TextOverview>
+
+              <TextOverview>
+                {runtime > 0 ? (
+                  <TextOverview>
+                    {getTimeFromMins(runtime)} (duration)
+                  </TextOverview>
+                ) : (
+                  'No time found'
+                )}
+              </TextOverview>
             </UserCont>
 
             <UserCont>
               <NameDetailsMovie>User score ·</NameDetailsMovie>
+
               <TextOverview>
                 {vote_average > 0 ? (
                   <TextOverview>
                     {Math.round(vote_average * 10)} % (average vote)
                   </TextOverview>
                 ) : (
-                  'Unknown rating'
+                  'No rating found'
                 )}
               </TextOverview>
             </UserCont>
@@ -178,7 +189,7 @@ const MovieDetails = () => {
                       {genres.map(genre => genre.name).join(', ')}
                     </TextOverview>
                   ) : (
-                    'Unknown genres'
+                    'No genres found'
                   )}
                 </TextOverview>
               </TextOverview>

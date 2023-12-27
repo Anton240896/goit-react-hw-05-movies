@@ -122,7 +122,7 @@ const MovieDetails = () => {
             <UserCont>
               <Title>
                 <b>
-                  {title} ({release_date.slice(0, 4) || 'Invalid Date'})
+                  {title} ({release_date.slice(0, 4) || 'No date found'})
                 </b>
               </Title>
               <ReleaseText></ReleaseText>
@@ -132,7 +132,15 @@ const MovieDetails = () => {
               <NameDetailsMovie>Release Date ·</NameDetailsMovie>
 
               <TextOverview>
-                {dayjs(release_date).format('DD. MM. YYYY')}
+                <TextOverview>
+                  {release_date.length === 0 ? (
+                    'No date found'
+                  ) : (
+                    <TextOverview>
+                      {dayjs(release_date).format('DD. MM. YYYY')}
+                    </TextOverview>
+                  )}
+                </TextOverview>
               </TextOverview>
             </UserCont>
 
@@ -185,7 +193,7 @@ const MovieDetails = () => {
 
               <TextOverview>
                 <TextOverview>
-                  {genres > 0 ? (
+                  {genres.length > 0 ? (
                     <TextOverview>
                       {genres.map(genre => genre.name).join(', ')}
                     </TextOverview>

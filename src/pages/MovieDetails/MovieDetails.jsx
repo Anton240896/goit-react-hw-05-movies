@@ -129,7 +129,7 @@ const MovieDetails = () => {
             </UserCont>
 
             <UserCont>
-              <NameDetailsMovie>Release Date ·</NameDetailsMovie>
+              <NameDetailsMovie>Release Date •</NameDetailsMovie>
 
               <TextOverview>
                 <TextOverview>

@@ -82,7 +82,7 @@ const Cast = () => {
             />
             <NameActor>{name}</NameActor>
             <Name>
-              <b>Character ·</b> {character}
+              <b>Character •</b> {character}
             </Name>
           </ListImage>
         ))}

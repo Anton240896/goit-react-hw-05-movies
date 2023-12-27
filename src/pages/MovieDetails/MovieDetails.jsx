@@ -145,7 +145,7 @@ const MovieDetails = () => {
             </UserCont>
 
             <NameDetailsMovie>
-              <b>Overview ·</b>
+              <b>Overview •</b>
             </NameDetailsMovie>
 
             <TextOverview>
@@ -159,7 +159,7 @@ const MovieDetails = () => {
             </TextOverview>
 
             <UserCont>
-              <NameDetailsMovie>Run time ·</NameDetailsMovie>
+              <NameDetailsMovie>Run time •</NameDetailsMovie>
 
               <TextOverview>
                 {runtime > 0 ? (
@@ -173,7 +173,7 @@ const MovieDetails = () => {
             </UserCont>
 
             <UserCont>
-              <NameDetailsMovie>User score ·</NameDetailsMovie>
+              <NameDetailsMovie>User score •</NameDetailsMovie>
 
               <TextOverview>
                 {vote_average > 0 ? (
@@ -188,7 +188,7 @@ const MovieDetails = () => {
 
             <UserCont>
               <NameDetailsMovie>
-                <b>Genres ·</b>
+                <b>Genres •</b>
               </NameDetailsMovie>
 
               <TextOverview>
@@ -206,17 +206,17 @@ const MovieDetails = () => {
 
             <UserCont>
               <NameDetailsMovie>
-                <b>Additonal information ·</b>
+                <b>Additonal information •</b>
               </NameDetailsMovie>
             </UserCont>
 
             <List>
               <div>
                 <ListInfo>
-                  <LinkInfo to="cast">Actors ·</LinkInfo>
+                  <LinkInfo to="cast">Actors •</LinkInfo>
 
                   <ActorsFilms>
-                    <LinkInfo to="reviews">Reviews ·</LinkInfo>
+                    <LinkInfo to="reviews">Reviews •</LinkInfo>
                   </ActorsFilms>
                 </ListInfo>
                 <Outlet />

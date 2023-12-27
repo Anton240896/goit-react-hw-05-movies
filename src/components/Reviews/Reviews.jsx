@@ -63,7 +63,7 @@ const Reviews = () => {
 
               return (
                 <ListReview>
-                  <h2>{author} ·</h2>
+                  <h2>{author} •</h2>
                   <TextAutor>{content}</TextAutor>
                 </ListReview>
               );

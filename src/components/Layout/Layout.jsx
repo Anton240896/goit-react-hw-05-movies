@@ -68,7 +68,7 @@ export const Layout = () => {
           <FaFacebookSquare
             size={40}
             style={{
-              marginTop: ' 20px',
+              marginTop: '20px',
             }}
           />
         </LinkFace>
@@ -77,7 +77,7 @@ export const Layout = () => {
           <FaWikipediaW
             size={40}
             style={{
-              marginTop: ' 20px',
+              marginTop: '20px',
             }}
           />
         </LinkWiki>
@@ -86,7 +86,7 @@ export const Layout = () => {
           <FaLinkedin
             size={40}
             style={{
-              marginTop: ' 20px',
+              marginTop: '20px',
             }}
           />
         </LinkLnkdn>

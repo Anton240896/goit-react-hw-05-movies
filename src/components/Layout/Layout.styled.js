@@ -184,3 +184,32 @@ export const LinkRegistration = styled.a`
   margin-left: -314px;
   margin-top: 413px;
 `;
+
+export const ButtonAbout = styled.button`
+  background-color: yellowgreen;
+  transition: background-color 0.5s ease-in-out;
+  width: 172px;
+  height: 37px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 82px;
+
+  @media (max-width: 1220px) {
+    position: absolute;
+    top: -440px;
+    left: 282px;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+
+    color: #1e90ff;
+    transition: color 0.5s ease-in-out;
+    border: none;
+    transform: scale(0.9);
+    transition: transform 850ms;
+  }
+`;

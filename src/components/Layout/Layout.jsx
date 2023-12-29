@@ -16,6 +16,7 @@ import {
   LinkLnkdn,
   LinkRegistration,
   ButtonRegistration,
+  ButtonAbout,
 } from './Layout.styled';
 
 import { Loader } from 'components/Loader/Loader';
@@ -93,6 +94,10 @@ export const Layout = () => {
 
         <LinkRegistration href="https://www.themoviedb.org/signup">
           <ButtonRegistration>JOIN THE COMMUNITY</ButtonRegistration>
+        </LinkRegistration>
+
+        <LinkRegistration href="https://www.themoviedb.org/about">
+          <ButtonAbout>About TMDB</ButtonAbout>
         </LinkRegistration>
 
         <LabelSwitch>

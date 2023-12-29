@@ -137,7 +137,7 @@ const MovieDetails = () => {
                     'No date found'
                   ) : (
                     <TextOverview>
-                      {dayjs(release_date).format('DD. MM. YYYY')}
+                      {dayjs(release_date).format('DD/ MM/ YYYY')}
                     </TextOverview>
                   )}
                 </TextOverview>

@@ -41,11 +41,12 @@ export const MessageNoActors = styled.p`
 `;
 
 export const NameActor = styled.p`
-  font-size: 40px;
   color: red;
   font-family: 'Marck Script';
   padding-right: 13px;
   padding-left: 13px;
+  font-size: 45px;
+  font-weight: 800;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;
 `;

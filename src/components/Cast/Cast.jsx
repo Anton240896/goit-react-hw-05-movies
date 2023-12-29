@@ -81,9 +81,7 @@ const Cast = () => {
               alt={name}
             />
             <NameActor>{name}</NameActor>
-            <Name>
-              <b>Character •</b> {character}
-            </Name>
+            <Name>{character}</Name>
           </ListImage>
         ))}
       </ListFilms>

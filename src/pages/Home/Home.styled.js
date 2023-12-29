@@ -14,7 +14,9 @@ export const Trending = styled.h1`
   margin-left: 326px;
   margin-top: 25px;
   color: red;
-  font-family: 'Marck Script';
+  /* font-family: 'Marck Script'; */
+  font-family: 'Ephesis', cursive;
+
   white-space: nowrap;
   overflow: hidden;
   animation: typeWriter 10s steps(24) forwards;
@@ -60,10 +62,11 @@ export const Trending = styled.h1`
 
 export const Description = styled.div`
   margin-top: -14px;
-  margin-left: -81px;
   color: red;
   font-size: 50px;
-  font-family: 'Marck Script';
+  /* font-family: 'Marck Script'; */
+  font-family: 'Ephesis', cursive;
+  font-weight: 700;
   transform: scale(0.75);
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;

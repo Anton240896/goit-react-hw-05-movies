@@ -37,11 +37,11 @@ const Home = () => {
   return (
     <ContFilms>
       <Description>
-        Welcome to Movie DB description • <Span>Plot</Span>
+        Welcome to Movie DB description : <Span>Plot</Span>
         <Span>Actors</Span>
         <Span>Reviews</Span>
       </Description>
-      <Trending>Trending today •</Trending>
+      <Trending>Trending today :</Trending>
       <ListFilms films={films} />
 
       {loading && <Loader />}

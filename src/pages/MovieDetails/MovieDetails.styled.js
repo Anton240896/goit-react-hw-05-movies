@@ -98,7 +98,7 @@ export const UserCont = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: -22px;
+  margin-top: -24px;
 `;
 
 export const ReleaseText = styled.p`
@@ -110,7 +110,7 @@ export const ReleaseText = styled.p`
 
 export const Title = styled.h1`
   color: red;
-  margin-top: -81px;
+  margin-top: -71px;
   margin-left: -414px;
   font-size: 35px;
   max-width: 600px;

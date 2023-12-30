@@ -207,7 +207,7 @@ export const ButtonAbout = styled.button`
 
   @media (max-width: 1220px) {
     position: absolute;
-    top: -448px;
+    top: -437px;
     left: 400px;
     width: 136px;
     height: 31px;
@@ -231,7 +231,7 @@ export const ButtonAbout = styled.button`
 
 export const BtnListActors = styled.button`
   position: absolute;
-  left: 377px;
+  margin-left: 378px;
   top: 217px;
   color: #ffffff;
   background-color: red;
@@ -251,8 +251,8 @@ export const BtnListActors = styled.button`
   }
 
   @media (max-width: 1220px) {
-    left: 402px;
-    top: 282px;
+    margin-left: 402px;
+    margin-top: -22px;
     background-color: yellowgreen;
     transition: background-color 0.5s ease-in-out;
     width: 136px;

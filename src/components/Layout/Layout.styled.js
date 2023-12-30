@@ -181,7 +181,7 @@ export const ButtonRegistration = styled.button`
     background-color: #ffffff;
     transition: background-color 850ms;
     color: #1e90ff;
-    border: none;
+    border: 1px solid red;
   }
 `;
 
@@ -208,7 +208,15 @@ export const ButtonAbout = styled.button`
   @media (max-width: 1220px) {
     position: absolute;
     top: -448px;
-    left: 382px;
+    left: 400px;
+    width: 136px;
+    height: 31px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 10px;
+    transform: scale(1.3);
   }
 
   &:hover {
@@ -216,8 +224,43 @@ export const ButtonAbout = styled.button`
 
     color: #1e90ff;
     transition: color 0.5s ease-in-out;
-    border: none;
     transform: scale(0.9);
     transition: transform 850ms;
+  }
+`;
+
+export const BtnListActors = styled.button`
+  position: absolute;
+  left: 377px;
+  top: 217px;
+  color: #ffffff;
+  background-color: red;
+  border: none;
+  width: 71px;
+  height: 37px;
+  border-radius: 29px;
+  cursor: pointer;
+  font-size: 7px;
+  transform: scale(1.9);
+
+  &:hover {
+    background-color: #ffffff;
+    transition: background-color 850ms;
+    color: #1e90ff;
+    border: 1px solid red;
+  }
+
+  @media (max-width: 1220px) {
+    left: 402px;
+    top: 282px;
+    background-color: yellowgreen;
+    transition: background-color 0.5s ease-in-out;
+    width: 136px;
+    height: 31px;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 10px;
+    transform: scale(1.3);
   }
 `;

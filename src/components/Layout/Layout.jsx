@@ -17,6 +17,7 @@ import {
   LinkRegistration,
   ButtonRegistration,
   ButtonAbout,
+  BtnListActors,
 } from './Layout.styled';
 
 import { Loader } from 'components/Loader/Loader';
@@ -54,6 +55,10 @@ export const Layout = () => {
             <b>Movies</b>
           </Link>
         </Nav>
+
+        <a href="https://www.themoviedb.org/person">
+          <BtnListActors>LIST OF ACTORS</BtnListActors>
+        </a>
 
         <LinkMovie href="https://www.themoviedb.org/">
           <SiThemoviedatabase
@@ -97,7 +102,7 @@ export const Layout = () => {
         </LinkRegistration>
 
         <LinkRegistration href="https://www.themoviedb.org/about">
-          <ButtonAbout>About TMDB</ButtonAbout>
+          <ButtonAbout>ABOUT TMDB</ButtonAbout>
         </LinkRegistration>
 
         <LabelSwitch>

@@ -149,33 +149,39 @@ export const LinkLnkdn = styled.a`
 
 export const ButtonRegistration = styled.button`
   position: absolute;
-  top: -74px;
-  left: -18px;
-  /* background-color: #1e90ff; */
-  background-color: yellowgreen;
-  transition: background-color 0.5s ease-in-out;
-  width: 172px;
+  top: -136px;
+  left: 22px;
+  background-color: red;
+  width: 102px;
   height: 37px;
-  border-radius: 5px;
+  border-radius: 29px;
   border: none;
   color: #ffffff;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 8px;
+  transform: scale(1.9);
 
   @media (max-width: 1220px) {
     position: absolute;
     top: -390px;
-    left: 364px;
+    left: 382px;
+    background-color: yellowgreen;
+    transition: background-color 0.5s ease-in-out;
+    width: 136px;
+    height: 31px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 10px;
+    transform: scale(1.3);
   }
 
   &:hover {
     background-color: #ffffff;
-
+    transition: background-color 850ms;
     color: #1e90ff;
-    transition: color 0.5s ease-in-out;
     border: none;
-    transform: scale(0.9);
-    transition: transform 850ms;
   }
 `;
 
@@ -187,20 +193,22 @@ export const LinkRegistration = styled.a`
 
 export const ButtonAbout = styled.button`
   background-color: yellowgreen;
+  position: absolute;
+  top: -77px;
   transition: background-color 0.5s ease-in-out;
   width: 172px;
-  height: 37px;
+  height: 46px;
   border-radius: 5px;
   border: none;
   color: #ffffff;
   cursor: pointer;
   font-size: 14px;
-  margin-left: 82px;
+  margin-left: -18px;
 
   @media (max-width: 1220px) {
     position: absolute;
-    top: -440px;
-    left: 282px;
+    top: -448px;
+    left: 382px;
   }
 
   &:hover {

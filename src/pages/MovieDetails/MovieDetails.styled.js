@@ -110,9 +110,9 @@ export const ReleaseText = styled.p`
 
 export const Title = styled.h1`
   color: red;
-  margin-top: -71px;
+  margin-top: -61px;
   margin-left: -414px;
-  font-size: 35px;
+  font-size: 44px;
   max-width: 600px;
   font-family: 'Courgette';
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
@@ -131,7 +131,8 @@ export const Title = styled.h1`
 export const Img = styled.img`
   border: thick double red;
   border-color: yellowgreen;
-  width: 400px;
+  width: 417px;
+  margin-top: 34px;
 `;
 
 export const NameDescription = styled.p`

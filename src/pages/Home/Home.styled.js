@@ -73,6 +73,7 @@ export const Description = styled.div`
 
   @media (max-width: 1220px) {
     margin-left: -80px;
+    margin-top: 34px;
   }
 
   @keyframes tracking-in-expand {

@@ -28,6 +28,7 @@ export const Name = styled.p`
 export const ListImage = styled.li`
   border: thick double yellowgreen;
   text-align: center;
+  margin-top: 71px;
 `;
 
 export const MessageNoActors = styled.p`

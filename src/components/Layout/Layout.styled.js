@@ -164,7 +164,7 @@ export const ButtonRegistration = styled.button`
   @media (max-width: 1220px) {
     position: absolute;
     top: -390px;
-    left: 382px;
+    left: 377px;
     background-color: yellowgreen;
     transition: background-color 0.5s ease-in-out;
     width: 136px;
@@ -208,7 +208,7 @@ export const ButtonAbout = styled.button`
   @media (max-width: 1220px) {
     position: absolute;
     top: -437px;
-    left: 400px;
+    left: 395px;
     width: 136px;
     height: 31px;
     border-radius: 8px;
@@ -251,7 +251,7 @@ export const BtnListActors = styled.button`
   }
 
   @media (max-width: 1220px) {
-    margin-left: 402px;
+    margin-left: 400px;
     margin-top: -22px;
     background-color: yellowgreen;
     transition: background-color 0.5s ease-in-out;

@@ -14,57 +14,42 @@ export const Trending = styled.h1`
   margin-left: 326px;
   margin-top: 25px;
   color: red;
-  /* font-family: 'Marck Script'; */
   font-family: 'Ephesis', cursive;
-
+  width: 29ch;
+  font-size: 30px;
   white-space: nowrap;
   overflow: hidden;
-  animation: typeWriter 10s steps(24) forwards;
+  animation: cursor 1s step-end infinite, printed_text 5s steps(30);
 
-  /* animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
-    both; */
+  @keyframes cursor {
+    0% {
+      border-color: red;
+    }
+
+    50% {
+      border-color: transparent;
+    }
+
+    100% {
+      border-color: white;
+    }
+  }
+
+  @keyframes printed_text {
+    from {
+      width: 0;
+    }
+  }
 
   @media (max-width: 1220px) {
     margin-left: 58px;
   }
-
-  @keyframes typeWriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
-  }
-
-  /* 
-  @keyframes tracking-in-expand {
-    8% {
-      letter-spacing: -3.5em;
-      opacity: 0;
-    }
-
-    40% {
-      opacity: 2.6;
-    }
-
-    100% {
-      opacity: 1;
-    }
-  }*/
 `;
 
 export const Description = styled.div`
   margin-top: -14px;
   color: red;
   font-size: 50px;
-  /* font-family: 'Marck Script'; */
   font-family: 'Ephesis', cursive;
   font-weight: 700;
   transform: scale(0.75);

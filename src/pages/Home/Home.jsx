@@ -37,7 +37,7 @@ const Home = () => {
   return (
     <ContFilms>
       <Description>
-        Welcome to Movie DB description : <Span>Plot</Span>
+        Welcome to Movie DB application : <Span>Plot</Span>
         <Span>Actors</Span>
         <Span>Reviews</Span>
       </Description>

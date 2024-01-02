@@ -101,8 +101,8 @@ export const Layout = () => {
           <ButtonRegistration>JOIN THE COMMUNITY</ButtonRegistration>
         </LinkRegistration>
 
-        <LinkRegistration href="https://www.themoviedb.org/about">
-          <ButtonAbout>ABOUT TMDB</ButtonAbout>
+        <LinkRegistration href="https://www.themoviedb.org/person">
+          <ButtonAbout>LIST OF ACTORS</ButtonAbout>
         </LinkRegistration>
 
         <LabelSwitch>

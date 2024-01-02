@@ -5,6 +5,7 @@ export const List = styled.ul`
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 10px;
   gap: 10px;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;

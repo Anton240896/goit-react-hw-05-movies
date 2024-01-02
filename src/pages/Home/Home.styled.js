@@ -100,7 +100,7 @@ export const Description = styled.div`
   }
   /* 
   & > span:nth-child(4) {
-    animation: roll2 5s linear infinite 1s;
+    animation: roll2 6s linear infinite 1s;
     margin-left: 10px;
   } */
 

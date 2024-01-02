@@ -4,7 +4,7 @@ export const ListFilms = styled.ul`
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 221px;
+  margin-top: 58px;
   margin-left: -772px;
   gap: 10px;
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
-import { useParams, Link, useLocation } from 'react-router-dom';
+import { useParams, Outlet, Link, useLocation } from 'react-router-dom';
 
 import { TbArrowBigLeftLine } from 'react-icons/tb';
 import toast from 'react-hot-toast';
@@ -41,7 +41,7 @@ const MovieDetails = () => {
         const data = await requestMovieDetails(movieId);
         setMovieInfo(data);
       } catch (error) {
-        toast.error('Sorry, nothing found');
+        toast.error('Nothing found');
       } finally {
         setLoading(false);
       }
@@ -217,11 +217,12 @@ const MovieDetails = () => {
                     <LinkInfo to="reviews">Reviews •</LinkInfo>
                   </ActorsFilms>
                 </ListInfo>
+                <Outlet />
               </div>
             </List>
           </ContMovieDetails>
 
-          <Link to={location.state?.from ?? '/'}>
+          <Link to={location.state?.from || '/'}>
             <ButtonLink type="button">
               <TbArrowBigLeftLine
                 size={50}

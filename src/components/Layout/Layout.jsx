@@ -56,8 +56,8 @@ export const Layout = () => {
           </Link>
         </Nav>
 
-        <a href="https://www.themoviedb.org/person">
-          <BtnListActors>LIST OF ACTORS</BtnListActors>
+        <a href="https://www.themoviedb.org/login">
+          <BtnListActors>LOGIN</BtnListActors>
         </a>
 
         <LinkMovie href="https://www.themoviedb.org/">

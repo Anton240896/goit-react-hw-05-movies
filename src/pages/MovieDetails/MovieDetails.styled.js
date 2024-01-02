@@ -50,7 +50,7 @@ export const ActorsFilms = styled.li`
 `;
 
 export const TextOverview = styled.p`
-  max-width: 227px;
+  max-width: 199px;
   color: red;
   font-family: 'Marck Script';
   font-size: 18px;

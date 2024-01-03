@@ -34,7 +34,7 @@ const MovieDetails = () => {
 
   /*   ====== FETCH REQUEST ======*/
   useEffect(() => {
-    const getMovieDetailsFilms = async () => {
+    async function getMovieDetailsFilms() {
       try {
         setError(false);
         setLoading(true);
@@ -45,7 +45,7 @@ const MovieDetails = () => {
       } finally {
         setLoading(false);
       }
-    };
+    }
     getMovieDetailsFilms();
   }, [movieId]);
 

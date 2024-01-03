@@ -187,9 +187,7 @@ const MovieDetails = () => {
             </UserCont>
 
             <UserCont>
-              <NameDetailsMovie>
-                <b>Genres •</b>
-              </NameDetailsMovie>
+              <NameDetailsMovie>Genres •</NameDetailsMovie>
 
               <TextOverview>
                 {genres.length > 0 ? (

@@ -4,7 +4,7 @@ export const ListFilms = styled.ul`
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 58px;
+  margin-top: 215px;
   margin-left: -772px;
   gap: 10px;
 
@@ -28,7 +28,6 @@ export const Name = styled.p`
 export const ListImage = styled.li`
   border: thick double yellowgreen;
   text-align: center;
-  margin-top: 71px;
 `;
 
 export const MessageNoActors = styled.p`

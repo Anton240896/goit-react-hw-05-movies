@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  margin-left: 190px;
+  margin-left: 248px;
   margin-top: 44px;
 `;
 
@@ -231,7 +231,7 @@ export const ButtonAbout = styled.button`
 
 export const BtnListActors = styled.button`
   position: absolute;
-  margin-left: 378px;
+  margin-left: 400px;
   top: 217px;
   color: #ffffff;
   background-color: red;

@@ -48,8 +48,9 @@ export const Trending = styled.h1`
 
 export const Description = styled.div`
   margin-top: -14px;
+  margin-left: -17px;
   color: red;
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Ephesis', cursive;
   font-weight: 700;
   transform: scale(0.75);
@@ -57,8 +58,9 @@ export const Description = styled.div`
     both;
 
   @media (max-width: 1220px) {
-    margin-left: 3px;
+    margin-left: -9px;
     margin-top: 34px;
+    font-size: 30px;
   }
 
   @keyframes tracking-in-expand {

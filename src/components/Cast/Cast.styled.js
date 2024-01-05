@@ -5,7 +5,7 @@ export const ListFilms = styled.ul`
   display: flex;
   flex-wrap: wrap;
   margin-top: 215px;
-  margin-left: -772px;
+  margin-left: -817px;
   gap: 10px;
 
   @media (max-width: 1220px) {
@@ -19,14 +19,14 @@ export const Name = styled.p`
   color: red;
   font-family: 'Marck Script';
   font-size: 25px;
-  padding-right: 13px;
-  padding-left: 13px;
+  padding-right: 4px;
+  padding-left: 4px;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;
 `;
 
 export const ListImage = styled.li`
-  border: thick double yellowgreen;
+  border: thick double var(--tmdbLightGreen);
   text-align: center;
 `;
 
@@ -43,8 +43,8 @@ export const MessageNoActors = styled.p`
 export const NameActor = styled.p`
   color: red;
   font-family: 'Marck Script';
-  padding-right: 13px;
-  padding-left: 13px;
+  padding-right: 4px;
+  padding-left: 4px;
   font-size: 45px;
   font-weight: 800;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms

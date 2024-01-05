@@ -106,7 +106,7 @@ export const LinkMovie = styled.a`
   }
 
   &:hover {
-    color: #1e90ff;
+    color: var(--tmdbLightBlue);
     transition: color 0.5s ease-in-out;
   }
 `;
@@ -118,11 +118,11 @@ export const LinkFace = styled.a`
   margin-left: -147px;
 
   @media (max-width: 1220px) {
-    margin-left: 198px;
+    margin-left: 250px;
   }
 
   &:hover {
-    color: yellowgreen;
+    color: var(--tmdbLightGreen);
     transition: color 0.5s ease-in-out;
   }
 `;
@@ -132,7 +132,7 @@ export const LinkWiki = styled.a`
   margin-left: 10px;
 
   &:hover {
-    color: yellowgreen;
+    color: var(--tmdbLightGreen);
     transition: color 0.5s ease-in-out;
   }
 `;
@@ -142,7 +142,7 @@ export const LinkLnkdn = styled.a`
   margin-left: 10px;
 
   &:hover {
-    color: yellowgreen;
+    color: var(--tmdbLightGreen);
     transition: color 0.5s ease-in-out;
   }
 `;
@@ -251,8 +251,8 @@ export const BtnLogin = styled.button`
   }
 
   @media (max-width: 1220px) {
-    margin-left: 400px;
-    margin-top: -22px;
+    margin-left: 452px;
+    margin-top: -20px;
     background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
     width: 136px;

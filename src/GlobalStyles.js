@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 :root {
   --tmdbLightBlue: rgb(1,180,228);
   --tmdbLightGreen: rgb(30,213,169);
-  --tmdbNameTitle: rgb(30 213 169 / 49%)
+  --tmdbNameTitle: rgb(30 213 169 / 49%);
 }
 
 body {

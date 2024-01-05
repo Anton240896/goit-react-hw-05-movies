@@ -61,7 +61,7 @@ export const ButtonLink = styled.li`
   left: 19px;
   font-weight: 500;
   font-size: 22px;
-  color: yellowgreen;
+  color: var(--tmdbLightGreen);
   cursor: pointer;
   list-style-type: none;
   top: 135px;
@@ -130,7 +130,7 @@ export const Title = styled.h1`
 
 export const Img = styled.img`
   border: thick double red;
-  border-color: yellowgreen;
+  border-color: var(--tmdbLightGreen);
   width: 417px;
   margin-top: 34px;
 `;

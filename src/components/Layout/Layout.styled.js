@@ -31,19 +31,19 @@ export const Link = styled(NavLink)`
     both;
 
   &:hover {
-    color: yellowgreen;
+    color: var(--tmdbLightGreen);
   }
 
   &.active {
-    color: yellowgreen;
-    border: thick double yellowgreen;
+    color: var(--tmdbLightGreen);
+    border: thick double var(--tmdbLightGreen);
   }
 `;
 export const Slider = styled.span`
   position: absolute;
   cursor: pointer;
   inset: 0;
-  border: 2px solid yellowgreen;
+  border: 2px solid var(--tmdbLightGreen);
   background-color: black;
   border-radius: 50px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -165,7 +165,7 @@ export const ButtonRegistration = styled.button`
     position: absolute;
     top: -390px;
     left: 377px;
-    background-color: yellowgreen;
+    background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
     width: 136px;
     height: 31px;
@@ -180,7 +180,7 @@ export const ButtonRegistration = styled.button`
   &:hover {
     background-color: #ffffff;
     transition: background-color 850ms;
-    color: #1e90ff;
+    color: var(--tmdbLightBlue);
     border: 1px solid red;
   }
 `;
@@ -191,8 +191,8 @@ export const LinkRegistration = styled.a`
   margin-top: 413px;
 `;
 
-export const ButtonAbout = styled.button`
-  background-color: yellowgreen;
+export const ButtonListOfActors = styled.button`
+  background-color: var(--tmdbLightGreen);
   position: absolute;
   top: -77px;
   transition: background-color 0.5s ease-in-out;
@@ -229,7 +229,7 @@ export const ButtonAbout = styled.button`
   }
 `;
 
-export const BtnListActors = styled.button`
+export const BtnLogin = styled.button`
   position: absolute;
   margin-left: 400px;
   top: 217px;
@@ -246,14 +246,14 @@ export const BtnListActors = styled.button`
   &:hover {
     background-color: #ffffff;
     transition: background-color 850ms;
-    color: #1e90ff;
+    color: var(--tmdbLightBlue);
     border: 1px solid red;
   }
 
   @media (max-width: 1220px) {
     margin-left: 400px;
     margin-top: -22px;
-    background-color: yellowgreen;
+    background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
     width: 136px;
     height: 31px;

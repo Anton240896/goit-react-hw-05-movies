@@ -15,7 +15,7 @@ export const List = styled.ul`
 export const NameFilms = styled.p`
   position: absolute;
   font-size: 15px;
-  background-color: #71d41775;
+  background-color: var(--tmdbNameTitle);
   color: white;
   text-align: center;
   margin-left: 7px;

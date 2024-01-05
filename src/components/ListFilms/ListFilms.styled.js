@@ -17,7 +17,7 @@ export const NameFilms = styled.p`
   font-size: 15px;
   background-color: #71d41775;
   color: white;
-  font-weight: 500;
+  text-align: center;
   margin-left: 7px;
   margin-top: 5px;
   font-family: 'Courgette';

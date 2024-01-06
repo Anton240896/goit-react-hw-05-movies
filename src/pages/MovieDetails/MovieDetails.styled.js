@@ -109,7 +109,7 @@ export const ReleaseText = styled.p`
 `;
 
 export const Title = styled.h1`
-  color: red;
+  color: var(--tmdbLightGreen);
   margin-top: -61px;
   margin-left: -414px;
   font-size: 44px;

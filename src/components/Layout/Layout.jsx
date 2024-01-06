@@ -98,7 +98,7 @@ export const Layout = () => {
         </LinkLnkdn>
 
         <LinkRegistration href="https://www.themoviedb.org/signup">
-          <ButtonRegistration>JOIN THE COMMUNITY</ButtonRegistration>
+          <ButtonRegistration>SIGN UP</ButtonRegistration>
         </LinkRegistration>
 
         <LinkRegistration href="https://www.themoviedb.org/person">

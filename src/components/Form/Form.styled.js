@@ -12,8 +12,8 @@ export const FormBox = styled.form`
 `;
 
 export const Input = styled.input`
-  padding: 10px 15px;
-  border: 2px solid #191d1e;
+  padding: 7px 15px;
+  border: 2px solid darkgray;
   font-weight: 600;
   font-size: 20px;
   margin-right: 10px;
@@ -21,7 +21,6 @@ export const Input = styled.input`
   outline: none;
 
   &:hover {
-    color: yellowgreen;
-    border: 2px solid yellowgreen;
+    border: 2px solid var(--tmdbLightBlue);
   }
 `;

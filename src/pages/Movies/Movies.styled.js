@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const NotFilms = styled.p`
   margin-top: -28px;
   margin-left: -282px;
-  color: red;
+  color: var(--tmdbRed);
   font-family: 'Courgette';
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 500ms
     both;
@@ -31,6 +31,6 @@ export const NotFilms = styled.p`
 export const ButtonLink = styled.button`
   position: fixed;
   &:hover {
-    color: red;
+    color: var(--tmdbRed);
   }
 `;

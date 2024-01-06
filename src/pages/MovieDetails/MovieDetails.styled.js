@@ -37,7 +37,7 @@ export const LinkInfo = styled(Link)`
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
-  color: red;
+  color: var(--tmdbRed);
   font-family: 'Marck Script';
 
   &:hover {
@@ -51,7 +51,7 @@ export const ActorsFilms = styled.li`
 
 export const TextOverview = styled.p`
   max-width: 199px;
-  color: red;
+  color: var(--tmdbRed);
   font-family: 'Marck Script';
   font-size: 18px;
 `;
@@ -71,7 +71,7 @@ export const ButtonLink = styled.li`
   }
 
   &:hover {
-    color: red;
+    color: var(--tmdbRed);
   }
 `;
 
@@ -80,13 +80,13 @@ export const ContMovieDetails = styled.div`
 `;
 
 export const NameFilms = styled.h2`
-  color: red;
+  color: var(--tmdbRed);
   /* animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both; */
 `;
 
 export const NameDetailsMovie = styled.h3`
-  color: red;
+  color: var(--tmdbRed);
   font-size: 15px;
   font-family: 'Marck Script';
   font-size: 20px;
@@ -103,7 +103,7 @@ export const UserCont = styled.div`
 
 export const ReleaseText = styled.p`
   font-size: 25px;
-  color: red;
+  color: var(--tmdbRed);
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;
 `;
@@ -129,14 +129,13 @@ export const Title = styled.h1`
 `;
 
 export const Img = styled.img`
-  border: thick double red;
-  border-color: var(--tmdbLightGreen);
+  border: thick double var(--tmdbLightGreen);
   width: 417px;
   margin-top: 34px;
 `;
 
 export const NameDescription = styled.p`
-  color: red;
+  color: var(--tmdbRed);
   font-size: 17px;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;

@@ -16,7 +16,7 @@ export const ListFilms = styled.ul`
 `;
 
 export const Name = styled.p`
-  color: red;
+  color: var(--tmdbRed);
   font-family: 'Marck Script';
   font-size: 25px;
   padding-right: 4px;
@@ -31,7 +31,7 @@ export const ListImage = styled.li`
 `;
 
 export const MessageNoActors = styled.p`
-  color: red;
+  color: var(--tmdbRed);
   margin-top: -41px;
   margin-left: -44px;
   font-family: 'Marck Script';
@@ -41,7 +41,7 @@ export const MessageNoActors = styled.p`
 `;
 
 export const NameActor = styled.p`
-  color: red;
+  color: var(--tmdbRed);
   font-family: 'Marck Script';
   padding-right: 4px;
   padding-left: 4px;

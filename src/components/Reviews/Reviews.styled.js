@@ -12,7 +12,7 @@ export const UnOrderedReviews = styled.ul`
 
 export const ListReview = styled.li`
   list-style: none;
-  color: red;
+  color: var(--tmdbRed);
   padding: 10px;
   margin-top: 14px;
   font-family: 'Marck Script';
@@ -21,7 +21,7 @@ export const ListReview = styled.li`
 `;
 
 export const MessageNoComments = styled.div`
-  color: red;
+  color: var(--tmdbRed);
   margin-top: 24px;
   font-family: 'Marck Script';
   font-size: 20px;

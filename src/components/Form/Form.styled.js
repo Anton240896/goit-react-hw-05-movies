@@ -21,6 +21,11 @@ export const Input = styled.input`
   outline: none;
 
   &:hover {
+    color: var(--tmdbLightBlue);
     border: 2px solid var(--tmdbLightBlue);
+  }
+
+  &:focus {
+    color: var(--tmdbLightBlue);
   }
 `;

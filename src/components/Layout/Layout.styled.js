@@ -149,7 +149,7 @@ export const LinkLnkdn = styled.a`
 
 export const ButtonRegistration = styled.button`
   position: absolute;
-  top: -136px;
+  top: -149px;
   left: 22px;
   background-color: red;
   width: 102px;
@@ -194,7 +194,7 @@ export const LinkRegistration = styled.a`
 export const ButtonListOfActors = styled.button`
   background-color: var(--tmdbLightGreen);
   position: absolute;
-  top: -77px;
+  top: -92px;
   transition: background-color 0.5s ease-in-out;
   width: 172px;
   height: 46px;
@@ -232,7 +232,7 @@ export const ButtonListOfActors = styled.button`
 export const BtnLogin = styled.button`
   position: absolute;
   margin-left: 400px;
-  top: 217px;
+  top: 203px;
   color: #ffffff;
   background-color: red;
   border: none;
@@ -252,7 +252,7 @@ export const BtnLogin = styled.button`
 
   @media (max-width: 1220px) {
     margin-left: 452px;
-    margin-top: -20px;
+    margin-top: -6px;
     background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
     width: 136px;

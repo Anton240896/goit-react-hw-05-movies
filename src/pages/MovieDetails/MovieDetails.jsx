@@ -125,7 +125,6 @@ const MovieDetails = () => {
                   {title} ({release_date.slice(0, 4) || 'No date found'})
                 </b>
               </Title>
-              <ReleaseText></ReleaseText>
             </UserCont>
 
             <UserCont>

@@ -76,7 +76,7 @@ export const ButtonLink = styled.li`
 `;
 
 export const ContMovieDetails = styled.div`
-  margin-top: -2px;
+  margin-top: 22px;
 `;
 
 export const NameFilms = styled.h2`
@@ -98,7 +98,7 @@ export const UserCont = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: -24px;
+  margin-top: -15px;
 `;
 
 export const ReleaseText = styled.p`
@@ -110,7 +110,7 @@ export const ReleaseText = styled.p`
 
 export const Title = styled.h1`
   color: var(--tmdbRed);
-  margin-top: -61px;
+  margin-top: -81px;
   margin-left: -414px;
   font-size: 44px;
   max-width: 600px;
@@ -139,4 +139,8 @@ export const NameDescription = styled.p`
   font-size: 17px;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;
+`;
+
+export const Year = styled.span`
+  color: var(--tmdbLightGreen);
 `;

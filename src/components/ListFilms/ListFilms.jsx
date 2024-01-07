@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+import dayjs from 'dayjs';
 import { List, Item, MovieLink, NameFilms } from './ListFilms.styled';
 
 /*   ====== DESTRUCTURIZATION  ======*/
@@ -18,7 +19,7 @@ const ListFilms = ({ films }) => {
           <Item key={id}>
             <MovieLink to={`/movies/${id}`} state={{ from: location }}>
               <NameFilms>
-                {title}, {release_date.slice(0, 4)}
+                {title} ({dayjs(release_date).format('DD, MM, YYYY')})
               </NameFilms>
               <img
                 src={poster_path ? `${posterFilms}${poster_path}` : defaultImg}

@@ -101,13 +101,6 @@ export const UserCont = styled.div`
   margin-top: -15px;
 `;
 
-export const ReleaseText = styled.p`
-  font-size: 25px;
-  color: var(--tmdbRed);
-  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
-    both;
-`;
-
 export const Title = styled.h1`
   color: var(--tmdbRed);
   margin-top: -81px;

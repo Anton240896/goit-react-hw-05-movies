@@ -18,7 +18,6 @@ import {
   ContMovieDetails,
   NameDetailsMovie,
   UserCont,
-  ReleaseText,
   Title,
   Img,
   NameDescription,

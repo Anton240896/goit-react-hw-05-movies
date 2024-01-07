@@ -28,7 +28,7 @@ import {
 const MovieDetails = () => {
   const { movieId } = useParams();
   const [error, setError] = useState(false);
-  const [movieInfo, setMovieInfo] = useState(null);
+  const [movieDetails, setMovieDetails] = useState(null);
   const [loading, setLoading] = useState(false);
   const location = useLocation();
 
@@ -39,7 +39,7 @@ const MovieDetails = () => {
         setError(false);
         setLoading(true);
         const data = await requestMovieDetails(movieId);
-        setMovieInfo(data);
+        setMovieDetails(data);
       } catch (error) {
         toast.error('Nothing found');
       } finally {
@@ -49,7 +49,7 @@ const MovieDetails = () => {
     getMovieDetailsFilms();
   }, [movieId]);
 
-  if (!movieInfo) {
+  if (!movieDetails) {
     return;
   }
   // useEffect(() => {
@@ -95,7 +95,7 @@ const MovieDetails = () => {
     poster_path,
     original_title,
     runtime,
-  } = movieInfo;
+  } = movieDetails;
 
   const defaultNoImages =
     'https://st4.depositphotos.com/14953852/22772/v/450/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg';

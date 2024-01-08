@@ -221,7 +221,7 @@ export const ButtonListOfActors = styled.button`
 
   &:hover {
     background-color: #ffffff;
-
+    border: 2px solid var(--tmdbLightGreen);
     color: #1e90ff;
     transition: color 0.5s ease-in-out;
     transform: scale(0.9);

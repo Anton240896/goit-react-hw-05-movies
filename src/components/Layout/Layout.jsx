@@ -34,7 +34,7 @@ export const Layout = () => {
   const [bodyColor, setBodyColor] = useState('whiteTheme');
 
   const handleSwitch = () => {
-    setToggle(!toggle);
+    setToggle(toggle);
     if (bodyColor === blackTheme) {
       setBodyColor(whiteTheme);
     } else {

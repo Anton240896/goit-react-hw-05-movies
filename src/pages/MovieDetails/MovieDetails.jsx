@@ -130,15 +130,13 @@ const MovieDetails = () => {
               <NameDetailsMovie>Release Date •</NameDetailsMovie>
 
               <TextOverview>
-                <TextOverview>
-                  {release_date.length === 0 ? (
-                    'No date found'
-                  ) : (
-                    <TextOverview>
-                      {dayjs(release_date).format('DD/ MM/ YYYY')}
-                    </TextOverview>
-                  )}
-                </TextOverview>
+                {release_date.length === 0 ? (
+                  'No date found'
+                ) : (
+                  <TextOverview>
+                    {dayjs(release_date).format('DD/ MM/ YYYY')}
+                  </TextOverview>
+                )}
               </TextOverview>
             </UserCont>
 

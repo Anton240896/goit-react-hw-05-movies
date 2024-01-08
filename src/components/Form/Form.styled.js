@@ -13,7 +13,7 @@ export const FormBox = styled.form`
 
 export const Input = styled.input`
   padding: 7px 15px;
-  border: 2px solid darkgray;
+  border: 2px solid var(--tmdbDarkGrey);
   font-weight: 600;
   font-size: 20px;
   margin-right: 10px;

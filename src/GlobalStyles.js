@@ -6,7 +6,8 @@ export const GlobalStyles = createGlobalStyle`
   --tmdbLightBlue: rgb(1,180,228);
   --tmdbLightGreen: rgb(30,213,169);
   --tmdbNameTitle: rgb(30 213 169 / 49%);
-  --tmdbRed: red
+  --tmdbRed: red;
+  --tmdbDarkGrey: darkgrey; 
 }
 
 body {

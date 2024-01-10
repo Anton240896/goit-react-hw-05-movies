@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const NotFilms = styled.p`
+export const NoFilms = styled.p`
   margin-top: -28px;
   margin-left: -282px;
   color: var(--tmdbRed);

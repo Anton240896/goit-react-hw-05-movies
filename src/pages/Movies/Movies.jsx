@@ -9,7 +9,7 @@ import { Loader } from 'components/Loader/Loader';
 
 import { requestSearch } from 'components/Api/Api';
 import { ButtonLink } from 'pages/MovieDetails/MovieDetails.styled';
-import { NotFilms } from './Movies.styled';
+import { NoFilms } from './Movies.styled';
 
 import toast from 'react-hot-toast';
 
@@ -59,7 +59,7 @@ const Movies = () => {
 
       <ListFilms films={movies} />
 
-      {movies.length === 0 && <NotFilms>No films, enter your request</NotFilms>}
+      {movies.length === 0 && <NoFilms>No films, enter your request</NoFilms>}
     </div>
   );
 };

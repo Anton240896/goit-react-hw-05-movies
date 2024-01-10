@@ -132,4 +132,8 @@ export const NameDescription = styled.p`
   font-size: 17px;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;
+
+  @media (max-width: 1220px) {
+    width: 575px;
+  }
 `;

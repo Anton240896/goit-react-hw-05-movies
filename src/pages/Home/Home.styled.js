@@ -11,12 +11,12 @@ export const ContFilms = styled.div`
 `;
 
 export const Trending = styled.h1`
-  margin-left: 326px;
+  margin-left: 250px;
   margin-top: 25px;
   color: red;
   font-family: 'Tangerine', cursive;
   width: 29ch;
-  font-size: 30px;
+  font-size: 50px;
   white-space: nowrap;
   overflow: hidden;
   animation: cursor 1s step-end infinite, printed_text 5s steps(30);
@@ -48,9 +48,9 @@ export const Trending = styled.h1`
 
 export const Description = styled.div`
   margin-top: -14px;
-  margin-left: -17px;
+  margin-left: -59px;
   color: red;
-  font-size: 40px;
+  font-size: 60px;
   font-family: 'Tangerine', cursive;
   font-weight: 700;
   transform: scale(0.75);

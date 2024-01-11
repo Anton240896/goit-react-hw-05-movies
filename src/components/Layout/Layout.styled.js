@@ -163,7 +163,7 @@ export const ButtonRegistration = styled.button`
 
   @media (max-width: 1220px) {
     position: absolute;
-    top: -390px;
+    top: -388px;
     left: 377px;
     background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
@@ -207,7 +207,7 @@ export const ButtonListOfActors = styled.button`
 
   @media (max-width: 1220px) {
     position: absolute;
-    top: -437px;
+    top: -433px;
     left: 395px;
     width: 136px;
     height: 31px;
@@ -252,7 +252,7 @@ export const BtnLogin = styled.button`
 
   @media (max-width: 1220px) {
     margin-left: 452px;
-    margin-top: -6px;
+    margin-top: -9px;
     background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
     width: 136px;
@@ -267,8 +267,8 @@ export const BtnLogin = styled.button`
 
 export const BtnTop = styled.button`
   position: absolute;
-  margin-left: 244px;
-  top: 282px;
+  margin-left: 245px;
+  top: 278px;
   border: none;
   border-radius: 50%;
   width: 70px;

@@ -18,6 +18,7 @@ import {
   ButtonRegistration,
   ButtonListOfActors,
   BtnLogin,
+  BtnTop,
 } from './Layout.styled';
 
 import { Loader } from 'components/Loader/Loader';
@@ -58,6 +59,10 @@ export const Layout = () => {
 
         <a href="https://www.themoviedb.org/login">
           <BtnLogin>LOGIN</BtnLogin>
+        </a>
+
+        <a href="https://www.themoviedb.org/2023">
+          <BtnTop>TOP MOVIES</BtnTop>
         </a>
 
         <LinkMovie href="https://www.themoviedb.org/">

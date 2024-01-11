@@ -44,7 +44,7 @@ export const Slider = styled.span`
   cursor: pointer;
   inset: 0;
   border: 2px solid var(--tmdbLightGreen);
-  background-color: black;
+  background-color: var(--tmdBlack);
   border-radius: 50px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
@@ -88,18 +88,18 @@ export const LabelSwitch = styled.label`
 
     &:checked + ${Slider} {
       box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
-      border: 2px solid red;
-      background-color: #dbdbe3;
+      border: 2px solid var(--tmdbRed);
+      background-color: var(--tmdbShadowSwitcher);
     }
     &:checked + ${Slider}:before {
       transform: translateX(1.5em);
-      background-color: black;
+      background-color: var(--tmdbBlack);
     }
   }
 `;
 
 export const LinkMovie = styled.a`
-  color: red;
+  color: var(--tmdbRed);
 
   @media (max-width: 1220px) {
     display: none;
@@ -112,7 +112,7 @@ export const LinkMovie = styled.a`
 `;
 
 export const LinkFace = styled.a`
-  color: red;
+  color: var(--tmdbRed);
   display: inline-block;
   cursor: pointer;
   margin-left: -147px;
@@ -128,7 +128,7 @@ export const LinkFace = styled.a`
 `;
 
 export const LinkWiki = styled.a`
-  color: red;
+  color: var(--tmdbRed);
   margin-left: 10px;
 
   &:hover {
@@ -138,7 +138,7 @@ export const LinkWiki = styled.a`
 `;
 
 export const LinkLnkdn = styled.a`
-  color: red;
+  color: var(--tmdbRed);
   margin-left: 10px;
 
   &:hover {
@@ -151,12 +151,12 @@ export const ButtonRegistration = styled.button`
   position: absolute;
   top: -149px;
   left: 22px;
-  background-color: red;
+  background-color: var(--tmdbRed);
   width: 102px;
   height: 37px;
   border-radius: 29px;
   border: none;
-  color: #ffffff;
+  color: var(--tmdbWhite);
   cursor: pointer;
   font-size: 8px;
   transform: scale(1.9);
@@ -171,17 +171,17 @@ export const ButtonRegistration = styled.button`
     height: 31px;
     border-radius: 8px;
     border: none;
-    color: #ffffff;
+    color: var(--tmdbWhite);
     cursor: pointer;
     font-size: 10px;
     transform: scale(1.3);
   }
 
   &:hover {
-    background-color: #ffffff;
+    background-color: var(--tmdbWhite);
     transition: background-color 850ms;
     color: var(--tmdbLightBlue);
-    border: 1px solid red;
+    border: 2px solid red;
   }
 `;
 
@@ -200,7 +200,7 @@ export const ButtonListOfActors = styled.button`
   height: 46px;
   border-radius: 5px;
   border: none;
-  color: #ffffff;
+  color: var(--tmdbWhite);
   cursor: pointer;
   font-size: 14px;
   margin-left: -18px;
@@ -213,16 +213,16 @@ export const ButtonListOfActors = styled.button`
     height: 31px;
     border-radius: 8px;
     border: none;
-    color: #ffffff;
+    color: var(--tmdbWhite);
     cursor: pointer;
     font-size: 10px;
     transform: scale(1.3);
   }
 
   &:hover {
-    background-color: #ffffff;
+    background-color: var(--tmdbWhite);
     border: 2px solid var(--tmdbLightGreen);
-    color: #1e90ff;
+    color: var(--tmdbLightBlue);
     transition: color 0.5s ease-in-out;
     transform: scale(0.9);
     transition: transform 850ms;
@@ -233,7 +233,7 @@ export const BtnLogin = styled.button`
   position: absolute;
   margin-left: 400px;
   top: 203px;
-  color: #ffffff;
+  color: var(--tmdbWhite);
   background-color: red;
   border: none;
   width: 71px;
@@ -244,10 +244,10 @@ export const BtnLogin = styled.button`
   transform: scale(1.9);
 
   &:hover {
-    background-color: #ffffff;
+    background-color: var(--tmdbWhite);
     transition: background-color 850ms;
     color: var(--tmdbLightBlue);
-    border: 1px solid red;
+    border: 2px solid var(--tmdbRed);
   }
 
   @media (max-width: 1220px) {
@@ -258,9 +258,33 @@ export const BtnLogin = styled.button`
     width: 136px;
     height: 31px;
     border-radius: 8px;
-    color: #ffffff;
+    color: var(--tmdbWhite);
     cursor: pointer;
     font-size: 10px;
     transform: scale(1.3);
+  }
+`;
+
+export const BtnTop = styled.button`
+  position: absolute;
+  margin-left: 244px;
+  top: 282px;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 68px;
+  cursor: pointer;
+  background-color: var(--tmdbRed);
+  color: var(--tmdbWhite);
+
+  &:hover {
+    background-color: var(--tmdbWhite);
+    transition: background-color 850ms;
+    color: var(--tmdbLightBlue);
+    border: 2px solid var(--tmdbRed);
+  }
+
+  @media (max-width: 1220px) {
+    display: none;
   }
 `;

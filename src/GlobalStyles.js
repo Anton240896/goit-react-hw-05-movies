@@ -8,6 +8,9 @@ export const GlobalStyles = createGlobalStyle`
   --tmdbNameTitle: rgb(30 213 169 / 49%);
   --tmdbRed: red;
   --tmdbDarkGrey: darkgrey; 
+  --tmdbWhite: white;
+  --tmdbBlack: black;
+  --tmdbShadowSwitcher: #dbdbe3;
 }
 
 body {

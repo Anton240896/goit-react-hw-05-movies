@@ -20,6 +20,10 @@ export const Input = styled.input`
   border-radius: 4px 8px;
   outline: none;
 
+  &::placeholder {
+    font-family: 'Courgette';
+  }
+
   &:hover {
     color: var(--tmdbLightBlue);
     border: 2px solid var(--tmdbLightBlue);

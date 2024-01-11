@@ -160,6 +160,7 @@ export const ButtonRegistration = styled.button`
   cursor: pointer;
   font-size: 8px;
   transform: scale(1.9);
+  font-family: 'Courgette';
 
   @media (max-width: 1220px) {
     position: absolute;
@@ -204,6 +205,7 @@ export const ButtonListOfActors = styled.button`
   cursor: pointer;
   font-size: 14px;
   margin-left: -18px;
+  font-family: 'Courgette';
 
   @media (max-width: 1220px) {
     position: absolute;
@@ -242,6 +244,7 @@ export const BtnLogin = styled.button`
   cursor: pointer;
   font-size: 7px;
   transform: scale(1.9);
+  font-family: 'Courgette';
 
   &:hover {
     background-color: var(--tmdbWhite);
@@ -276,6 +279,7 @@ export const BtnTop = styled.button`
   cursor: pointer;
   background-color: var(--tmdbRed);
   color: var(--tmdbWhite);
+  font-family: 'Courgette';
 
   &:hover {
     background-color: var(--tmdbWhite);

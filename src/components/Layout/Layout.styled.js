@@ -21,7 +21,8 @@ export const Link = styled(NavLink)`
   text-decoration: none;
   padding: 0.75rem 1.25rem;
   border-radius: 10rem;
-  color: red;
+  font-family: 'Tangerine', cursive;
+  color: var(--tmdbRed);
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   transition: all 0.3s;

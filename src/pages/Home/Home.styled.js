@@ -14,7 +14,7 @@ export const Trending = styled.h1`
   margin-left: 326px;
   margin-top: 25px;
   color: red;
-  font-family: 'Italianno';
+  font-family: 'Tangerine', cursive;
   width: 29ch;
   font-size: 30px;
   white-space: nowrap;
@@ -51,7 +51,7 @@ export const Description = styled.div`
   margin-left: -17px;
   color: red;
   font-size: 40px;
-  font-family: 'Ephesis', cursive;
+  font-family: 'Tangerine', cursive;
   font-weight: 700;
   transform: scale(0.75);
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms

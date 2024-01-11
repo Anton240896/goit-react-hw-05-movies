@@ -14,7 +14,7 @@ export const Trending = styled.h1`
   margin-left: 326px;
   margin-top: 25px;
   color: red;
-  font-family: 'Ephesis', cursive;
+  font-family: 'Italianno';
   width: 29ch;
   font-size: 30px;
   white-space: nowrap;

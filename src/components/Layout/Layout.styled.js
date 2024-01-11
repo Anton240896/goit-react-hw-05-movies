@@ -26,7 +26,6 @@ export const Link = styled(NavLink)`
   letter-spacing: 0.15rem;
   transition: all 0.3s;
   overflow: hidden;
-  font-family: 'Courgette';
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;
 

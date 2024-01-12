@@ -58,9 +58,9 @@ export const Description = styled.div`
     both;
 
   @media (max-width: 1220px) {
-    margin-left: -9px;
+    margin-left: -39px;
     margin-top: 34px;
-    font-size: 30px;
+    font-size: 35px;
   }
 
   @keyframes tracking-in-expand {

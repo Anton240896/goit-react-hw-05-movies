@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
 
 body {
   margin: 0;
-  background-image: radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%);
+  background-image: radial-gradient(circle, #dbdbe3 50%, rgb(0, 0, 0)75%);
 }
 
 code {

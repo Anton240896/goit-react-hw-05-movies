@@ -14,6 +14,10 @@ export const Nav = styled.nav`
   padding-bottom: 10px;
   margin-left: 248px;
   margin-top: 44px;
+
+  @media (max-width: 1220px) {
+    margin-top: 10px;
+  }
 `;
 
 export const Link = styled(NavLink)`
@@ -64,22 +68,22 @@ export const Slider = styled.span`
 export const LabelSwitch = styled.label`
   font-size: 17px;
   position: absolute;
-  top: 55px;
-  left: 297px;
+  top: 115px;
+  left: 162px;
   width: 3.5em;
   height: 2em;
 
-  @media (max-width: 1748px) {
-    left: 16px;
-    top: 50px;
-    max-width: 670px;
+  @media (min-width: 120px) and (max-width: 1220px) {
+    position: absolute;
+    top: 56px;
+    left: 14px;
   }
-
+  /* 
   @media (max-width: 514px) {
-    left: 16px;
-    top: 101px;
+    left: 347px;
+    top: 141px;
     max-width: 670px;
-  }
+  } */
 
   input {
     opacity: 0;
@@ -118,7 +122,7 @@ export const LinkFace = styled.a`
   margin-left: -147px;
 
   @media (max-width: 1220px) {
-    margin-left: 250px;
+    display: none;
   }
 
   &:hover {
@@ -131,6 +135,10 @@ export const LinkWiki = styled.a`
   color: var(--tmdbRed);
   margin-left: 10px;
 
+  @media (max-width: 1220px) {
+    display: none;
+  }
+
   &:hover {
     color: var(--tmdbLightGreen);
     transition: color 0.5s ease-in-out;
@@ -140,6 +148,10 @@ export const LinkWiki = styled.a`
 export const LinkLnkdn = styled.a`
   color: var(--tmdbRed);
   margin-left: 10px;
+
+  @media (max-width: 1220px) {
+    display: none;
+  }
 
   &:hover {
     color: var(--tmdbLightGreen);
@@ -164,8 +176,8 @@ export const ButtonRegistration = styled.button`
 
   @media (max-width: 1220px) {
     position: absolute;
-    top: -388px;
-    left: 377px;
+    top: -356px;
+    left: 588px;
     background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
     width: 136px;
@@ -209,8 +221,8 @@ export const ButtonListOfActors = styled.button`
 
   @media (max-width: 1220px) {
     position: absolute;
-    top: -433px;
-    left: 395px;
+    top: -401px;
+    left: 605px;
     width: 136px;
     height: 31px;
     border-radius: 8px;
@@ -254,8 +266,8 @@ export const BtnLogin = styled.button`
   }
 
   @media (max-width: 1220px) {
-    margin-left: 452px;
-    margin-top: -9px;
+    margin-left: 280px;
+    margin-top: -11px;
     background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
     width: 136px;
@@ -289,6 +301,57 @@ export const BtnTop = styled.button`
   }
 
   @media (max-width: 1220px) {
+    display: none;
+  }
+`;
+
+export const BtnDataBase = styled.button`
+  @media (max-width: 1220px) {
+    position: relative;
+    top: 99px;
+    left: 489px;
+    background-color: var(--tmdbLightGreen);
+    transition: background-color 0.5s ease-in-out;
+    color: var(--tmdbWhite);
+    width: 136px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: 'Courgette';
+    margin-right: -130px;
+  }
+
+  &:hover {
+    background-color: var(--tmdbWhite);
+    transition: background-color 850ms;
+    color: var(--tmdbLightBlue);
+    border: 2px solid var(--tmdbRed);
+  }
+
+  @media (min-width: 1220px) {
+    display: none;
+  }
+`;
+
+export const ButtonListOfActorsMedia = styled.button`
+  position: relative;
+  top: 8px;
+  left: 483px;
+  background-color: var(--tmdbLightGreen);
+  transition: background-color 0.5s ease-in-out;
+  color: var(--tmdbWhite);
+  width: 136px;
+  height: 43px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Courgette';
+  margin-right: -130px;
+
+  @media (min-width: 1220px) {
     display: none;
   }
 `;

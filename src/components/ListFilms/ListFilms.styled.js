@@ -2,14 +2,12 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const List = styled.ul`
-  list-style-type: none;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin-left: 10px;
   margin-right: 94px;
   gap: 10px;
-  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
-    both;
 `;
 
 export const NameFilms = styled.p`
@@ -23,8 +21,10 @@ export const NameFilms = styled.p`
   font-family: 'Courgette';
 
   @media (min-width: 122px) {
-    width: 87px;
+    width: 107px;
+    text-align: center;
     font-size: 10px;
+    font-weight: 500;
   }
 
   @media (min-width: 1288px) {

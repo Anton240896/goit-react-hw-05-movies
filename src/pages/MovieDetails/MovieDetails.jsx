@@ -223,6 +223,7 @@ const MovieDetails = () => {
                 style={{
                   position: 'fixed',
                   top: '193px',
+                  left: '0',
                 }}
               />
             </ButtonLink>

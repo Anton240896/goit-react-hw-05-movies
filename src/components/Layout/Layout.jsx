@@ -19,6 +19,8 @@ import {
   ButtonListOfActors,
   BtnLogin,
   BtnTop,
+  BtnDataBase,
+  ButtonListOfActorsMedia,
 } from './Layout.styled';
 
 import { Loader } from 'components/Loader/Loader';
@@ -75,6 +77,10 @@ export const Layout = () => {
           />
         </LinkMovie>
 
+        <a href="https://www.themoviedb.org/">
+          <BtnDataBase>MOVIE DATABASE</BtnDataBase>
+        </a>
+
         <LinkFace href="https://www.facebook.com/themoviedb/">
           <FaFacebookSquare
             size={40}
@@ -109,6 +115,10 @@ export const Layout = () => {
         <LinkRegistration href="https://www.themoviedb.org/person">
           <ButtonListOfActors>LIST OF ACTORS</ButtonListOfActors>
         </LinkRegistration>
+
+        <a href="https://www.themoviedb.org/person">
+          <ButtonListOfActorsMedia>LIST OF ACTORS</ButtonListOfActorsMedia>
+        </a>
 
         <LabelSwitch>
           <input type="checkbox" onClick={handleSwitch} />

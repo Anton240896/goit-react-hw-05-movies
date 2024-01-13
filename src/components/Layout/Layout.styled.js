@@ -35,7 +35,7 @@ export const Link = styled(NavLink)`
     both;
 
   &:hover {
-    color: var(--tmdbLightGreen);
+    color: var(--tmdbDarkBlue);
   }
 
   &.active {
@@ -126,7 +126,7 @@ export const LinkFace = styled.a`
   }
 
   &:hover {
-    color: var(--tmdbLightGreen);
+    color: var(--tmdbDarkBlue);
     transition: color 0.5s ease-in-out;
   }
 `;
@@ -140,7 +140,7 @@ export const LinkWiki = styled.a`
   }
 
   &:hover {
-    color: var(--tmdbLightGreen);
+    color: var(--tmdbDarkBlue);
     transition: color 0.5s ease-in-out;
   }
 `;
@@ -154,7 +154,7 @@ export const LinkLnkdn = styled.a`
   }
 
   &:hover {
-    color: var(--tmdbLightGreen);
+    color: var(--tmdbDarkBlue);
     transition: color 0.5s ease-in-out;
   }
 `;
@@ -193,7 +193,7 @@ export const ButtonRegistration = styled.button`
   &:hover {
     background-color: var(--tmdbWhite);
     transition: background-color 850ms;
-    color: var(--tmdbLightBlue);
+    color: var(--tmdbDarkBlue);
     border: 2px solid red;
   }
 `;
@@ -222,7 +222,7 @@ export const ButtonListOfActors = styled.button`
   &:hover {
     background-color: var(--tmdbWhite);
     border: 2px solid var(--tmdbLightGreen);
-    color: var(--tmdbLightBlue);
+    color: var(--tmdbDarkBlue);
     transition: color 0.5s ease-in-out;
     transform: scale(0.9);
     transition: transform 850ms;
@@ -242,7 +242,7 @@ export const ButtonListOfActors = styled.button`
     transform: scale(1.3);
 
     &:hover {
-      color: var(--tmdbLightBlue);
+      color: var(--tmdbDarkBlue);
       border: 2px solid var(--tmdbRed);
       transform: scale(1.3);
       transition: transform 850ms;
@@ -268,7 +268,7 @@ export const BtnLogin = styled.button`
   &:hover {
     background-color: var(--tmdbWhite);
     transition: background-color 850ms;
-    color: var(--tmdbLightBlue);
+    color: var(--tmdbDarkBlue);
     border: 2px solid var(--tmdbRed);
   }
 
@@ -303,7 +303,7 @@ export const BtnTop = styled.button`
   &:hover {
     background-color: var(--tmdbWhite);
     transition: background-color 850ms;
-    color: var(--tmdbLightBlue);
+    color: var(--tmdbDarkBlue);
     border: 2px solid var(--tmdbRed);
   }
 
@@ -333,7 +333,7 @@ export const BtnDataBase = styled.button`
   &:hover {
     background-color: var(--tmdbWhite);
     transition: background-color 850ms;
-    color: var(--tmdbLightBlue);
+    color: var(--tmdbDarkBlue);
     border: 2px solid var(--tmdbRed);
   }
 
@@ -342,7 +342,7 @@ export const BtnDataBase = styled.button`
   }
 `;
 
-export const ButtonListOfActorsMedia = styled.button`
+export const BtnTopMedia = styled.button`
   position: relative;
   top: 8px;
   left: 483px;
@@ -365,7 +365,7 @@ export const ButtonListOfActorsMedia = styled.button`
   &:hover {
     background-color: var(--tmdbWhite);
     transition: background-color 850ms;
-    color: var(--tmdbLightBlue);
+    color: var(--tmdbDarkBlue);
     border: 2px solid var(--tmdbRed);
   }
 `;

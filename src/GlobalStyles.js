@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   --tmdbWhite: white;
   --tmdbBlack: black;
   --tmdbShadowSwitcher: #dbdbe3;
+  --tmdbDarkBlue: #031d33;
 }
 
 body {

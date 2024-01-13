@@ -20,7 +20,7 @@ import {
   BtnLogin,
   BtnTop,
   BtnDataBase,
-  ButtonListOfActorsMedia,
+  BtnTopMedia,
 } from './Layout.styled';
 
 import { Loader } from 'components/Loader/Loader';
@@ -117,7 +117,7 @@ export const Layout = () => {
         </LinkRegistration>
 
         <a href="https://www.themoviedb.org/2023">
-          <ButtonListOfActorsMedia>TOP MOVIES</ButtonListOfActorsMedia>
+          <BtnTopMedia>TOP MOVIES</BtnTopMedia>
         </a>
 
         <LabelSwitch>

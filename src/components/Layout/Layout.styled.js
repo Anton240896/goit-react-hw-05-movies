@@ -219,6 +219,15 @@ export const ButtonListOfActors = styled.button`
   margin-left: -18px;
   font-family: 'Courgette';
 
+  &:hover {
+    background-color: var(--tmdbWhite);
+    border: 2px solid var(--tmdbLightGreen);
+    color: var(--tmdbLightBlue);
+    transition: color 0.5s ease-in-out;
+    transform: scale(0.9);
+    transition: transform 850ms;
+  }
+
   @media (max-width: 1220px) {
     position: absolute;
     top: -401px;
@@ -231,15 +240,13 @@ export const ButtonListOfActors = styled.button`
     cursor: pointer;
     font-size: 10px;
     transform: scale(1.3);
-  }
 
-  &:hover {
-    background-color: var(--tmdbWhite);
-    border: 2px solid var(--tmdbLightGreen);
-    color: var(--tmdbLightBlue);
-    transition: color 0.5s ease-in-out;
-    transform: scale(0.9);
-    transition: transform 850ms;
+    &:hover {
+      color: var(--tmdbLightBlue);
+      border: 2px solid var(--tmdbRed);
+      transform: scale(1.3);
+      transition: transform 850ms;
+    }
   }
 `;
 
@@ -353,5 +360,12 @@ export const ButtonListOfActorsMedia = styled.button`
 
   @media (min-width: 1220px) {
     display: none;
+  }
+
+  &:hover {
+    background-color: var(--tmdbWhite);
+    transition: background-color 850ms;
+    color: var(--tmdbLightBlue);
+    border: 2px solid var(--tmdbRed);
   }
 `;

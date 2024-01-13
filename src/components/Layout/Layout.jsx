@@ -116,8 +116,8 @@ export const Layout = () => {
           <ButtonListOfActors>LIST OF ACTORS</ButtonListOfActors>
         </LinkRegistration>
 
-        <a href="https://www.themoviedb.org/person">
-          <ButtonListOfActorsMedia>LIST OF ACTORS</ButtonListOfActorsMedia>
+        <a href="https://www.themoviedb.org/2023">
+          <ButtonListOfActorsMedia>TOP MOVIES</ButtonListOfActorsMedia>
         </a>
 
         <LabelSwitch>

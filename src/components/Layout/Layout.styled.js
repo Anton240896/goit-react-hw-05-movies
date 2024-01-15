@@ -155,7 +155,7 @@ export const LinkLnkdn = styled.a`
 
 export const ButtonRegistration = styled.button`
   position: absolute;
-  top: -149px;
+  top: -114px;
   left: 22px;
   background-color: var(--tmdbRed);
   width: 102px;
@@ -170,7 +170,7 @@ export const ButtonRegistration = styled.button`
 
   @media (max-width: 1220px) {
     position: absolute;
-    top: -356px;
+    top: -338px;
     left: 588px;
     background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
@@ -201,7 +201,7 @@ export const LinkRegistration = styled.a`
 export const ButtonListOfActors = styled.button`
   background-color: var(--tmdbLightGreen);
   position: absolute;
-  top: -92px;
+  top: -54px;
   transition: background-color 0.5s ease-in-out;
   width: 172px;
   height: 46px;
@@ -247,7 +247,7 @@ export const ButtonListOfActors = styled.button`
 export const BtnLogin = styled.button`
   position: absolute;
   margin-left: 400px;
-  top: 203px;
+  top: 238px;
   color: var(--tmdbWhite);
   background-color: red;
   border: none;
@@ -284,7 +284,7 @@ export const BtnLogin = styled.button`
 export const BtnTop = styled.button`
   position: absolute;
   margin-left: 245px;
-  top: 278px;
+  top: 314px;
   border: none;
   border-radius: 50%;
   width: 70px;
@@ -309,7 +309,7 @@ export const BtnTop = styled.button`
 export const BtnDataBase = styled.button`
   @media (max-width: 1220px) {
     position: relative;
-    top: 99px;
+    top: 131px;
     left: 489px;
     background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;

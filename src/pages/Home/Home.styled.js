@@ -59,7 +59,7 @@ export const Description = styled.div`
 
   @media (max-width: 1220px) {
     margin-left: -39px;
-    margin-top: 34px;
+    margin-top: 64px;
     font-size: 35px;
   }
 

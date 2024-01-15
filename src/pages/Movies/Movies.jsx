@@ -45,14 +45,14 @@ const Movies = () => {
     effectAction();
   }, [query]);
 
-  const submitAction = value => {
+  const submitRequest = value => {
     setSearchParams({ query: value });
   };
 
   /*   ====== RENDER ======*/
   return (
     <div>
-      <Form submitAction={submitAction} />
+      <Form submitAction={submitRequest} />
 
       <Link to={location.state?.from ?? '/'}>
         <ButtonLink type="button">

@@ -9,7 +9,7 @@ import { Loader } from 'components/Loader/Loader';
 
 import { requestSearch } from 'components/Api/Api';
 import { ButtonLink } from 'pages/MovieDetails/MovieDetails.styled';
-import { NoFilms } from './Movies.styled';
+import { NoFilms, Search } from './Movies.styled';
 
 const Movies = () => {
   /*   ====== HOOKS ======*/
@@ -52,6 +52,7 @@ const Movies = () => {
   /*   ====== RENDER ======*/
   return (
     <div>
+      <Search />
       <Form submitQuery={submitRequest} />
 
       <Link to={location.state?.from ?? '/'}>
@@ -59,9 +60,7 @@ const Movies = () => {
           <TbArrowBigLeftLine size={50} />
         </ButtonLink>
       </Link>
-
       {loading ?? <Loader />}
-
       {movies.length > 0 && <ListFilms films={movies} />}
       {emptyPage && <NoFilms>No films, enter your request</NoFilms>}
     </div>

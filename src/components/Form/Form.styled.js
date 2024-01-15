@@ -12,14 +12,18 @@ export const FormContainer = styled.form`
 `;
 
 export const Input = styled.input`
-  padding: 7px 15px;
+  padding: 7px 30px;
   border: 2px solid var(--tmdbDarkGrey);
   font-weight: 600;
   font-size: 20px;
+  margin-top: 10px;
   margin-right: 10px;
-  margin-top: 35px;
   border-radius: 4px 8px;
   outline: none;
+
+  @media (max-width: 1220px) {
+    padding: 7px 51px;
+  }
 
   &::placeholder {
     font-family: 'Courgette';

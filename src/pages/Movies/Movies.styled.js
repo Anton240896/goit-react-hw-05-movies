@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { IoSearch } from 'react-icons/io5';
 
 export const NoFilms = styled.p`
   margin-top: 2px;
@@ -32,5 +33,22 @@ export const ButtonLink = styled.button`
   position: fixed;
   &:hover {
     color: var(--tmdbRed);
+  }
+`;
+
+export const Search = styled(IoSearch)`
+  position: relative;
+  top: 160px;
+  right: 319px;
+  color: var(--tmdbDarkGrey);
+
+  &:focus {
+    color: var(--tmdbLightBlue);
+  }
+
+  @media (max-width: 1220px) {
+    position: relative;
+    top: 280px;
+    right: 212px;
   }
 `;

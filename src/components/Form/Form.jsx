@@ -6,7 +6,7 @@ const Form = ({ submitAction, startInputText }) => {
     evt.preventDefault();
     const inputValue = evt.target.elements.query.value.trim();
     if (!inputValue) {
-      return toast.error('Sorry, nothing found');
+      return toast.error('Enter request');
     }
     submitAction(inputValue);
   };

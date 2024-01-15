@@ -16,12 +16,8 @@ const Home = () => {
   useEffect(() => {
     const getRequestTrending = async () => {
       setLoading(true);
-
       try {
         const trendingFilms = await requestTrending();
-        if (requestTrending.lenght > 0) {
-          toast.success('We find films');
-        }
         setFilms(trendingFilms);
       } catch (error) {
         toast.error(' Sorry, we didnt find anything');

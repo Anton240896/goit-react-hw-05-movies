@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NoFilms = styled.p`
-  margin-top: -28px;
+  margin-top: 2px;
   margin-left: -282px;
   color: var(--tmdbRed);
   font-family: 'Courgette';

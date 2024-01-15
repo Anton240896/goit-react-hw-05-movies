@@ -69,7 +69,7 @@ export const LabelSwitch = styled.label`
   font-size: 17px;
   position: absolute;
   top: 115px;
-  left: 162px;
+  left: 90px;
   width: 3.5em;
   height: 2em;
 

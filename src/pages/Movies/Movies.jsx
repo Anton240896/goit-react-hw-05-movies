@@ -11,15 +11,13 @@ import { requestSearch } from 'components/Api/Api';
 import { ButtonLink } from 'pages/MovieDetails/MovieDetails.styled';
 import { NoFilms } from './Movies.styled';
 
-import toast from 'react-hot-toast';
-
 const Movies = () => {
   /*   ====== HOOKS ======*/
   const [searchParams, setSearchParams] = useSearchParams();
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
-  // const [btnLoadMore, setBtnLoadMore] = useState(false);
   const query = searchParams.get('query');
+  const [emptyPage, setEmptyPage] = useState(false);
   const location = useLocation();
 
   /*   ====== FETCH REQUEST ======*/
@@ -33,8 +31,13 @@ const Movies = () => {
         setLoading(true);
         const data = await requestSearch(query);
         setMovies(data);
+        setEmptyPage(() => {
+          if (data.length === 0) {
+            return true;
+          }
+        });
       } catch (error) {
-        toast.error('Sorry, nothing found');
+        console.log(error);
       }
     };
     effectAction();
@@ -57,9 +60,8 @@ const Movies = () => {
 
       {loading ?? <Loader />}
 
-      <ListFilms films={movies} />
-
-      {movies.length === 0 && <NoFilms>No films, enter your request</NoFilms>}
+      {movies.length > 0 && <ListFilms films={movies} />}
+      {emptyPage && <NoFilms>No films, enter your request</NoFilms>}
     </div>
   );
 };

@@ -7,8 +7,8 @@ import { Loader } from 'components/Loader/Loader';
 
 import { requestTrending } from 'components/Api/Api';
 
-/*   ====== HOOKS ======*/
 const Home = () => {
+  /*   ====== HOOKS ======*/
   const [films, setFilms] = useState([]);
   const [loading, setLoading] = useState(false);
 

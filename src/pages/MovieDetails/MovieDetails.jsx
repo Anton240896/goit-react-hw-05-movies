@@ -23,8 +23,8 @@ import {
   NameDescription,
 } from './MovieDetails.styled';
 
-/*   ====== HOOKS ======*/
 const MovieDetails = () => {
+  /*   ====== HOOKS ======*/
   const { movieId } = useParams();
   const [error, setError] = useState(false);
   const [movieDetails, setMovieDetails] = useState(null);

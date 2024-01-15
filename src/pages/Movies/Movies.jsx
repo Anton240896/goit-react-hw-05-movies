@@ -13,8 +13,8 @@ import { NoFilms } from './Movies.styled';
 
 import toast from 'react-hot-toast';
 
-/*   ====== HOOKS ======*/
 const Movies = () => {
+  /*   ====== HOOKS ======*/
   const [searchParams, setSearchParams] = useSearchParams();
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);

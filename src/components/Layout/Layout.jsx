@@ -25,19 +25,18 @@ import {
 
 import { Loader } from 'components/Loader/Loader';
 
-/*   ====== SWITCH-THEME ======*/
 export const Layout = () => {
-  const whiteTheme =
-    'background-image:radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%)';
-  const blackTheme =
-    'background-image:radial-gradient(circle, rgb(0, 0, 0) 70%, #dbdbe3 75%)';
-
   /*   ====== HOOKS ======*/
   const [toggle, setToggle] = useState(false);
   const [bodyColor, setBodyColor] = useState('whiteTheme');
 
   /*   ====== SWITCH-THEME ======*/
   const handleSwitch = () => {
+    const whiteTheme =
+      'background-image:radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%)';
+    const blackTheme =
+      'background-image:radial-gradient(circle, rgb(0, 0, 0) 70%, #dbdbe3 75%)';
+
     setToggle(toggle);
     if (bodyColor === blackTheme) {
       setBodyColor(whiteTheme);

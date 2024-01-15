@@ -21,8 +21,8 @@ const defaultNoImages =
 /*   ====== IMAGE ACTORS ======*/
 const imageActors = 'https://image.tmdb.org/t/p/w500';
 
-/*   ====== HOOKS ======*/
 const Cast = () => {
+  /*   ====== HOOKS ======*/
   const { movieId } = useParams();
   const [actors, setActors] = useState([]);
   const [error, setError] = useState(false);

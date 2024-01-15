@@ -12,8 +12,8 @@ import {
   TextAutor,
 } from 'components/Reviews/Reviews.styled';
 
-/*   ====== HOOKS ======*/
 const Reviews = () => {
+  /*   ====== HOOKS ======*/
   const { movieId } = useParams();
   const [loading, setLoading] = useState(false);
   const [reviews, setReviews] = useState([]);

@@ -48,7 +48,7 @@ export const Slider = styled.span`
   cursor: pointer;
   inset: 0;
   border: 2px solid var(--tmdbLightGreen);
-  background-color: var(--tmdBlack);
+  background-color: var(--tmdbBlack);
   border-radius: 50px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
@@ -78,12 +78,6 @@ export const LabelSwitch = styled.label`
     top: 56px;
     left: 14px;
   }
-  /* 
-  @media (max-width: 514px) {
-    left: 347px;
-    top: 141px;
-    max-width: 670px;
-  } */
 
   input {
     opacity: 0;
@@ -110,7 +104,7 @@ export const LinkMovie = styled.a`
   }
 
   &:hover {
-    color: var(--tmdbLightBlue);
+    color: var(--tmdbLightGreen);
     transition: color 0.5s ease-in-out;
   }
 `;

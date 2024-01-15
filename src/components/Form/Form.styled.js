@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FormBox = styled.form`
+export const FormContainer = styled.form`
   display: flex;
   margin-top: 238px;
   margin-left: -219px;

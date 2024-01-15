@@ -52,7 +52,7 @@ const Movies = () => {
   /*   ====== RENDER ======*/
   return (
     <div>
-      <Form submitAction={submitRequest} />
+      <Form submitQuery={submitRequest} />
 
       <Link to={location.state?.from ?? '/'}>
         <ButtonLink type="button">

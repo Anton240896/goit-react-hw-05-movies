@@ -1,27 +1,26 @@
-import { FormBox, Input } from './Form.styled';
+import { FormContainer, Input } from './Form.styled';
 import toast from 'react-hot-toast';
 
-const Form = ({ submitAction, startInputText }) => {
+const Form = ({ submitQuery }) => {
   const onFormSubmit = evt => {
     evt.preventDefault();
     const inputValue = evt.target.elements.query.value.trim();
     if (!inputValue) {
       return toast.error('Enter request');
     }
-    submitAction(inputValue);
+    submitQuery(inputValue);
   };
 
   /*   ====== RENDER ======*/
   return (
-    <FormBox onSubmit={onFormSubmit}>
+    <FormContainer onSubmit={onFormSubmit}>
       <Input
-        defaultValue={startInputText}
         name="query"
         type="text"
         autoComplete="off"
         placeholder="Search films..."
       />
-    </FormBox>
+    </FormContainer>
   );
 };
 

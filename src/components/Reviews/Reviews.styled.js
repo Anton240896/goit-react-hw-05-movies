@@ -22,7 +22,7 @@ export const ListReview = styled.li`
 
 export const MessageNoComments = styled.div`
   color: var(--tmdbRed);
-  margin-top: 24px;
+  margin-top: 42px;
   font-family: 'Marck Script';
   font-size: 20px;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms

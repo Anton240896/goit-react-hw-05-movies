@@ -32,7 +32,7 @@ export const ListImage = styled.li`
 
 export const MessageNoActors = styled.p`
   color: var(--tmdbRed);
-  margin-top: -41px;
+  margin-top: -171px;
   margin-left: -44px;
   font-family: 'Marck Script';
   font-size: 20px;

@@ -18,7 +18,8 @@ const ListFilms = ({ films }) => {
           <Item key={id}>
             <MovieLink to={`/movies/${id}`} state={{ from: location }}>
               <NameFilms>
-                {title} ({dayjs(release_date).format('DD. MM. YYYY')})
+                {title} (
+                {dayjs(release_date).format('DD. MM. YYYY') || 'No date found'})
               </NameFilms>
               <img
                 src={poster_path ? `${posterFilms}${poster_path}` : defaultImg}

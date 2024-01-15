@@ -16,9 +16,9 @@ const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
-  const query = searchParams.get('query');
   const [emptyPage, setEmptyPage] = useState(false);
   const location = useLocation();
+  const query = searchParams.get('query');
 
   /*   ====== FETCH REQUEST ======*/
   useEffect(() => {

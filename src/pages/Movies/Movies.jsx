@@ -17,6 +17,7 @@ const Movies = () => {
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
   const [emptyPage, setEmptyPage] = useState(false);
+
   const location = useLocation();
   const query = searchParams.get('query');
 
@@ -31,6 +32,7 @@ const Movies = () => {
         setLoading(true);
         const data = await requestSearch(query);
         setMovies(data);
+
         setEmptyPage(() => {
           if (data.length === 0) {
             return true;
@@ -50,7 +52,7 @@ const Movies = () => {
   /*   ====== RENDER ======*/
   return (
     <div>
-      <Form submitAction={submitAction} startInputText={query} />
+      <Form submitAction={submitAction} />
 
       <Link to={location.state?.from ?? '/'}>
         <ButtonLink type="button">

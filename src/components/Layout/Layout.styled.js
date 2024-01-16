@@ -298,7 +298,7 @@ export const BtnTop = styled.button`
     background-color: var(--tmdbWhite);
     transition: background-color 850ms;
     color: var(--tmdbDarkBlue);
-    border: 2px solid var(--tmdbRed);
+    border: 3px solid var(--tmdbRed);
   }
 
   @media (max-width: 1220px) {

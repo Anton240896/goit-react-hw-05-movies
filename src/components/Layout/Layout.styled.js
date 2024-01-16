@@ -284,7 +284,7 @@ export const BtnLogin = styled.button`
 export const BtnTop = styled.button`
   position: absolute;
   margin-left: 245px;
-  top: 314px;
+  top: 315px;
   border: none;
   border-radius: 50%;
   width: 70px;

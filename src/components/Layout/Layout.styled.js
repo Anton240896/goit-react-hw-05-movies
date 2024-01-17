@@ -17,6 +17,7 @@ export const Nav = styled.nav`
 
   @media (max-width: 1220px) {
     margin-top: 10px;
+    margin-left: 286px;
   }
 `;
 

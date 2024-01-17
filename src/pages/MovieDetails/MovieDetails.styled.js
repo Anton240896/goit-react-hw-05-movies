@@ -76,7 +76,7 @@ export const ButtonLink = styled.li`
 `;
 
 export const ContMovieDetails = styled.div`
-  margin-top: 22px;
+  margin-top: 120px;
 `;
 
 export const NameFilms = styled.h2`
@@ -122,7 +122,7 @@ export const Title = styled.h1`
 export const Img = styled.img`
   border: thick double var(--tmdbLightGreen);
   width: 417px;
-  margin-top: 34px;
+  margin-top: 126px;
 `;
 
 export const NameDescription = styled.p`

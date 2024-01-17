@@ -96,8 +96,11 @@ const MovieDetails = () => {
     runtime,
   } = movieDetails;
 
+  /*   ====== DESTRUCTURIZATION - DEFAULT NO IMAGE  ======*/
   const defaultNoImages =
     'https://st4.depositphotos.com/14953852/22772/v/450/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg';
+
+  /*   ====== DESTRUCTURIZATION - POSTER FILMS ======*/
   const posterFilms = 'https://image.tmdb.org/t/p/w500';
 
   /*   ====== DESTRUCTURIZATION - TITLE  ======*/

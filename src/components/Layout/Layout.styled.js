@@ -116,7 +116,9 @@ export const LinkFace = styled.a`
   margin-left: -147px;
 
   @media (max-width: 1220px) {
-    display: none;
+    position: relative;
+    left: 628px;
+    top: 50px;
   }
 
   &:hover {
@@ -170,11 +172,11 @@ export const ButtonRegistration = styled.button`
 
   @media (max-width: 1220px) {
     position: absolute;
-    top: -338px;
-    left: 588px;
+    top: -339px;
+    left: 728px;
     background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
-    width: 136px;
+    width: 118px;
     height: 31px;
     border-radius: 8px;
     border: none;
@@ -224,9 +226,9 @@ export const ButtonListOfActors = styled.button`
 
   @media (max-width: 1220px) {
     position: absolute;
-    top: -401px;
-    left: 605px;
-    width: 136px;
+    top: -400px;
+    left: 745px;
+    width: 117px;
     height: 31px;
     border-radius: 8px;
     border: none;
@@ -267,12 +269,12 @@ export const BtnLogin = styled.button`
   }
 
   @media (max-width: 1220px) {
-    margin-left: 280px;
-    margin-top: -11px;
+    margin-left: 311px;
+    margin-top: -14px;
     background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
-    width: 136px;
-    height: 31px;
+    width: 120px;
+    height: 32px;
     border-radius: 8px;
     color: var(--tmdbWhite);
     cursor: pointer;
@@ -309,13 +311,13 @@ export const BtnTop = styled.button`
 export const BtnDataBase = styled.button`
   @media (max-width: 1220px) {
     position: relative;
-    top: 131px;
-    left: 489px;
+    top: 95px;
+    left: 490px;
     background-color: var(--tmdbLightGreen);
     transition: background-color 0.5s ease-in-out;
     color: var(--tmdbWhite);
     width: 136px;
-    height: 40px;
+    height: 42px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -338,13 +340,13 @@ export const BtnDataBase = styled.button`
 
 export const BtnTopMedia = styled.button`
   position: relative;
-  top: 8px;
-  left: 483px;
+  top: -27px;
+  left: 591px;
   background-color: var(--tmdbLightGreen);
   transition: background-color 0.5s ease-in-out;
   color: var(--tmdbWhite);
   width: 136px;
-  height: 43px;
+  height: 40px;
   border-radius: 8px;
   border: none;
   cursor: pointer;

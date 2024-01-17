@@ -39,7 +39,7 @@ export const Link = styled(NavLink)`
   }
 
   &.active {
-    color: var(--tmdbLightGreen);
+    color: var(--tmdbRed);
     border: thick double var(--tmdbLightGreen);
   }
 `;

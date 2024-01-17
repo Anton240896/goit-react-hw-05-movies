@@ -58,7 +58,7 @@ export const Description = styled.div`
     both;
 
   @media (max-width: 1220px) {
-    margin-left: -39px;
+    margin-left: -17px;
     margin-top: 64px;
     font-size: 35px;
   }

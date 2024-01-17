@@ -115,7 +115,7 @@ const MovieDetails = () => {
     );
 
   /*   ====== DESTRUCTURIZATION - OVERVIEW  ======*/
-  const overwiewText =
+  const overviewText =
     overview.length === 0 ? (
       'No plot found'
     ) : (
@@ -186,7 +186,7 @@ const MovieDetails = () => {
               <b>Overview •</b>
             </NameDetailsMovie>
 
-            <TextOverview>{overwiewText}</TextOverview>
+            <TextOverview>{overviewText}</TextOverview>
 
             <UserCont>
               <NameDetailsMovie>Run time •</NameDetailsMovie>

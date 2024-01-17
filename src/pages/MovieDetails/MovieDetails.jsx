@@ -98,8 +98,54 @@ const MovieDetails = () => {
 
   const defaultNoImages =
     'https://st4.depositphotos.com/14953852/22772/v/450/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg';
-
   const posterFilms = 'https://image.tmdb.org/t/p/w500';
+
+  /*   ====== DESTRUCTURIZATION - TITLE  ======*/
+  const nameTitle = release_date.slice(0, 4) || 'No date found';
+
+  /*   ====== DESTRUCTURIZATION - RELEASE DATE  ======*/
+  const releaseDate =
+    release_date.length === 0 ? (
+      'No date found'
+    ) : (
+      <TextOverview>{dayjs(release_date).format('DD/ MM/ YYYY')}</TextOverview>
+    );
+
+  /*   ====== DESTRUCTURIZATION - OVERVIEW  ======*/
+  const overwiewText =
+    overview.length === 0 ? (
+      'No plot found'
+    ) : (
+      <b>
+        <NameDescription>{overview}</NameDescription>
+      </b>
+    );
+
+  /*   ====== DESTRUCTURIZATION - RUN TIME  ======*/
+  const runTime =
+    runtime > 0 ? (
+      <TextOverview>{getTimeFromMins(runtime)} (duration)</TextOverview>
+    ) : (
+      'No time found'
+    );
+
+  /*   ====== DESTRUCTURIZATION - USER SCORE  ======*/
+  const userScore =
+    vote_average > 0 ? (
+      <TextOverview>
+        {Math.round(vote_average * 10)} % (average vote)
+      </TextOverview>
+    ) : (
+      'No rating found'
+    );
+
+  /*   ====== DESTRUCTURIZATION - GENRES  ======*/
+  const genresFilms =
+    genres.length > 0 ? (
+      <TextOverview>{genres.map(genre => genre.name).join(' / ')}</TextOverview>
+    ) : (
+      'No genres found'
+    );
 
   /*   ====== RENDER ======*/
   return (
@@ -121,7 +167,7 @@ const MovieDetails = () => {
             <UserCont>
               <Title>
                 <b>
-                  {title} ({release_date.slice(0, 4) || 'No date found'})
+                  {title} ({nameTitle})
                 </b>
               </Title>
             </UserCont>
@@ -129,71 +175,31 @@ const MovieDetails = () => {
             <UserCont>
               <NameDetailsMovie>Release Date •</NameDetailsMovie>
 
-              <TextOverview>
-                {release_date.length === 0 ? (
-                  'No date found'
-                ) : (
-                  <TextOverview>
-                    {dayjs(release_date).format('DD/ MM/ YYYY')}
-                  </TextOverview>
-                )}
-              </TextOverview>
+              <TextOverview>{releaseDate}</TextOverview>
             </UserCont>
 
             <NameDetailsMovie>
               <b>Overview •</b>
             </NameDetailsMovie>
 
-            <TextOverview>
-              {overview.length === 0 ? (
-                'No plot found'
-              ) : (
-                <b>
-                  <NameDescription>{overview}</NameDescription>
-                </b>
-              )}
-            </TextOverview>
+            <TextOverview>{overwiewText}</TextOverview>
 
             <UserCont>
               <NameDetailsMovie>Run time •</NameDetailsMovie>
 
-              <TextOverview>
-                {runtime > 0 ? (
-                  <TextOverview>
-                    {getTimeFromMins(runtime)} (duration)
-                  </TextOverview>
-                ) : (
-                  'No time found'
-                )}
-              </TextOverview>
+              <TextOverview>{runTime}</TextOverview>
             </UserCont>
 
             <UserCont>
               <NameDetailsMovie>User score •</NameDetailsMovie>
 
-              <TextOverview>
-                {vote_average > 0 ? (
-                  <TextOverview>
-                    {Math.round(vote_average * 10)} % (average vote)
-                  </TextOverview>
-                ) : (
-                  'No rating found'
-                )}
-              </TextOverview>
+              <TextOverview>{userScore}</TextOverview>
             </UserCont>
 
             <UserCont>
               <NameDetailsMovie>Genres •</NameDetailsMovie>
 
-              <TextOverview>
-                {genres.length > 0 ? (
-                  <TextOverview>
-                    {genres.map(genre => genre.name).join(' / ')}
-                  </TextOverview>
-                ) : (
-                  'No genres found'
-                )}
-              </TextOverview>
+              <TextOverview>{genresFilms}</TextOverview>
             </UserCont>
 
             <UserCont>

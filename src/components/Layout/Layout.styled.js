@@ -119,6 +119,7 @@ export const LinkFace = styled.a`
     position: relative;
     left: 628px;
     top: 50px;
+    color: var(--tmdbLightGreen);
   }
 
   &:hover {
@@ -132,7 +133,10 @@ export const LinkWiki = styled.a`
   margin-left: 10px;
 
   @media (max-width: 1220px) {
-    display: none;
+    position: absolute;
+    margin-left: 640px;
+    margin-top: 50px;
+    color: var(--tmdbLightGreen);
   }
 
   &:hover {
@@ -146,7 +150,10 @@ export const LinkLnkdn = styled.a`
   margin-left: 10px;
 
   @media (max-width: 1220px) {
-    display: none;
+    position: absolute;
+    margin-left: 692px;
+    margin-top: 49px;
+    color: var(--tmdbLightGreen);
   }
 
   &:hover {

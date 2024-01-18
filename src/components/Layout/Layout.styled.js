@@ -175,7 +175,7 @@ export const ButtonRegistration = styled.button`
   font-family: 'Courgette';
 
   @media (max-width: 1220px) {
-    position: absolute;
+    position: relative;
     top: -339px;
     left: 728px;
     background-color: var(--tmdbLightGreen);
@@ -229,7 +229,7 @@ export const ButtonListOfActors = styled.button`
   }
 
   @media (max-width: 1220px) {
-    position: absolute;
+    position: relative;
     top: -400px;
     left: 745px;
     width: 117px;

@@ -58,7 +58,7 @@ export const Search = styled(IoSearch)`
 export const BtnSearch = styled.button`
   position: relative;
   top: 29px;
-  left: -10px;
+  left: -px;
   background-color: var(--tmdbWhite);
   border: none;
   width: 24px;
@@ -68,7 +68,7 @@ export const BtnSearch = styled.button`
 
   @media (max-width: 1220px) {
     position: relative;
-    top: 45px;
-    left: 10px;
+    top: 46px;
+    left: 9px;
   }
 `;

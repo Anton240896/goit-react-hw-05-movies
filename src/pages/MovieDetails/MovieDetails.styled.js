@@ -67,7 +67,7 @@ export const ButtonLink = styled.li`
   top: 135px;
 
   @media (max-width: 540px) {
-    top: 139px;
+    top: 348px;
   }
 
   &:hover {

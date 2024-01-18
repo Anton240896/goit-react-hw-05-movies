@@ -9,7 +9,7 @@ export const List = styled.ul`
   margin-right: 94px;
   gap: 10px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1220px) {
     margin-left: 7px;
   }
 `;

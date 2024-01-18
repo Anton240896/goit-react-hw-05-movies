@@ -101,7 +101,7 @@ export const UserCont = styled.div`
 
 export const Title = styled.h1`
   color: var(--tmdbRed);
-  margin-top: -81px;
+  margin-top: -94px;
   margin-left: -440px;
   font-size: 44px;
   max-width: 600px;

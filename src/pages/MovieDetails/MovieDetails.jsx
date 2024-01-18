@@ -161,7 +161,7 @@ const MovieDetails = () => {
               src={
                 poster_path
                   ? `${posterFilms}${poster_path}`
-                  : `${defaultNoImages} }`
+                  : `${defaultNoImages}`
               }
               alt={original_title}
             />

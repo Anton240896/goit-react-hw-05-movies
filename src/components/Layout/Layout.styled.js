@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   margin-bottom: 20px;
   padding-bottom: 10px;
-  margin-left: 248px;
+  margin-left: 124px;
   margin-top: 44px;
 
   @media (max-width: 1220px) {
@@ -34,10 +34,6 @@ export const Link = styled(NavLink)`
   overflow: hidden;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;
-
-  &:hover {
-    color: var(--tmdbDarkBlue);
-  }
 
   &.active {
     color: var(--tmdbRed);
@@ -69,14 +65,14 @@ export const Slider = styled.span`
 export const LabelSwitch = styled.label`
   font-size: 17px;
   position: absolute;
-  top: 115px;
+  top: 110px;
   left: 90px;
   width: 3.5em;
   height: 2em;
 
   @media (min-width: 120px) and (max-width: 1220px) {
     position: absolute;
-    top: 56px;
+    top: 62px;
     left: 14px;
   }
 

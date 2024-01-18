@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { IoSearch } from 'react-icons/io5';
 
 export const FormContainer = styled.form`
   display: flex;
@@ -12,17 +13,20 @@ export const FormContainer = styled.form`
 `;
 
 export const Input = styled.input`
-  padding: 7px 30px;
+  padding: 7px 44px;
   border: 2px solid var(--tmdbDarkGrey);
   font-weight: 600;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 24px;
+  margin-left: -46px;
   margin-right: 10px;
   border-radius: 4px 8px;
   outline: none;
 
   @media (max-width: 1220px) {
-    padding: 7px 51px;
+    padding: 7px 35px;
+    margin-top: 42px;
+    margin-left: -21px;
   }
 
   &::placeholder {
@@ -36,5 +40,35 @@ export const Input = styled.input`
 
   &:focus {
     color: var(--tmdbLightBlue);
+  }
+`;
+
+export const Search = styled(IoSearch)`
+  scale: 1.5;
+
+  &:hover {
+    color: var(--tmdbLightBlue);
+  }
+
+  &:focus {
+    color: var(--tmdbLightBlue);
+  }
+`;
+
+export const BtnSearch = styled.button`
+  position: relative;
+  top: 29px;
+  left: -10px;
+  background-color: var(--tmdbWhite);
+  border: none;
+  width: 24px;
+  height: 32px;
+  color: var(--tmdbDarkGrey);
+  cursor: pointer;
+
+  @media (max-width: 1220px) {
+    position: relative;
+    top: 45px;
+    left: 10px;
   }
 `;

@@ -1,4 +1,4 @@
-import { FormContainer, Input } from './Form.styled';
+import { FormContainer, Input, Search, BtnSearch } from './Form.styled';
 import toast from 'react-hot-toast';
 
 const Form = ({ submitQuery }) => {
@@ -14,6 +14,9 @@ const Form = ({ submitQuery }) => {
   /*   ====== RENDER ======*/
   return (
     <FormContainer onSubmit={onFormSubmit}>
+      <BtnSearch type="submit">
+        <Search />
+      </BtnSearch>
       <Input
         name="query"
         type="text"

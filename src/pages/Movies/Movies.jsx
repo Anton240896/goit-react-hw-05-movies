@@ -9,7 +9,7 @@ import { Loader } from 'components/Loader/Loader';
 
 import { requestSearch } from 'components/Api/Api';
 import { ButtonLink } from 'pages/MovieDetails/MovieDetails.styled';
-import { NoFilms, Search } from './Movies.styled';
+import { NoFilms } from './Movies.styled';
 
 const Movies = () => {
   /*   ====== HOOKS ======*/
@@ -52,7 +52,6 @@ const Movies = () => {
   /*   ====== RENDER ======*/
   return (
     <div>
-      <Search />
       <Form submitQuery={submitRequest} />
 
       <Link to={location.state?.from ?? '/'}>

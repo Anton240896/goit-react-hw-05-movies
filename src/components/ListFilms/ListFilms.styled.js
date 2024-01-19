@@ -10,7 +10,9 @@ export const List = styled.ul`
   gap: 10px;
 
   @media (max-width: 1220px) {
-    margin-left: 7px;
+    margin-left: -28px;
+    margin-top: -153px;
+    transform: scale(0.8);
   }
 `;
 

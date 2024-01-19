@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   @media (max-width: 1220px) {
     margin-top: 201px;
-    margin-left: -218px;
+    margin-left: -371px;
     display: flex;
     flex-direction: column;
   }
@@ -123,6 +123,10 @@ export const Img = styled.img`
   border: thick double var(--tmdbLightGreen);
   width: 417px;
   margin-top: 126px;
+
+  @media (max-width: 1220px) {
+    width: 282px;
+  }
 `;
 
 export const NameDescription = styled.p`

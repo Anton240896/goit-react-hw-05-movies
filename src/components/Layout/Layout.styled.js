@@ -10,6 +10,7 @@ export const Container = styled.div`
 
   @media (max-width: 1220px) {
     display: flex;
+    width: 192px;
     position: relative;
     left: 30px;
     justify-content: center;
@@ -28,10 +29,6 @@ export const Nav = styled.nav`
     margin-top: 10px;
     margin-left: 286px;
   }
-  /*    
-  @media (min-width: 1220px) {
-    margin-left: 308px;
-  } */
 `;
 
 export const Link = styled(NavLink)`
@@ -86,7 +83,7 @@ export const LabelSwitch = styled.label`
   @media (min-width: 120px) and (max-width: 1220px) {
     position: absolute;
     top: 62px;
-    left: 14px;
+    left: 123px;
   }
 
   input {

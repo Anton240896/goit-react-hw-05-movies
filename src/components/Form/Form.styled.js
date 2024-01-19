@@ -24,13 +24,15 @@ export const Input = styled.input`
   outline: none;
 
   @media (max-width: 1220px) {
-    padding: 7px 35px;
+    padding: 7px 39px;
     margin-top: 42px;
-    margin-left: -21px;
+    margin-left: -31px;
+    width: 88px;
   }
 
   &::placeholder {
     font-family: 'Courgette';
+    font-size: 14px;
   }
 
   &:hover {
@@ -69,6 +71,6 @@ export const BtnSearch = styled.button`
   @media (max-width: 1220px) {
     position: relative;
     top: 46px;
-    left: 9px;
+    left: 0;
   }
 `;

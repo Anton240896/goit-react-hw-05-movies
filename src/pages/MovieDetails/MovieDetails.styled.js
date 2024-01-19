@@ -132,6 +132,6 @@ export const NameDescription = styled.p`
     both;
 
   @media (max-width: 1220px) {
-    width: 575px;
+    width: 361px;
   }
 `;

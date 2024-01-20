@@ -45,23 +45,6 @@ const Cast = () => {
     getCast();
   }, [movieId]);
 
-  // useEffect(() => {
-  //   const getCast = () => {
-  //     setLoading(true);
-
-  //     requestActors(movieId)
-  //       .then(resp => {
-  //         setActors(resp);
-  //       })
-  //       .catch(error => {
-  //         toast.error('Sorry we didnt find anythyng');
-  //       })
-  //       .finally(() => {
-  //         setLoading(false);
-  //       });
-  //   };
-  //   getCast();
-  // }, [movieId]);
 
   /*   ====== RENDER ======*/
   return (

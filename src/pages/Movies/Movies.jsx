@@ -54,11 +54,11 @@ const Movies = () => {
     <div>
       <Form submitQuery={submitRequest} />
 
-      <Link to={location.state?.from ?? '/'}>
-        <ButtonLink type="button">
-          <TbArrowBigLeftLine size={50} />
-        </ButtonLink>
-      </Link>
+      {/* <Link to={location.state?.from ?? '/'}> */}
+      <ButtonLink type="button">
+        <TbArrowBigLeftLine size={50} />
+      </ButtonLink>
+      {/* </Link> */}
       {loading ?? <Loader />}
       {movies.length > 0 && <ListFilms films={movies} />}
       {emptyPage && <NoFilms>No films, enter your request</NoFilms>}

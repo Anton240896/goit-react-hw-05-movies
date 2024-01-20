@@ -226,7 +226,7 @@ const MovieDetails = () => {
             </List>
           </ContMovieDetails>
 
-          <Link to={location.state?.from || '/'}>
+          <Link to={location.state?.from || '/movies'}>
             <ButtonLink type="button">
               <TbArrowBigLeftLine
                 size={50}

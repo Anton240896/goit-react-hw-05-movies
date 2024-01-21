@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
-import dayjs from 'dayjs';
+import { useEffect, useState, useRef } from 'react';
 import { useParams, Outlet, Link, useLocation } from 'react-router-dom';
 
-import { TbArrowBigLeftLine } from 'react-icons/tb';
+import dayjs from 'dayjs';
 import toast from 'react-hot-toast';
+
+import { TbArrowBigLeftLine } from 'react-icons/tb';
 
 import { requestMovieDetails } from 'components/Api/Api';
 import Loader from 'components/Loader/Loader';
@@ -30,6 +31,7 @@ const MovieDetails = () => {
   const [movieDetails, setMovieDetails] = useState(null);
   const [loading, setLoading] = useState(false);
   const location = useLocation();
+  const backCurrentPage = useRef(location.state?.from || '/movies');
 
   /*   ====== FETCH REQUEST ======*/
   useEffect(() => {
@@ -226,7 +228,7 @@ const MovieDetails = () => {
             </List>
           </ContMovieDetails>
 
-          <Link to={location.state?.from || '/movies'}>
+          <Link to={backCurrentPage.current}>
             <ButtonLink type="button">
               <TbArrowBigLeftLine
                 size={50}

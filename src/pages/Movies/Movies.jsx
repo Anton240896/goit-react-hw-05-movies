@@ -59,6 +59,7 @@ const Movies = () => {
           <TbArrowBigLeftLine size={50} />
         </ButtonLink>
       </Link>
+
       {loading ?? <Loader />}
       {movies.length > 0 && <ListFilms films={movies} />}
       {emptyPage && <NoFilms>No films, enter your request</NoFilms>}

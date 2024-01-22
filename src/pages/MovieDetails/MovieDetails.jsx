@@ -138,8 +138,8 @@ const MovieDetails = () => {
   const userScore =
     vote_average > 0 ? (
       <TextOverview>
-        {Math.round(vote_average * 10)} % (average vote)
-        {/* {vote_average.toFixed(1)} */}
+        {vote_average.toFixed(1)} (average vote)
+        {/* {Math.round(vote_average * 10)} % (average vote) */}
       </TextOverview>
     ) : (
       'No rating found'

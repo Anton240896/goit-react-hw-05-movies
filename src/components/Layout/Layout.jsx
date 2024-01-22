@@ -48,7 +48,7 @@ export const Layout = () => {
   };
 
   /*   ====== NOW-TIME ======*/
-  setInterval(() => setNowTime(new Date()), 1000);
+  setTimeout(() => setNowTime(new Date()), 1000);
 
   /*   ====== RENDER ======*/
   return (

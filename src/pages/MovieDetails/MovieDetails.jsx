@@ -71,7 +71,7 @@ const MovieDetails = () => {
   // }, [movieId]);
 
   /*   ====== CONVERT MINUTES TO HOURS  ======*/
-  function getTimeFromMins(mins) {
+  function getHoursWithMins(mins) {
     let hours = Math.floor(mins / 60);
     let minutes = mins % 60;
 
@@ -129,7 +129,7 @@ const MovieDetails = () => {
   /*   ====== DESTRUCTURIZATION - RUN TIME  ======*/
   const runTime =
     runtime > 0 ? (
-      <TextOverview>{getTimeFromMins(runtime)} (duration)</TextOverview>
+      <TextOverview>{getHoursWithMins(runtime)} (duration)</TextOverview>
     ) : (
       'No time found'
     );

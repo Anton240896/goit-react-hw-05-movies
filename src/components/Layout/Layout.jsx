@@ -7,6 +7,7 @@ import { FaFacebookSquare, FaWikipediaW, FaLinkedin } from 'react-icons/fa';
 import {
   Container,
   Nav,
+  Time,
   Link,
   LabelSwitch,
   Slider,
@@ -29,6 +30,7 @@ export const Layout = () => {
   /*   ====== HOOKS ======*/
   const [toggle, setToggle] = useState(false);
   const [bodyColor, setBodyColor] = useState('whiteTheme');
+  const [nowTime, setNowTime] = useState(new Date());
 
   /*   ====== SWITCH-THEME ======*/
   const handleSwitch = () => {
@@ -45,6 +47,9 @@ export const Layout = () => {
     }
   };
 
+  /*   ====== NOW-TIME ======*/
+  setInterval(() => setNowTime(new Date()), 1000);
+
   /*   ====== RENDER ======*/
   return (
     <Container>
@@ -53,6 +58,10 @@ export const Layout = () => {
           <Link to="/" end>
             <b>Home</b>
           </Link>
+
+          <Time>
+            <b>Kyiv time • {nowTime.toLocaleTimeString()}</b>
+          </Time>
 
           <Link to="/movies">
             <b>Movies</b>

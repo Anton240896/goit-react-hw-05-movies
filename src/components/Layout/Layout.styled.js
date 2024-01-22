@@ -379,3 +379,17 @@ export const BtnTopMedia = styled.button`
     border: 2px solid var(--tmdbRed);
   }
 `;
+
+export const Time = styled.span`
+  font-size: 23px;
+  color: var(--tmdbRed);
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: 'Tangerine', cursive;
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
+
+  @media (max-width: 1220px) {
+    display: none;
+  }
+`;

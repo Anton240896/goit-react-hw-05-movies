@@ -60,8 +60,8 @@ export const Layout = () => {
           </Link>
 
           <Time>
-            {/* <b>Local time • {nowTime.toLocaleTimeString()}</b>  */}
             <b> {nowTime.toLocaleDateString()}</b>
+            {/* <b>Local time • {nowTime.toLocaleTimeString()}</b>  */}
           </Time>
 
           <Link to="/movies">

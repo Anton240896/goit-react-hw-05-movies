@@ -18,13 +18,12 @@ export const Container = styled.div`
 
 export const List = styled.ul`
   gap: 12px;
-  list-style: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
 `;
 
-export const ListInfo = styled.ul`
+export const ListInfo = styled.li`
+  list-style: none;
   display: flex;
   flex-direction: row;
   gap: 50px;

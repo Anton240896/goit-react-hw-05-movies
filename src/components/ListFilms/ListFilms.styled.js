@@ -7,7 +7,7 @@ export const List = styled.ul`
   flex-wrap: wrap;
   margin-left: 10px;
   margin-right: 94px;
-  gap: 10px;
+  gap: 3px;
 
   @media (max-width: 1220px) {
     margin-left: -28px;

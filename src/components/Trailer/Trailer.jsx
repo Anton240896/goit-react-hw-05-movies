@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 
 import { Loader } from 'components/Loader/Loader';
 import { requestTrailer } from 'components/Api/Api';
-import { ContTrailer } from 'components/Trailer/Trailer.styled';
+import { ContTrailer, Frame } from 'components/Trailer/Trailer.styled';
 
 export const MovieTrailer = ({ movieId }) => {
   /*   ====== HOOKS ======*/
@@ -34,22 +34,12 @@ export const MovieTrailer = ({ movieId }) => {
   return (
     <div>
       <ContTrailer>
-        {/* <FaYoutube
-         
-        /> */}
         {trailer && (
-          <iframe
-            width="200"
-            height="100"
-            title="movie-trailer"
+          <Frame
             src={`https://www.youtube.com/embed/${trailer}`}
             allowFullScreen
-          ></iframe>
+          ></Frame>
         )}
-        {/* <FaYoutube
-          size={80}
-          style={{ position: 'absolute', top: '300px', right: '800px' }}
-        /> */}
       </ContTrailer>
 
       {loading && <Loader />}

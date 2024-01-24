@@ -5,6 +5,11 @@ export const ContTrailer = styled.div`
   margin-top: 21px;
   margin-left: -219px;
   margin-right: -269px;
+
+  @media (max-width: 1220px) {
+    margin-top: 0;
+    margin-left: 0;
+  }
 `;
 
 export const Frame = styled.iframe`

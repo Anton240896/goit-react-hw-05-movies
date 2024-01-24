@@ -76,6 +76,10 @@ export const ButtonLink = styled.li`
 
 export const ContMovieDetails = styled.div`
   margin-top: 120px;
+
+  @media (max-width: 1220px) {
+    margin-top: -37px;
+  }
 `;
 
 export const NameFilms = styled.h2`

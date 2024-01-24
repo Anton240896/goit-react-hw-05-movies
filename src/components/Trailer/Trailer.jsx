@@ -32,17 +32,15 @@ export const MovieTrailer = ({ movieId }) => {
 
   /*   ====== RENDER ======*/
   return (
-    <div>
-      <ContTrailer>
-        {trailer && (
-          <Frame
-            src={`https://www.youtube.com/embed/${trailer}`}
-            allowFullScreen
-          ></Frame>
-        )}
-      </ContTrailer>
+    <ContTrailer>
+      {trailer && (
+        <Frame
+          src={`https://www.youtube.com/embed/${trailer}`}
+          allowFullScreen
+        ></Frame>
+      )}
 
       {loading && <Loader />}
-    </div>
+    </ContTrailer>
   );
 };

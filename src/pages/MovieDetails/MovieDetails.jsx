@@ -7,6 +7,7 @@ import toast from 'react-hot-toast';
 import { TbArrowBigLeftLine } from 'react-icons/tb';
 
 import { requestMovieDetails } from 'components/Api/Api';
+import { MovieTrailer } from 'components/Trailer/Trailer';
 import Loader from 'components/Loader/Loader';
 import {
   Container,
@@ -33,7 +34,7 @@ const MovieDetails = () => {
   const location = useLocation();
   const backCurrentPage = useRef(location.state?.from || '/movies');
 
-  /*   ====== FETCH REQUEST ======*/
+  /*   ====== FETCH REQUEST USING "TRY" & "CATCH" ======*/
   useEffect(() => {
     async function getMovieDetailsFilms() {
       try {
@@ -53,22 +54,6 @@ const MovieDetails = () => {
   if (!movieDetails) {
     return;
   }
-  // useEffect(() => {
-  //   const getMovieDetailsFilms = () => {
-  //     setLoading(true);
-
-  //     requestMovieDetails(movieId)
-  //       .then(detailMovie => {
-  //         setMovieInfo(detailMovie);
-  //       })
-  //       .catch(error => {})
-  //       .finally(() => {
-  //         setLoading(false);
-  //       });
-  //   };
-
-  //   getMovieDetailsFilms();
-  // }, [movieId]);
 
   /*   ====== CONVERT MINUTES TO HOURS  ======*/
   function getHoursWithMins(mins) {
@@ -178,6 +163,8 @@ const MovieDetails = () => {
               </Title>
             </UserCont>
 
+            <MovieTrailer movieId={movieId} />
+
             <UserCont>
               <NameDetailsMovie>Release Date •</NameDetailsMovie>
 
@@ -250,3 +237,21 @@ const MovieDetails = () => {
 };
 
 export default MovieDetails;
+
+//        USE EFFECT "USING THEN & CATCH"
+// useEffect(() => {
+//   const getMovieDetailsFilms = () => {
+//     setLoading(true);
+
+//     requestMovieDetails(movieId)
+//       .then(detailMovie => {
+//         setMovieInfo(detailMovie);
+//       })
+//       .catch(error => {})
+//       .finally(() => {
+//         setLoading(false);
+//       });
+//   };
+
+//   getMovieDetailsFilms();
+// }, [movieId]);

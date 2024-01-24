@@ -45,3 +45,11 @@ export const requestReviews = async movieId => {
   );
   return response.data.results;
 };
+
+/*   ====== MOVIE TRAILER ======*/
+export const requestTrailer = async movieId => {
+  const response = await axios.get(
+    `movie/${movieId}/videos?api_key=${API_KEY}&language=en-US&page=1`
+  );
+  return response.data.results;
+};

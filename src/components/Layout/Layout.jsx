@@ -1,4 +1,4 @@
-import { Suspense, useState } from 'react';
+import { Suspense, useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { SiThemoviedatabase } from 'react-icons/si';
@@ -30,14 +30,14 @@ export const Layout = () => {
   /*   ====== HOOKS ======*/
   const [toggle, setToggle] = useState(false);
   const [bodyColor, setBodyColor] = useState('whiteTheme');
-  const [nowTime, setNowTime] = useState(new Date());
+  const [nowDate, setNowDate] = useState(new Date());
 
   /*   ====== SWITCH-THEME ======*/
   const handleSwitch = () => {
     const whiteTheme =
-      'background-image:radial-gradient(circle, #dbdbe3 60%, rgb(0, 0, 0)75%)';
+      'background-image:radial-gradient(circle, var(--tmdbShadowSwitcher) 60%, var( --tmdbBlack)75%)';
     const blackTheme =
-      'background-image:radial-gradient(circle, rgb(0, 0, 0) 70%, #dbdbe3 75%)';
+      'background-image:radial-gradient(circle, var( --tmdbBlack) 70%,var(--tmdbShadowSwitcher) 75%)';
 
     setToggle(toggle);
     if (bodyColor === blackTheme) {
@@ -48,7 +48,9 @@ export const Layout = () => {
   };
 
   /*   ====== NOW-TIME ======*/
-  setTimeout(() => setNowTime(new Date()), 1000);
+  useEffect(() => {
+    setTimeout(() => setNowDate(new Date()));
+  }, []);
 
   /*   ====== RENDER ======*/
   return (
@@ -60,7 +62,7 @@ export const Layout = () => {
           </Link>
 
           <Time>
-            <b> {nowTime.toLocaleDateString()}</b>
+            <b> {nowDate.toLocaleDateString()}</b>
             {/* <b>Local time • {nowTime.toLocaleTimeString()}</b>  */}
           </Time>
 

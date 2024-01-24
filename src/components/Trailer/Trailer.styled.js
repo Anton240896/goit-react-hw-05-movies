@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 export const ContTrailer = styled.div`
   margin-top: 21px;
+  margin-left: -219px;
   margin-right: -269px;
-  color: var(--tmdbRed);
 `;
 
 export const Frame = styled.iframe`

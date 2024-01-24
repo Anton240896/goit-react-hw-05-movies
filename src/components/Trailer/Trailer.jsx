@@ -34,6 +34,9 @@ export const MovieTrailer = ({ movieId }) => {
   return (
     <div>
       <ContTrailer>
+        {/* <FaYoutube
+         
+        /> */}
         {trailer && (
           <iframe
             width="200"

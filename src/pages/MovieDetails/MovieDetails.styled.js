@@ -121,6 +121,7 @@ export const Title = styled.h1`
 export const Img = styled.img`
   border: thick double var(--tmdbLightGreen);
   width: 417px;
+  height: 789px;
   margin-top: 126px;
 
   @media (max-width: 1220px) {

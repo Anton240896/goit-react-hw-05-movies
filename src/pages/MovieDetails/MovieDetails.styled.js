@@ -125,7 +125,8 @@ export const Img = styled.img`
   margin-top: 126px;
 
   @media (max-width: 1220px) {
-    width: 282px;
+    width: 266px;
+    height: 386px;
   }
 `;
 

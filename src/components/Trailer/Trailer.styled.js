@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 export const ContTrailer = styled.div`
   position: relative;
-  top: 40px;
-  left: -390px;
+  top: 19px;
 
   @media (max-width: 1220px) {
     margin-top: 0;
@@ -13,13 +12,13 @@ export const ContTrailer = styled.div`
 `;
 
 export const Frame = styled.iframe`
-  width: 320px;
-  height: 100px;
+  width: 205px;
+  height: 106px;
   border: thick double var(--tmdbLightGreen);
   border-radius: 10px;
 
   @media (max-width: 1220px) {
-    width: 325px;
+    width: 273px;
   }
 `;
 // export const BtnTrailer = styled(FaYoutube)`

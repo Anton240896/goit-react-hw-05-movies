@@ -102,7 +102,7 @@ export const Description = styled.div`
   }
 
   & > span:nth-child(4) {
-    animation: roll 4s linear infinite 2s;
+    animation: roll 4s linear infinite 2.5s;
     margin-left: 10px;
   }
 

@@ -100,6 +100,11 @@ export const Description = styled.div`
     animation: roll 4s linear infinite 2s;
     margin-left: 10px;
   }
+
+  & > span:nth-child(4) {
+    animation: roll 4s linear infinite 2s;
+    margin-left: 10px;
+  }
   /* 
   & > span:nth-child(4) {
     animation: roll2 6s linear infinite 1s;

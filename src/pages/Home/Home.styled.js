@@ -146,7 +146,7 @@ export const Description = styled.div`
     }
   }
 
-  @keyframes roll2 {
+  /* @keyframes roll2 {
     0% {
       font-size: 0px;
       opacity: 0;
@@ -184,7 +184,7 @@ export const Description = styled.div`
       margin-top: 0px;
       transform: rotate(15deg);
     }
-  }
+  } */
 `;
 
 export const Span = styled.span`

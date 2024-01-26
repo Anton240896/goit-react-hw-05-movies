@@ -7,7 +7,7 @@ import Loader from 'components/Loader/Loader';
 
 import {
   ListFilms,
-  Name,
+  Role,
   ListImage,
   MessageNoActors,
   NameActor,
@@ -63,16 +63,14 @@ const Cast = () => {
               alt={name}
             />
             <NameActor>{name}</NameActor>
-            <Name>{character}</Name>
+            <Role>{character}</Role>
           </ListImage>
         ))}
       </ListFilms>
 
-      <div>
-        {actors.length === 0 && (
-          <MessageNoActors> ¯\_(ツ)_/¯ No actors found</MessageNoActors>
-        )}
-      </div>
+      {actors.length === 0 && (
+        <MessageNoActors> ¯\_(ツ)_/¯ No actors found</MessageNoActors>
+      )}
     </ul>
   );
 };

@@ -15,7 +15,7 @@ export const ListFilms = styled.ul`
   }
 `;
 
-export const Name = styled.p`
+export const Role = styled.p`
   color: var(--tmdbRed);
   font-family: 'Marck Script';
   font-size: 25px;

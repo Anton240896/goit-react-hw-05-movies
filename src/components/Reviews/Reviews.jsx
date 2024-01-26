@@ -39,22 +39,22 @@ const Reviews = () => {
   return (
     <div>
       {loading && <Loader />}
-      {reviews.length !== 0 && (
-        <div>
-          <UnOrderedReviews>
-            {reviews.map(review => {
-              const { author, content } = review;
 
-              return (
-                <ListReview>
-                  <h2>{author} •</h2>
-                  <TextAutor>{content}</TextAutor>
-                </ListReview>
-              );
-            })}
-          </UnOrderedReviews>
-        </div>
+      {reviews.length !== 0 && (
+        <UnOrderedReviews>
+          {reviews.map(review => {
+            const { author, content } = review;
+
+            return (
+              <ListReview>
+                <h2>{author} •</h2>
+                <TextAutor>{content}</TextAutor>
+              </ListReview>
+            );
+          })}
+        </UnOrderedReviews>
       )}
+
       {reviews.length === 0 && (
         <MessageNoComments>¯\_(ツ)_/¯ No comments found</MessageNoComments>
       )}

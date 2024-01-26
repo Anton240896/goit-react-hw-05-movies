@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 
 import { requestActors } from 'components/Api/Api';
-
 import Loader from 'components/Loader/Loader';
+
 import {
   ListFilms,
   Name,
@@ -44,7 +44,6 @@ const Cast = () => {
     };
     getCast();
   }, [movieId]);
-
 
   /*   ====== RENDER ======*/
   return (

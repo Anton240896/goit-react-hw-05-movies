@@ -11,7 +11,7 @@ export const ContFilms = styled.div`
 `;
 
 export const Trending = styled.h1`
-  margin-left: 250px;
+  margin-left: 51px;
   margin-top: 25px;
   color: red;
   font-family: 'Tangerine', cursive;

@@ -381,9 +381,9 @@ export const BtnTopMedia = styled.button`
 `;
 
 export const Time = styled.span`
-  font-size: 43px;
+  font-size: 29px;
   color: var(--tmdbRed);
-  margin-top: -6px;
+  margin-top: 0;
   margin-left: 10px;
   font-family: 'Tangerine', cursive;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
@@ -391,5 +391,22 @@ export const Time = styled.span`
 
   @media (max-width: 1220px) {
     display: none;
+  }
+`;
+
+export const KievTime = styled.span`
+  position: relative;
+  top: -78px;
+  left: 346px;
+  font-size: 43px;
+  color: var(--tmdbRed);
+
+  font-family: 'Tangerine', cursive;
+  animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
+    both;
+
+  @media (max-width: 1220px) {
+    top: -37px;
+    left: 49px;
   }
 `;

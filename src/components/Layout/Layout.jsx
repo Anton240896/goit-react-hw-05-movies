@@ -62,8 +62,7 @@ export const Layout = () => {
           </Link>
 
           <Time>
-            <b> {nowDate.toLocaleDateString()}</b>
-            {/* <b>Local time • {nowTime.toLocaleTimeString()}</b>  */}
+            <b>{nowDate.toLocaleDateString()}</b>
           </Time>
 
           <Link to="/movies">

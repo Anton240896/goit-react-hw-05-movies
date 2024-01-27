@@ -244,7 +244,7 @@ export default MovieDetails;
 //     setLoading(true);
 
 //     requestMovieDetails(movieId)
-//       .then(detailMovie => {
+//       .then(detailMovie => {np
 //         setMovieInfo(detailMovie);
 //       })
 //       .catch(error => {})

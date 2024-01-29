@@ -7,7 +7,7 @@ import { FaFacebookSquare, FaWikipediaW, FaLinkedin } from 'react-icons/fa';
 import {
   Container,
   Nav,
-  Time,
+  DateNow,
   Link,
   LabelSwitch,
   Slider,
@@ -61,9 +61,9 @@ export const Layout = () => {
             <b>Home</b>
           </Link>
 
-          <Time>
+          <DateNow>
             <b>{nowDate.toLocaleDateString()}</b>
-          </Time>
+          </DateNow>
 
           <Link to="/movies">
             <b>Movies</b>

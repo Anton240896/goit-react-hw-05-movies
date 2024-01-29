@@ -380,7 +380,7 @@ export const BtnTopMedia = styled.button`
   }
 `;
 
-export const Time = styled.span`
+export const DateNow = styled.span`
   font-size: 29px;
   color: var(--tmdbRed);
   margin-top: 0;

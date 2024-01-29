@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, Link, useLocation } from 'react-router-dom';
 import { TbArrowBigLeftLine } from 'react-icons/tb';
-import { Link, useLocation } from 'react-router-dom';
 
 import ListFilms from 'components/ListFilms/ListFilms';
 import Form from 'components/Form/Form';

@@ -33,11 +33,6 @@ export const NameFilms = styled.p`
     font-size: 10px;
     font-weight: 500;
   }
-
-  @media (min-width: 1288px) {
-    width: 106px;
-    font-weight: 500;
-  }
 `;
 
 export const Item = styled.li`

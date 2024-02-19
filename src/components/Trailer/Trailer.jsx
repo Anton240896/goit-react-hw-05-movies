@@ -12,8 +12,7 @@ export const MovieTrailer = ({ movieId }) => {
   const [loading, setLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-
-
+    /*   ====== OPEN-CLOSE MODAL ======*/
   const openModal = () => {
     setIsModalOpen(true);
   };

@@ -24,9 +24,9 @@ export const MovieTrailer = ({ movieId }) => {
         const data = await requestTrailer(movieId);
 
         if (data.length > 0) {
-          setTrailer(data[1].key);
+          setTrailer(data[0].key);
         }
-        
+
         else if(data.length === 0) {
           setTrailer(false);
         }

@@ -43,16 +43,16 @@ export const MovieTrailer = ({ movieId }) => {
 
     /*   ====== RENDER ======*/
   return (
-    <>
+        <ContTrailer>
       <BtnTrailer size={120} onClick={openModal} />
       <OverlayModal isOpen={isModalOpen} onRequestClose={closeModal}>
-        <ContTrailer>
+
           {trailer && (
             <Frame src={`https://www.youtube.com/embed/${trailer}`} allowFullScreen></Frame>
           )}
+          
           {loading && <Loader />}
-        </ContTrailer>
       </OverlayModal>
-    </>
+        </ContTrailer>
   );
 };

@@ -16,7 +16,7 @@ export const OverlayModal = styled(ReactModal)`
 
 export const ContTrailer = styled.div`
   position: relative;
-  top: 19px;
+  top: -2px;
 
   @media (max-width: 1220px) {
     margin-top: 0;

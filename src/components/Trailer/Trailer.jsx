@@ -1,18 +1,14 @@
 import { useState, useEffect } from 'react';
-
+import { OverlayModal, ContTrailer, Frame, BtnTrailer } from './Trailer.styled';
 import { requestTrailer } from 'components/Api/Api';
-import { ContTrailer, Frame, BtnTrailer, OverlayModal } from './Trailer.styled';
 import { Loader } from 'components/Loader/Loader';
+// import toast from 'react-hot-toast';
 
-import toast from 'react-hot-toast';
-
-  /*   ====== HOOKS ======*/
 export const MovieTrailer = ({ movieId }) => {
   const [trailer, setTrailer] = useState();
   const [loading, setLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-    /*   ====== OPEN-CLOSE MODAL ======*/
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -21,8 +17,6 @@ export const MovieTrailer = ({ movieId }) => {
     setIsModalOpen(false);
   };
 
-
-  /*   ====== EFFECT-TRAILER ======*/
   useEffect(() => {
     async function getMovieTrailer() {
       try {
@@ -30,10 +24,15 @@ export const MovieTrailer = ({ movieId }) => {
         const data = await requestTrailer(movieId);
 
         if (data.length > 0) {
-          setTrailer(data[0].key);
+          setTrailer(data[1].key);
         }
+        
+        else if(data.length === 0) {
+          setTrailer(false);
+        }
+       
       } catch (error) {
-        toast.error('Nothing found');
+        console.error('Nothing found');
       } finally {
         setLoading(false);
       }
@@ -41,18 +40,13 @@ export const MovieTrailer = ({ movieId }) => {
     getMovieTrailer();
   }, [movieId]);
 
-    /*   ====== RENDER ======*/
   return (
-        <ContTrailer>
+    <ContTrailer>
       <BtnTrailer size={120} onClick={openModal} />
       <OverlayModal isOpen={isModalOpen} onRequestClose={closeModal}>
-
-          {trailer && (
-            <Frame src={`https://www.youtube.com/embed/${trailer}`} allowFullScreen></Frame>
-          )}
-          
-          {loading && <Loader />}
+        {trailer && <Frame src={`https://www.youtube.com/embed/${trailer}`} allowFullScreen></Frame>}
+        {loading && <Loader />}
       </OverlayModal>
-        </ContTrailer>
+    </ContTrailer>
   );
 };

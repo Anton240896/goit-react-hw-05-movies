@@ -12,6 +12,10 @@ export const OverlayModal = styled(ReactModal)`
   transform: translate(-50%, -50%);
   padding: 0%;
   z-index: 1000;
+
+  @media(max-width: 1220px) {
+    margin-left: -136px;
+  }
 `;
 
 export const ContTrailer = styled.div`
@@ -20,7 +24,7 @@ export const ContTrailer = styled.div`
 
   @media (max-width: 1220px) {
     margin-top: 0;
-    margin-left: -223px;
+    margin-left: 0;
   }
 `;
 

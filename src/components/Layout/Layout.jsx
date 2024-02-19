@@ -35,7 +35,7 @@ export const Layout = () => {
   /*   ====== SWITCH-THEME ======*/
   const handleSwitch = () => {
     const whiteTheme =
-      'background-image:radial-gradient(circle, var(--tmdbShadowSwitcher) 60%, var( --tmdbBlack)75%)';
+      'background-image:radial-gradient(circle, var(--tmdbShadowSwitcher) 60%, var( --tmdbBlack) 75%)';
     const blackTheme =
       'background-image:radial-gradient(circle, var( --tmdbBlack) 70%,var(--tmdbShadowSwitcher) 75%)';
 

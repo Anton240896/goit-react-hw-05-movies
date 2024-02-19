@@ -1,5 +1,18 @@
 import styled from 'styled-components';
-// import { FaYoutube } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
+import ReactModal from 'react-modal';
+
+export const OverlayModal = styled(ReactModal)`
+  position: relative;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 0%;
+  z-index: 1000;
+`;
 
 export const ContTrailer = styled.div`
   position: relative;
@@ -7,21 +20,27 @@ export const ContTrailer = styled.div`
 
   @media (max-width: 1220px) {
     margin-top: 0;
-    margin-left: 0;
+    margin-left: -223px;
   }
 `;
 
 export const Frame = styled.iframe`
-  width: 205px;
-  height: 106px;
+  margin-left: 550px;
+  width: 50%;
+  height: 500px;
   border: thick double var(--tmdbLightGreen);
   border-radius: 10px;
+/* 
+  &:focus {
+    outline: none;
+  } */
 
   @media (max-width: 1220px) {
     width: 273px;
   }
 `;
-// export const BtnTrailer = styled(FaYoutube)`
-//   cursor: pointer;
-//   color: var(--tmdbRed);
-// `;
+
+ export const BtnTrailer = styled(FaYoutube)`
+   cursor: pointer;
+   color: var(--tmdbRed);
+ `;

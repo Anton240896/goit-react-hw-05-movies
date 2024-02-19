@@ -1,17 +1,29 @@
 import { useState, useEffect } from 'react';
 
-// import { FaYoutube } from 'react-icons/fa';
+import { requestTrailer } from 'components/Api/Api';
+import { ContTrailer, Frame, BtnTrailer, OverlayModal } from './Trailer.styled';
+import { Loader } from 'components/Loader/Loader';
+
 import toast from 'react-hot-toast';
 
-import { Loader } from 'components/Loader/Loader';
-import { requestTrailer } from 'components/Api/Api';
-import { ContTrailer, Frame } from 'components/Trailer/Trailer.styled';
-
-export const MovieTrailer = ({ movieId }) => {
   /*   ====== HOOKS ======*/
+export const MovieTrailer = ({ movieId }) => {
   const [trailer, setTrailer] = useState();
   const [loading, setLoading] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+
+  /*   ====== EFFECT-TRAILER ======*/
   useEffect(() => {
     async function getMovieTrailer() {
       try {
@@ -30,17 +42,18 @@ export const MovieTrailer = ({ movieId }) => {
     getMovieTrailer();
   }, [movieId]);
 
-  /*   ====== RENDER ======*/
+    /*   ====== RENDER ======*/
   return (
-    <ContTrailer>
-      {trailer && (
-        <Frame
-          src={`https://www.youtube.com/embed/${trailer}`}
-          allowFullScreen
-        ></Frame>
-      )}
-
-      {loading && <Loader />}
-    </ContTrailer>
+    <>
+      <BtnTrailer size={120} onClick={openModal} />
+      <OverlayModal isOpen={isModalOpen} onRequestClose={closeModal}>
+        <ContTrailer>
+          {trailer && (
+            <Frame src={`https://www.youtube.com/embed/${trailer}`} allowFullScreen></Frame>
+          )}
+          {loading && <Loader />}
+        </ContTrailer>
+      </OverlayModal>
+    </>
   );
 };

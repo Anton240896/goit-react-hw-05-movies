@@ -25,15 +25,15 @@ export const ContTrailer = styled.div`
 `;
 
 export const Frame = styled.iframe`
-  margin-left: 550px;
+  margin-left: 520px;
   width: 50%;
   height: 500px;
   border: thick double var(--tmdbLightGreen);
   border-radius: 10px;
-/* 
+
   &:focus {
     outline: none;
-  } */
+  }
 
   @media (max-width: 1220px) {
     width: 273px;

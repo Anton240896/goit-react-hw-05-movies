@@ -14,8 +14,8 @@ import { Loader } from 'components/Loader/Loader';
 export const MovieTrailer = ({ movieId }) => {
   /*   ====== HOOKS ======*/
   const [trailer, setTrailer] = useState();
-  const [loading, setLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const modalRef = useRef(null);
 
@@ -37,19 +37,20 @@ export const MovieTrailer = ({ movieId }) => {
     }
     getMovieTrailer();
   }, [movieId]);
+  console.log(modalRef);
 
   /*   ====== MODAL CLOSES ANYWHERE ======*/
   useEffect(() => {
-    const handleClickOutside = evt => {
+    const handleClickAnywhere = evt => {
       if (modalRef.current && !modalRef.current.contains(evt.target)) {
         setIsModalOpen(false);
       }
     };
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener('click', handleClickAnywhere);
 
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener('click', handleClickAnywhere);
     };
   }, []);
 

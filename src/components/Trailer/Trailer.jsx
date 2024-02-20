@@ -1,5 +1,11 @@
 import { useState, useEffect } from 'react';
-import { OverlayModal, ContTrailer, Frame, BtnTrailer, NoTrailer } from './Trailer.styled';
+import {
+  OverlayModal,
+  ContTrailer,
+  Frame,
+  BtnTrailer,
+  NoTrailer,
+} from './Trailer.styled';
 import { requestTrailer } from 'components/Api/Api';
 import { Loader } from 'components/Loader/Loader';
 
@@ -9,7 +15,7 @@ export const MovieTrailer = ({ movieId }) => {
   const [loading, setLoading] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-    /*   ====== MODAL ======*/
+  /*   ====== MODAL ======*/
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -18,7 +24,7 @@ export const MovieTrailer = ({ movieId }) => {
     setIsModalOpen(false);
   };
 
-    /*   ====== EFFECT-TRAILER ======*/
+  /*   ====== EFFECT-TRAILER ======*/
 
   useEffect(() => {
     async function getMovieTrailer() {
@@ -29,9 +35,6 @@ export const MovieTrailer = ({ movieId }) => {
         if (data.length > 0) {
           setTrailer(data[0].key);
         }
-
-       
-       
       } catch (error) {
         console.error('Nothing found');
       } finally {
@@ -41,11 +44,22 @@ export const MovieTrailer = ({ movieId }) => {
     getMovieTrailer();
   }, [movieId]);
 
+  /*   ====== DESTRUCTURIZATION - TRAILER  ======*/
+  const trailerShow = trailer ? (
+    <Frame
+      src={`https://www.youtube.com/embed/${trailer}`}
+      allowFullScreen
+    ></Frame>
+  ) : (
+    <NoTrailer>No trailer found</NoTrailer>
+  );
+
+  /*   ====== RENDER ======*/
   return (
     <ContTrailer>
       <BtnTrailer size={120} onClick={openModal} />
       <OverlayModal isOpen={isModalOpen} onRequestClose={closeModal}>
-        {trailer ? <Frame src={`https://www.youtube.com/embed/${trailer}`} allowFullScreen></Frame> : <NoTrailer>No trailer found</NoTrailer>}
+        {trailerShow}
         {loading && <Loader />}
       </OverlayModal>
     </ContTrailer>

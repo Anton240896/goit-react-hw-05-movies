@@ -57,5 +57,11 @@ export const Frame = styled.iframe`
   font-size: 100px;
     font-family: 'Marck Script';
 
+@media(max-width: 1220px) {
+    font-size: 50px;
+      left: 491px;
+
+
+}
 
  `

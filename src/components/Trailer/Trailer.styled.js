@@ -13,7 +13,7 @@ export const OverlayModal = styled(ReactModal)`
   padding: 0%;
   z-index: 1000;
 
-  @media(max-width: 1220px) {
+  @media (max-width: 1220px) {
     margin-left: -136px;
   }
 `;
@@ -44,24 +44,21 @@ export const Frame = styled.iframe`
   }
 `;
 
- export const BtnTrailer = styled(FaYoutube)`
-   cursor: pointer;
-   color: var(--tmdbRed);
-   `;
+export const BtnTrailer = styled(FaYoutube)`
+  cursor: pointer;
+  color: var(--tmdbRed);
+`;
 
- export const NoTrailer = styled.p`
+export const NoTrailer = styled.p`
   position: absolute;
   left: 693px;
   top: -144px;
   color: var(--tmdbRed);
   font-size: 100px;
-    font-family: 'Marck Script';
+  font-family: 'Marck Script';
 
-@media(max-width: 1220px) {
+  @media (max-width: 1220px) {
     font-size: 50px;
-      left: 491px;
-
-
-}
-
- `
+    left: 495px;
+  }
+`;

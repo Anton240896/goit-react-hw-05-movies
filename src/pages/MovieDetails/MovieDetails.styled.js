@@ -88,7 +88,6 @@ export const NameFilms = styled.h2`
 
 export const NameDetailsMovie = styled.h3`
   color: var(--tmdbRed);
-  font-size: 15px;
   font-family: 'Marck Script';
   font-size: 20px;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms

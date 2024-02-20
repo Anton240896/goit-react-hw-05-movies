@@ -75,8 +75,8 @@ export const Slider = styled.span`
 export const LabelSwitch = styled.label`
   font-size: 17px;
   position: absolute;
-  top: 110px;
-  left: 90px;
+  top: 99px;
+  left: 151px;
   width: 3.5em;
   height: 2em;
 

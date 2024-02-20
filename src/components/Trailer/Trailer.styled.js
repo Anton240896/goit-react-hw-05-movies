@@ -47,4 +47,15 @@ export const Frame = styled.iframe`
  export const BtnTrailer = styled(FaYoutube)`
    cursor: pointer;
    color: var(--tmdbRed);
- `;
+   `;
+
+ export const NoTrailer = styled.p`
+  position: absolute;
+  left: 693px;
+  top: -144px;
+  color: var(--tmdbRed);
+  font-size: 100px;
+    font-family: 'Marck Script';
+
+
+ `
